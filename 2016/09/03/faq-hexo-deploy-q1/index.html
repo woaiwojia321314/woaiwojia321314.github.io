@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="faq,ssm,tomcat7,spring3,struts2,mybatis3," />
+  <meta name="keywords" content="hexo,git,faq," />
 
 
 
@@ -86,16 +86,16 @@
 
 
 
-<meta name="description" content="Q:不允许有匹配 “[xX][mM][lL]” 的处理指令目标。">
+<meta name="description" content="Q:hexo部署到github时，报错：fatal: unable to auto-detect email address">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ssm(struts2+spring3+mybatis3)问题集Q1">
-<meta property="og:url" content="http://www.missfli.com/2016/08/29/faq-ssm-q1/index.html">
+<meta property="og:title" content="hexo问题--hexo部署到github">
+<meta property="og:url" content="http://www.missfli.com/2016/09/03/faq-hexo-deploy-q1/index.html">
 <meta property="og:site_name" content="Fli">
-<meta property="og:description" content="Q:不允许有匹配 “[xX][mM][lL]” 的处理指令目标。">
-<meta property="og:updated_time" content="2016-09-03T06:46:03.996Z">
+<meta property="og:description" content="Q:hexo部署到github时，报错：fatal: unable to auto-detect email address">
+<meta property="og:updated_time" content="2016-09-03T06:46:55.700Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ssm(struts2+spring3+mybatis3)问题集Q1">
-<meta name="twitter:description" content="Q:不允许有匹配 “[xX][mM][lL]” 的处理指令目标。">
+<meta name="twitter:title" content="hexo问题--hexo部署到github">
+<meta name="twitter:description" content="Q:hexo部署到github时，报错：fatal: unable to auto-detect email address">
 
 
 
@@ -116,9 +116,9 @@
 
 
 
-  <link rel="canonical" href="http://www.missfli.com/2016/08/29/faq-ssm-q1/"/>
+  <link rel="canonical" href="http://www.missfli.com/2016/09/03/faq-hexo-deploy-q1/"/>
 
-  <title> ssm(struts2+spring3+mybatis3)问题集Q1 | Fli </title>
+  <title> hexo问题--hexo部署到github | Fli </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -268,7 +268,7 @@
             
             
               
-                ssm(struts2+spring3+mybatis3)问题集Q1
+                hexo问题--hexo部署到github
               
             
           </h1>
@@ -280,8 +280,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-29T08:41:01+08:00" content="2016-08-29">
-              2016-08-29
+            <time itemprop="dateCreated" datetime="2016-09-03T14:30:32+08:00" content="2016-09-03">
+              2016-09-03
             </time>
           </span>
 
@@ -294,8 +294,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/backdev/" itemprop="url" rel="index">
-                    <span itemprop="name">backdev</span>
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
                   </a>
                 </span>
 
@@ -310,8 +310,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/08/29/faq-ssm-q1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/29/faq-ssm-q1/" itemprop="commentsCount"></span>
+                <a href="/2016/09/03/faq-hexo-deploy-q1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/03/faq-hexo-deploy-q1/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -334,9 +334,12 @@
       
 
       
-        <h2 id="Q"><a href="#Q" class="headerlink" title="Q:"></a>Q:</h2><p>不允许有匹配 “[xX][mM][lL]” 的处理指令目标。<br><a id="more"></a></p>
-<p>异常信息：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">aused by: 不允许有匹配 <span class="string">"[xX][mM][lL]"</span> 的处理指令目标。 - file:/D:/apache-tomcat-7.0.70/webapps/security/WEB-INF/classes/struts.xml:1:7</div><div class="line">	at com.opensymphony.xwork2.util.DomHelper.parse(DomHelper.java:119)</div><div class="line">	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.loadConfigurationFiles(XmlConfigurationProvider.java:1021)</div><div class="line">	... 23 more</div><div class="line">Caused by: org.xml.sax.SAXParseException; systemId: file:/D:/apache-tomcat-7.0.70/webapps/security/WEB-INF/classes/struts.xml; lineNumber: 1; columnNumber: 7; 不允许有匹配 <span class="string">"[xX][mM][lL]"</span> 的处理指令目标。</div><div class="line">	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198)</div><div class="line">	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1388)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanPIData(XMLScanner.java:675)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanPIData(XMLDocumentFragmentScannerImpl.java:980)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanPI(XMLScanner.java:643)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl<span class="variable">$PrologDriver</span>.next(XMLDocumentScannerImpl.java:913)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:607)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:116)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:489)</div><div class="line">	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:835)</div><div class="line">	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764)</div><div class="line">	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:123)</div><div class="line">	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1210)</div><div class="line">	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl<span class="variable">$JAXPSAXParser</span>.parse(SAXParserImpl.java:568)</div><div class="line">	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:302)</div><div class="line">	at com.opensymphony.xwork2.util.DomHelper.parse(DomHelper.java:117)</div><div class="line">	... 24 more</div><div class="line">八月 29, 2016 10:20:43 上午 com.sun.faces.config.ConfigureListener contextInitialized</div></pre></td></tr></table></figure></p>
-<h2 id="A"><a href="#A" class="headerlink" title="A:"></a>A:</h2><p>看看struts.xml配置文件的声明 <code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</code> 前面是否有空格啥的。</p>
+        <h2 id="Q"><a href="#Q" class="headerlink" title="Q:"></a>Q:</h2><p>hexo部署到github时，报错：fatal: unable to auto-detect email address</p>
+<a id="more"></a>
+<p>异常信息：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">D:\workspace\fliblog&gt;hexo deploy</div><div class="line">INFO  Deploying: git</div><div class="line">INFO  Clearing .deploy_git folder...</div><div class="line">INFO  Copying files from public folder...</div><div class="line"></div><div class="line">*** Please tell me who you are.</div><div class="line"></div><div class="line">Run</div><div class="line"></div><div class="line">  git config --global user.email <span class="string">"you@example.com"</span></div><div class="line">  git config --global user.name <span class="string">"Your Name"</span></div><div class="line"></div><div class="line">to <span class="built_in">set</span> your account<span class="string">'s default identity.</span></div><div class="line">Omit --global to set the identity only in this repository.</div><div class="line"></div><div class="line">fatal: unable to auto-detect email address (got 'feili@feili-PC.(none)<span class="string">')</span></div><div class="line">Branch master set up to track remote branch master from https://github.com/woaiw</div><div class="line">ojia321314/woaiwojia321314.github.io.git.</div><div class="line">Everything up-to-date</div><div class="line">INFO  Deploy done: git</div></pre></td></tr></table></figure></p>
+<h2 id="A"><a href="#A" class="headerlink" title="A:"></a>A:</h2><p>找到工程目录的.git文件夹（比如我的项目是fliblog,路径就是…./fliblog/.deploy_git.git），打开之后找到config文件，在最后边加上一句话</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[user]</div><div class="line">    email = your email</div><div class="line">    name = your name</div></pre></td></tr></table></figure>
+<p>your email 和your name随便写上就行</p>
 
       
     </div>
@@ -359,17 +362,11 @@
       
         <div class="post-tags">
           
+            <a href="/tags/hexo/" rel="tag">#hexo</a>
+          
+            <a href="/tags/git/" rel="tag">#git</a>
+          
             <a href="/tags/faq/" rel="tag">#faq</a>
-          
-            <a href="/tags/ssm/" rel="tag">#ssm</a>
-          
-            <a href="/tags/tomcat7/" rel="tag">#tomcat7</a>
-          
-            <a href="/tags/spring3/" rel="tag">#spring3</a>
-          
-            <a href="/tags/struts2/" rel="tag">#struts2</a>
-          
-            <a href="/tags/mybatis3/" rel="tag">#mybatis3</a>
           
         </div>
       
@@ -378,16 +375,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/08/29/faq-ssm-q2/" rel="next" title="ssm(struts2+spring3+mybatis3)问题集Q2">
-                <i class="fa fa-chevron-left"></i> ssm(struts2+spring3+mybatis3)问题集Q2
+              <a href="/2016/09/01/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/08/31/fetch-customer-id-java/" rel="prev" title="java获取客户端真实IP（转载）">
-                java获取客户端真实IP（转载） <i class="fa fa-chevron-right"></i>
+              <a href="/2016/09/03/hexo-deploy-no-psw/" rel="prev" title="Hexo免输入密码部署到github">
+                Hexo免输入密码部署到github <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -414,8 +411,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/08/29/faq-ssm-q1/"
-           data-title="ssm(struts2+spring3+mybatis3)问题集Q1" data-url="http://www.missfli.com/2016/08/29/faq-ssm-q1/">
+      <div class="ds-thread" data-thread-key="2016/09/03/faq-hexo-deploy-q1/"
+           data-title="hexo问题--hexo部署到github" data-url="http://www.missfli.com/2016/09/03/faq-hexo-deploy-q1/">
       </div>
     
   </div>

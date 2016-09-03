@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.missfli.com/"/>
-  <updated>2016-09-03T01:10:56.387Z</updated>
+  <updated>2016-09-03T07:06:57.683Z</updated>
   <id>http://www.missfli.com/</id>
   
   <author>
@@ -14,6 +14,70 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo免输入密码部署到github</title>
+    <link href="http://www.missfli.com/2016/09/03/hexo-deploy-no-psw/"/>
+    <id>http://www.missfli.com/2016/09/03/hexo-deploy-no-psw/</id>
+    <published>2016-09-03T06:53:32.000Z</published>
+    <updated>2016-09-03T07:06:57.683Z</updated>
+    
+    <content type="html"><![CDATA[<p>hexo部署到github时，会要求你输入用户名密码，每次提交都要输入，肯定让你抓狂吧，下面的2步配置就能把你从痛苦中解救出来。</p>
+<a id="more"></a>
+<h6 id="在系统变量中添加一个环境变量："><a href="#在系统变量中添加一个环境变量：" class="headerlink" title="在系统变量中添加一个环境变量："></a>在系统变量中添加一个环境变量：</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">变量名：HOME</div><div class="line">变量值：%USERPROFILE%</div></pre></td></tr></table></figure>
+<p>见图：<br><img src="/images/blog/hexo-deploy-no-psw-01.jpg" alt="img"></p>
+<h6 id="接着在你的用户目录（C-Users-username）下新建一个叫-netrc的文件编辑这个文件"><a href="#接着在你的用户目录（C-Users-username）下新建一个叫-netrc的文件编辑这个文件" class="headerlink" title="接着在你的用户目录（C:\Users\username）下新建一个叫 _netrc的文件编辑这个文件"></a>接着在你的用户目录（C:\Users\username）下新建一个叫 _netrc的文件编辑这个文件</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">machine github.com</div><div class="line">login username</div><div class="line">password password</div></pre></td></tr></table></figure>
+<p>设置好这些后，当你再次部署时，就不用输入用户名和密码了。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;hexo部署到github时，会要求你输入用户名密码，每次提交都要输入，肯定让你抓狂吧，下面的2步配置就能把你从痛苦中解救出来。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://www.missfli.com/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://www.missfli.com/tags/hexo/"/>
+    
+      <category term="git" scheme="http://www.missfli.com/tags/git/"/>
+    
+      <category term="faq" scheme="http://www.missfli.com/tags/faq/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo问题--hexo部署到github</title>
+    <link href="http://www.missfli.com/2016/09/03/faq-hexo-deploy-q1/"/>
+    <id>http://www.missfli.com/2016/09/03/faq-hexo-deploy-q1/</id>
+    <published>2016-09-03T06:30:32.000Z</published>
+    <updated>2016-09-03T06:46:55.700Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Q"><a href="#Q" class="headerlink" title="Q:"></a>Q:</h2><p>hexo部署到github时，报错：fatal: unable to auto-detect email address</p>
+<a id="more"></a>
+<p>异常信息：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">D:\workspace\fliblog&gt;hexo deploy</div><div class="line">INFO  Deploying: git</div><div class="line">INFO  Clearing .deploy_git folder...</div><div class="line">INFO  Copying files from public folder...</div><div class="line"></div><div class="line">*** Please tell me who you are.</div><div class="line"></div><div class="line">Run</div><div class="line"></div><div class="line">  git config --global user.email <span class="string">"you@example.com"</span></div><div class="line">  git config --global user.name <span class="string">"Your Name"</span></div><div class="line"></div><div class="line">to <span class="built_in">set</span> your account<span class="string">'s default identity.</span></div><div class="line">Omit --global to set the identity only in this repository.</div><div class="line"></div><div class="line">fatal: unable to auto-detect email address (got 'feili@feili-PC.(none)<span class="string">')</span></div><div class="line">Branch master set up to track remote branch master from https://github.com/woaiw</div><div class="line">ojia321314/woaiwojia321314.github.io.git.</div><div class="line">Everything up-to-date</div><div class="line">INFO  Deploy done: git</div></pre></td></tr></table></figure></p>
+<h2 id="A"><a href="#A" class="headerlink" title="A:"></a>A:</h2><p>找到工程目录的.git文件夹（比如我的项目是fliblog,路径就是…./fliblog/.deploy_git.git），打开之后找到config文件，在最后边加上一句话</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">[user]</div><div class="line">    email = your email</div><div class="line">    name = your name</div></pre></td></tr></table></figure>
+<p>your email 和your name随便写上就行</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Q&quot;&gt;&lt;a href=&quot;#Q&quot; class=&quot;headerlink&quot; title=&quot;Q:&quot;&gt;&lt;/a&gt;Q:&lt;/h2&gt;&lt;p&gt;hexo部署到github时，报错：fatal: unable to auto-detect email address&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://www.missfli.com/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://www.missfli.com/tags/hexo/"/>
+    
+      <category term="git" scheme="http://www.missfli.com/tags/git/"/>
+    
+      <category term="faq" scheme="http://www.missfli.com/tags/faq/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
@@ -47,6 +111,43 @@
     
     
       <category term="hexo" scheme="http://www.missfli.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js获取客户端真实IP</title>
+    <link href="http://www.missfli.com/2016/08/31/fetch-customer-id-js/"/>
+    <id>http://www.missfli.com/2016/08/31/fetch-customer-id-js/</id>
+    <published>2016-08-31T00:41:01.000Z</published>
+    <updated>2016-09-03T01:11:58.542Z</updated>
+    
+    <content type="html"><![CDATA[<p>java获取客户端程序本身还有对应的对象来实现。而js却不行。搜罗了一些资料，发现比较全而好的前端获取客户端IP的方法基本都是通过三方接口。也就是调用别人写好的接口。用浏览器已有的控件ActiveXObject的控件方式，有一定的兼容性问题。<br><a id="more"></a></p>
+<h2 id="方法一：（所有的平台及浏览器）"><a href="#方法一：（所有的平台及浏览器）" class="headerlink" title="方法一：（所有的平台及浏览器）"></a>方法一：（所有的平台及浏览器）</h2><p>使用搜狐接口：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;script src=<span class="string">"http://pv.sohu.com/cityjson?ie=utf-8"</span>&gt;&lt;/script&gt;</div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</div><div class="line">document.write(<span class="built_in">return</span>CitySN[<span class="string">"cip"</span>]+<span class="string">','</span>+<span class="built_in">return</span>CitySN[<span class="string">"cname"</span>])</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h2 id="方法二：（所有的平台及浏览器）"><a href="#方法二：（所有的平台及浏览器）" class="headerlink" title="方法二：（所有的平台及浏览器）"></a>方法二：（所有的平台及浏览器）</h2><p>使用新浪接口：(我测试过，此方法好像不行。访问网站也不能访问了。)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"http://counter.sina.com.cn/ip/"</span> charset=<span class="string">"gb2312"</span>&gt;&lt;/script&gt;       &lt;!--获取接口数据，注意charset --&gt;</div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</div><div class="line">document.writeln(<span class="string">"IP地址："</span>+ILData[0]+<span class="string">"&lt;br /&gt;"</span>);             //输出接口数据中的IP地址</div><div class="line">document.writeln(<span class="string">"地址类型："</span>+ILData[1]+<span class="string">"&lt;br /&gt;"</span>);         //输出接口数据中的IP地址的类型</div><div class="line">document.writeln(<span class="string">"地址类型："</span>+ILData[2]+<span class="string">"&lt;br /&gt;"</span>);         //输出接口数据中的IP地址的省市</div><div class="line">document.writeln(<span class="string">"地址类型："</span>+ILData[3]+<span class="string">"&lt;br /&gt;"</span>);         //输出接口数据中的IP地址的</div><div class="line">document.writeln(<span class="string">"地址类型："</span>+ILData[4]+<span class="string">"&lt;br /&gt;"</span>);         //输出接口数据中的IP地址的运营商</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h2 id="方法三："><a href="#方法三：" class="headerlink" title="方法三："></a>方法三：</h2><p>个人Robert Hashemian写的：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;script language=<span class="string">"JavaScript"</span> src=<span class="string">"http://www.hashemian.com/js/visitorIP.js.php"</span>&gt;&lt;/script&gt;</div><div class="line">&lt;script language=<span class="string">"JavaScript"</span>&gt;</div><div class="line">    VIH_BackColor = <span class="string">"palegreen"</span>;</div><div class="line">    VIH_ForeColor = <span class="string">"navy"</span>;</div><div class="line">    VIH_FontPix = <span class="string">"16"</span>;</div><div class="line">    VIH_DisplayFormat = <span class="string">"You are visiting from:&lt;br&gt;IP Address: %%IP%%&lt;br&gt;Host: %%HOST%%"</span>;</div><div class="line">    VIH_DisplayOnPage = <span class="string">"yes"</span>;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h2 id="方法四：（只针对IE且客户端的IE允许AcitiveX运行，通过平台：XP，SERVER03，2000）。"><a href="#方法四：（只针对IE且客户端的IE允许AcitiveX运行，通过平台：XP，SERVER03，2000）。" class="headerlink" title="方法四：（只针对IE且客户端的IE允许AcitiveX运行，通过平台：XP，SERVER03，2000）。"></a>方法四：（只针对IE且客户端的IE允许AcitiveX运行，通过平台：XP，SERVER03，2000）。</h2><p>利用ActiveXObject控件，ie浏览器里要开启此控件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;script language=<span class="string">"JavaScript"</span>&gt;</div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">GetLocalIPAddr</span></span>()&#123; var oSetting = null; var ip = null; try&#123; oSetting = new ActiveXObject(<span class="string">"rcbdyctl.Setting"</span>); ip = oSetting.GetIPAddress; <span class="keyword">if</span> (ip.length == 0)&#123; <span class="built_in">return</span> <span class="string">"没有连接到Internet"</span>; &#125; oSetting = null; &#125;catch(e)&#123; <span class="built_in">return</span> ip; &#125; <span class="built_in">return</span> ip; &#125; document.write(GetLocalIPAddr()+<span class="string">"&lt;br/&gt;"</span>)</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><ul>
+<li><a href="http://www.jb51.net/article/52484.htm" target="_blank" rel="external">JS获取客户端IP地址、MAC和主机名的7个方法汇总</a></li>
+<li><a href="http://www.jb51.net/article/43586.htm" target="_blank" rel="external">js获取客户端外网ip的简单实例</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;java获取客户端程序本身还有对应的对象来实现。而js却不行。搜罗了一些资料，发现比较全而好的前端获取客户端IP的方法基本都是通过三方接口。也就是调用别人写好的接口。用浏览器已有的控件ActiveXObject的控件方式，有一定的兼容性问题。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="frontend" scheme="http://www.missfli.com/categories/frontend/"/>
+    
+      <category term="js" scheme="http://www.missfli.com/categories/frontend/js/"/>
+    
+    
+      <category term="js" scheme="http://www.missfli.com/tags/js/"/>
     
   </entry>
   
@@ -110,48 +211,11 @@
   </entry>
   
   <entry>
-    <title>js获取客户端真实IP</title>
-    <link href="http://www.missfli.com/2016/08/31/fetch-customer-id-js/"/>
-    <id>http://www.missfli.com/2016/08/31/fetch-customer-id-js/</id>
-    <published>2016-08-31T00:41:01.000Z</published>
-    <updated>2016-09-03T01:11:58.542Z</updated>
-    
-    <content type="html"><![CDATA[<p>java获取客户端程序本身还有对应的对象来实现。而js却不行。搜罗了一些资料，发现比较全而好的前端获取客户端IP的方法基本都是通过三方接口。也就是调用别人写好的接口。用浏览器已有的控件ActiveXObject的控件方式，有一定的兼容性问题。<br><a id="more"></a></p>
-<h2 id="方法一：（所有的平台及浏览器）"><a href="#方法一：（所有的平台及浏览器）" class="headerlink" title="方法一：（所有的平台及浏览器）"></a>方法一：（所有的平台及浏览器）</h2><p>使用搜狐接口：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;script src=<span class="string">"http://pv.sohu.com/cityjson?ie=utf-8"</span>&gt;&lt;/script&gt;</div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</div><div class="line">document.write(<span class="built_in">return</span>CitySN[<span class="string">"cip"</span>]+<span class="string">','</span>+<span class="built_in">return</span>CitySN[<span class="string">"cname"</span>])</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
-<h2 id="方法二：（所有的平台及浏览器）"><a href="#方法二：（所有的平台及浏览器）" class="headerlink" title="方法二：（所有的平台及浏览器）"></a>方法二：（所有的平台及浏览器）</h2><p>使用新浪接口：(我测试过，此方法好像不行。访问网站也不能访问了。)</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"http://counter.sina.com.cn/ip/"</span> charset=<span class="string">"gb2312"</span>&gt;&lt;/script&gt;       &lt;!--获取接口数据，注意charset --&gt;</div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</div><div class="line">document.writeln(<span class="string">"IP地址："</span>+ILData[0]+<span class="string">"&lt;br /&gt;"</span>);             //输出接口数据中的IP地址</div><div class="line">document.writeln(<span class="string">"地址类型："</span>+ILData[1]+<span class="string">"&lt;br /&gt;"</span>);         //输出接口数据中的IP地址的类型</div><div class="line">document.writeln(<span class="string">"地址类型："</span>+ILData[2]+<span class="string">"&lt;br /&gt;"</span>);         //输出接口数据中的IP地址的省市</div><div class="line">document.writeln(<span class="string">"地址类型："</span>+ILData[3]+<span class="string">"&lt;br /&gt;"</span>);         //输出接口数据中的IP地址的</div><div class="line">document.writeln(<span class="string">"地址类型："</span>+ILData[4]+<span class="string">"&lt;br /&gt;"</span>);         //输出接口数据中的IP地址的运营商</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
-<h2 id="方法三："><a href="#方法三：" class="headerlink" title="方法三："></a>方法三：</h2><p>个人Robert Hashemian写的：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;script language=<span class="string">"JavaScript"</span> src=<span class="string">"http://www.hashemian.com/js/visitorIP.js.php"</span>&gt;&lt;/script&gt;</div><div class="line">&lt;script language=<span class="string">"JavaScript"</span>&gt;</div><div class="line">    VIH_BackColor = <span class="string">"palegreen"</span>;</div><div class="line">    VIH_ForeColor = <span class="string">"navy"</span>;</div><div class="line">    VIH_FontPix = <span class="string">"16"</span>;</div><div class="line">    VIH_DisplayFormat = <span class="string">"You are visiting from:&lt;br&gt;IP Address: %%IP%%&lt;br&gt;Host: %%HOST%%"</span>;</div><div class="line">    VIH_DisplayOnPage = <span class="string">"yes"</span>;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
-<h2 id="方法四：（只针对IE且客户端的IE允许AcitiveX运行，通过平台：XP，SERVER03，2000）。"><a href="#方法四：（只针对IE且客户端的IE允许AcitiveX运行，通过平台：XP，SERVER03，2000）。" class="headerlink" title="方法四：（只针对IE且客户端的IE允许AcitiveX运行，通过平台：XP，SERVER03，2000）。"></a>方法四：（只针对IE且客户端的IE允许AcitiveX运行，通过平台：XP，SERVER03，2000）。</h2><p>利用ActiveXObject控件，ie浏览器里要开启此控件：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;script language=<span class="string">"JavaScript"</span>&gt;</div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">GetLocalIPAddr</span></span>()&#123; var oSetting = null; var ip = null; try&#123; oSetting = new ActiveXObject(<span class="string">"rcbdyctl.Setting"</span>); ip = oSetting.GetIPAddress; <span class="keyword">if</span> (ip.length == 0)&#123; <span class="built_in">return</span> <span class="string">"没有连接到Internet"</span>; &#125; oSetting = null; &#125;catch(e)&#123; <span class="built_in">return</span> ip; &#125; <span class="built_in">return</span> ip; &#125; document.write(GetLocalIPAddr()+<span class="string">"&lt;br/&gt;"</span>)</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
-<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><ul>
-<li><a href="http://www.jb51.net/article/52484.htm" target="_blank" rel="external">JS获取客户端IP地址、MAC和主机名的7个方法汇总</a></li>
-<li><a href="http://www.jb51.net/article/43586.htm" target="_blank" rel="external">js获取客户端外网ip的简单实例</a></li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;java获取客户端程序本身还有对应的对象来实现。而js却不行。搜罗了一些资料，发现比较全而好的前端获取客户端IP的方法基本都是通过三方接口。也就是调用别人写好的接口。用浏览器已有的控件ActiveXObject的控件方式，有一定的兼容性问题。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="frontend" scheme="http://www.missfli.com/categories/frontend/"/>
-    
-      <category term="js" scheme="http://www.missfli.com/categories/frontend/js/"/>
-    
-    
-      <category term="js" scheme="http://www.missfli.com/tags/js/"/>
-    
-  </entry>
-  
-  <entry>
     <title>ssm(struts2+spring3+mybatis3)问题集Q1</title>
     <link href="http://www.missfli.com/2016/08/29/faq-ssm-q1/"/>
     <id>http://www.missfli.com/2016/08/29/faq-ssm-q1/</id>
     <published>2016-08-29T00:41:01.000Z</published>
-    <updated>2016-09-03T01:20:01.339Z</updated>
+    <updated>2016-09-03T06:46:03.996Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Q"><a href="#Q" class="headerlink" title="Q:"></a>Q:</h2><p>不允许有匹配 “[xX][mM][lL]” 的处理指令目标。<br><a id="more"></a></p>
 <p>异常信息：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">aused by: 不允许有匹配 <span class="string">"[xX][mM][lL]"</span> 的处理指令目标。 - file:/D:/apache-tomcat-7.0.70/webapps/security/WEB-INF/classes/struts.xml:1:7</div><div class="line">	at com.opensymphony.xwork2.util.DomHelper.parse(DomHelper.java:119)</div><div class="line">	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.loadConfigurationFiles(XmlConfigurationProvider.java:1021)</div><div class="line">	... 23 more</div><div class="line">Caused by: org.xml.sax.SAXParseException; systemId: file:/D:/apache-tomcat-7.0.70/webapps/security/WEB-INF/classes/struts.xml; lineNumber: 1; columnNumber: 7; 不允许有匹配 <span class="string">"[xX][mM][lL]"</span> 的处理指令目标。</div><div class="line">	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198)</div><div class="line">	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1388)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanPIData(XMLScanner.java:675)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanPIData(XMLDocumentFragmentScannerImpl.java:980)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanPI(XMLScanner.java:643)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl<span class="variable">$PrologDriver</span>.next(XMLDocumentScannerImpl.java:913)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:607)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:116)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:489)</div><div class="line">	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:835)</div><div class="line">	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764)</div><div class="line">	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:123)</div><div class="line">	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1210)</div><div class="line">	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl<span class="variable">$JAXPSAXParser</span>.parse(SAXParserImpl.java:568)</div><div class="line">	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:302)</div><div class="line">	at com.opensymphony.xwork2.util.DomHelper.parse(DomHelper.java:117)</div><div class="line">	... 24 more</div><div class="line">八月 29, 2016 10:20:43 上午 com.sun.faces.config.ConfigureListener contextInitialized</div></pre></td></tr></table></figure></p>
@@ -166,6 +230,8 @@
     
       <category term="backdev" scheme="http://www.missfli.com/categories/backdev/"/>
     
+    
+      <category term="faq" scheme="http://www.missfli.com/tags/faq/"/>
     
       <category term="ssm" scheme="http://www.missfli.com/tags/ssm/"/>
     
@@ -184,7 +250,7 @@
     <link href="http://www.missfli.com/2016/08/29/faq-ssm-q2/"/>
     <id>http://www.missfli.com/2016/08/29/faq-ssm-q2/</id>
     <published>2016-08-29T00:41:01.000Z</published>
-    <updated>2016-09-03T01:19:57.076Z</updated>
+    <updated>2016-09-03T06:46:10.618Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Q"><a href="#Q" class="headerlink" title="Q:"></a>Q:</h2><p>java.lang.NoClassDefFoundError: org/objectweb/asm/ClassVisitor<br><a id="more"></a></p>
 <p>异常信息：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">SEVERE: Exception starting filter struts2</div><div class="line">java.lang.NoClassDefFoundError: org/objectweb/asm/ClassVisitor</div><div class="line">    at org.apache.struts2.convention.PackageBasedActionConfigBuilder.findActions(PackageBasedActionConfigBuilder.java:390)</div><div class="line">    at org.apache.struts2.convention.PackageBasedActionConfigBuilder.buildActionConfigs(PackageBasedActionConfigBuilder.java:347)</div><div class="line">    at org.apache.struts2.convention.ClasspathPackageProvider.loadPackages(ClasspathPackageProvider.java:53)</div><div class="line">    at com.opensymphony.xwork2.config.impl.DefaultConfiguration.reloadContainer(DefaultConfiguration.java:260)</div><div class="line">    at com.opensymphony.xwork2.config.ConfigurationManager.getConfiguration(ConfigurationManager.java:67)</div><div class="line">    at org.apache.struts2.dispatcher.Dispatcher.init_PreloadConfiguration(Dispatcher.java:429)</div><div class="line">    at org.apache.struts2.dispatcher.Dispatcher.init(Dispatcher.java:473)</div><div class="line">    at org.apache.struts2.dispatcher.ng.InitOperations.initDispatcher(InitOperations.java:74)</div><div class="line">    at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.init(StrutsPrepareAndExecuteFilter.java:51)</div><div class="line">    at org.apache.catalina.core.ApplicationFilterConfig.initFilter(ApplicationFilterConfig.java:281)</div><div class="line">    at org.apache.catalina.core.ApplicationFilterConfig.getFilter(ApplicationFilterConfig.java:262)</div><div class="line">    at org.apache.catalina.core.ApplicationFilterConfig.&lt;init&gt;(ApplicationFilterConfig.java:107)</div><div class="line">    at org.apache.catalina.core.StandardContext.filterStart(StandardContext.java:4775)</div><div class="line">    at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5452)</div><div class="line">    at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)</div><div class="line">    at org.apache.catalina.core.ContainerBase<span class="variable">$StartChild</span>.call(ContainerBase.java:1559)</div><div class="line">    at org.apache.catalina.core.ContainerBase<span class="variable">$StartChild</span>.call(ContainerBase.java:1549)</div><div class="line">    at java.util.concurrent.FutureTask<span class="variable">$Sync</span>.innerRun(Unknown Source)</div><div class="line">    at java.util.concurrent.FutureTask.run(Unknown Source)</div><div class="line">    at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)</div><div class="line">    at java.util.concurrent.ThreadPoolExecutor<span class="variable">$Worker</span>.run(Unknown Source)</div><div class="line">    at java.lang.Thread.run(Unknown Source)</div><div class="line">Caused by: java.lang.ClassNotFoundException: org.objectweb.asm.ClassVisitor</div><div class="line">    at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1714)</div><div class="line">    at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1559)</div><div class="line">    ... 22 more</div></pre></td></tr></table></figure></p>
@@ -204,6 +270,8 @@
     
       <category term="backdev" scheme="http://www.missfli.com/categories/backdev/"/>
     
+    
+      <category term="faq" scheme="http://www.missfli.com/tags/faq/"/>
     
       <category term="ssm" scheme="http://www.missfli.com/tags/ssm/"/>
     
