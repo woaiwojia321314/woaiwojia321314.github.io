@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Fli</title>
+  <subtitle>狼行千里吃肉，狗行千里吃屎；&lt;br&gt;活鱼逆流而上，死鱼随波逐流！</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://www.missfli.com/"/>
+  <updated>2016-09-03T01:10:56.387Z</updated>
+  <id>http://www.missfli.com/</id>
+  
+  <author>
+    <name>Fli</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://www.missfli.com/2016/09/01/hello-world/"/>
+    <id>http://www.missfli.com/2016/09/01/hello-world/</id>
+    <published>2016-09-01T04:39:04.000Z</published>
+    <updated>2016-09-03T01:10:56.387Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<a id="more"></a>
+<blockquote class="blockquote-center"><p>居中文本blah blah blah </p>
+</blockquote>
+<img src="/image-url" class="full-image" alt="alt" title="图片放大26%">
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div><div class="line"><span class="comment"># Code Highlight theme</span></div><div class="line"><span class="comment"># Available value: normal | night | night eighties | night blue | night bright</span></div><div class="line"><span class="comment"># https://github.com/chriskempson/tomorrow-theme</span></div><div class="line">highlight_theme: normal</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://www.missfli.com/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://www.missfli.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>java获取客户端真实IP（转载）</title>
+    <link href="http://www.missfli.com/2016/08/31/fetch-customer-id-java/"/>
+    <id>http://www.missfli.com/2016/08/31/fetch-customer-id-java/</id>
+    <published>2016-08-31T00:41:01.000Z</published>
+    <updated>2016-09-03T01:54:41.606Z</updated>
+    
+    <content type="html"><![CDATA[<p>转载自<a href="http://www.cnblogs.com/ITtangtang/p/3927768.html" target="_blank" rel="external"><strong>Java获取客户端IP</strong></a><br>有时候希望记录用户登录ip，用于获取他的登录地址。网上搜了很多资料，发现常用的1种方式比较全面而实用的方式：request获取。<br><a id="more"></a></p>
+<h2 id="request获取方式"><a href="#request获取方式" class="headerlink" title="request获取方式"></a>request获取方式</h2><p>在开发工作中,我们常常需要获取客户端的IP。一般获取客户端的IP地址的方法是: <strong>request.getRemoteAddr()</strong> ;但是在通过了Apache,Squid等反向代理软件就不能获取到客户端的真实IP地址了。</p>
+<p>原因:</p>
+<p>由于在客户端和服务之间增加了中间代理,因此服务器无法直接拿到客户端的IP,服务器端应用也无法直接通过转发请求的地址返回给客户端。</p>
+<p><strong>现在图示代理上网和IP的关系：</strong></p>
+<p><em>第一种情况：不通过代理上网,服务器端拿到真实IP</em></p>
+<p><img src="/images/blog/fetch-customer-id-java-01.png" alt="img"></p>
+<p><em>第二种情况：通过代理服务器如:Nginx,Squid等一层代理或多层代理上网，如下图:</em></p>
+<p><img src="/images/blog/fetch-customer-id-java-02.png" alt="img"></p>
+<p>需要注意的是X-Forwarded-For和X-Real-IP都不是http的正式协议头，而是squid等反向代理软件最早引入的，之所以resin能拿到，是因为NGINX里一般缺省都会这么配置转发的http请求：</p>
+<ul>
+<li><p><strong>proxy_pass       <a href="http://yourdomain.com" target="_blank" rel="external">http://yourdomain.com</a>;</strong></p>
+</li>
+<li><p><strong>proxy_set_header   Host             $host;</strong></p>
+</li>
+<li><p><strong>proxy_set_header   X-Real-IP        $remote_addr;</strong></p>
+</li>
+<li><p><strong>proxy_set_header   X-Forwarded-For  $proxy_add_x_forwarded_for;</strong></p>
+<p>从X-Forwarded-For的定义来看，ips[0]才是原始客户端ip，如果这个都不是，那拿第二个就更不靠谱了，我们平时检验的时候，可能是直接在内网挂代理去访问的，跟外面网友访问经过的网络路径不一样，后面不停添加的是经过的每一层代理ip才对,下面举例说明;</p>
+</li>
+<li><p><strong>request.getRemoteAddr() 192.168.239.196</strong></p>
+</li>
+<li><p><strong>request.getHeader(“X-Forwarded-For”) 58.63.227.162, 192.168.237.178, 192.168.238.218</strong></p>
+</li>
+<li><p><strong>request.getHeader(“X-Real-IP”) 192.168.238.218</strong></p>
+</li>
+</ul>
+<p>所以访问的流程应该是这样，客户端58.63.227.162发出请求，经过192.168.237.178, 192.168.238.218两层转发，到了192.168.239.196这台NGINX上，NGINX就把X-Real-IP头设成了自己看到的remote_addr，也就是直接发给到他的192.168.238.218，这时候resin收到这个包，对resin来说直接发给他的remote_addr就是NGINX的ip，也就是192.168.239.196，那么resin里面的request.getRemoteAddr()就是192.168.239.196，那么在resin里拿最原始的ip逻辑（也就是拿能够知道的最外层的ip）应该是这样：</p>
+<ol>
+<li><p><strong>如果XFF不为空，拿XFF的左边第一个</strong></p>
+</li>
+<li><p><strong>如果XFF为空，拿XRI</strong></p>
+</li>
+<li><p><strong>如果XRI为空，只能拿request.getRemoteAddr()，也就是只能拿到最直接发给他的机器ip了，</strong></p>
+</li>
+</ol>
+<p>其他都不可考究,参考代码如下(已经封装成一个工具类)：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">package com.le.util;</div><div class="line"></div><div class="line">import javax.servlet.http.HttpServletRequest;</div><div class="line"></div><div class="line">public class IPFetch &#123;</div><div class="line"></div><div class="line">	/**</div><div class="line">	 * fetch customer real ip</div><div class="line">	 * @param request</div><div class="line">	 * @<span class="built_in">return</span> string</div><div class="line">	 */</div><div class="line">	public static String getRealIp(HttpServletRequest request) &#123;</div><div class="line"></div><div class="line">        String ip = request.getHeader(<span class="string">"X-Forwarded-For"</span>);</div><div class="line"></div><div class="line">        <span class="keyword">if</span>(isNotEmpty(ip) &amp;&amp; !<span class="string">"unKnown"</span>.equalsIgnoreCase(ip))&#123;</div><div class="line">            //多次反向代理后会有多个ip值，第一个ip才是真实ip</div><div class="line">            int index = ip.indexOf(<span class="string">","</span>);</div><div class="line">            <span class="keyword">if</span>(index != -1)&#123;</div><div class="line">                <span class="built_in">return</span> ip.substring(0,index);</div><div class="line">            &#125;<span class="keyword">else</span>&#123;</div><div class="line">                <span class="built_in">return</span> ip;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        ip = request.getHeader(<span class="string">"X-Real-IP"</span>);</div><div class="line">        <span class="keyword">if</span>(isNotEmpty(ip) &amp;&amp; !<span class="string">"unKnown"</span>.equalsIgnoreCase(ip))&#123;</div><div class="line">            <span class="built_in">return</span> ip;</div><div class="line">        &#125;</div><div class="line">        <span class="built_in">return</span> request.getRemoteAddr();</div><div class="line">    &#125;//method</div><div class="line"></div><div class="line">	/**</div><div class="line">	 * Check whether string is empty</div><div class="line">	 * @param str String</div><div class="line">	 * @<span class="built_in">return</span> boolean</div><div class="line">	 */</div><div class="line">	public static boolean isNotEmpty(String str) &#123;</div><div class="line">		<span class="built_in">return</span> !(str == null || str.length() == 0);</div><div class="line">	&#125;//method</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;转载自&lt;a href=&quot;http://www.cnblogs.com/ITtangtang/p/3927768.html&quot;&gt;&lt;strong&gt;Java获取客户端IP&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;有时候希望记录用户登录ip，用于获取他的登录地址。网上搜了很多资料，发现常用的1种方式比较全面而实用的方式：request获取。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="backdev" scheme="http://www.missfli.com/categories/backdev/"/>
+    
+    
+      <category term="java" scheme="http://www.missfli.com/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js获取客户端真实IP</title>
+    <link href="http://www.missfli.com/2016/08/31/fetch-customer-id-js/"/>
+    <id>http://www.missfli.com/2016/08/31/fetch-customer-id-js/</id>
+    <published>2016-08-31T00:41:01.000Z</published>
+    <updated>2016-09-03T01:11:58.542Z</updated>
+    
+    <content type="html"><![CDATA[<p>java获取客户端程序本身还有对应的对象来实现。而js却不行。搜罗了一些资料，发现比较全而好的前端获取客户端IP的方法基本都是通过三方接口。也就是调用别人写好的接口。用浏览器已有的控件ActiveXObject的控件方式，有一定的兼容性问题。<br><a id="more"></a></p>
+<h2 id="方法一：（所有的平台及浏览器）"><a href="#方法一：（所有的平台及浏览器）" class="headerlink" title="方法一：（所有的平台及浏览器）"></a>方法一：（所有的平台及浏览器）</h2><p>使用搜狐接口：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;script src=<span class="string">"http://pv.sohu.com/cityjson?ie=utf-8"</span>&gt;&lt;/script&gt;</div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</div><div class="line">document.write(<span class="built_in">return</span>CitySN[<span class="string">"cip"</span>]+<span class="string">','</span>+<span class="built_in">return</span>CitySN[<span class="string">"cname"</span>])</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h2 id="方法二：（所有的平台及浏览器）"><a href="#方法二：（所有的平台及浏览器）" class="headerlink" title="方法二：（所有的平台及浏览器）"></a>方法二：（所有的平台及浏览器）</h2><p>使用新浪接口：(我测试过，此方法好像不行。访问网站也不能访问了。)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"http://counter.sina.com.cn/ip/"</span> charset=<span class="string">"gb2312"</span>&gt;&lt;/script&gt;       &lt;!--获取接口数据，注意charset --&gt;</div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</div><div class="line">document.writeln(<span class="string">"IP地址："</span>+ILData[0]+<span class="string">"&lt;br /&gt;"</span>);             //输出接口数据中的IP地址</div><div class="line">document.writeln(<span class="string">"地址类型："</span>+ILData[1]+<span class="string">"&lt;br /&gt;"</span>);         //输出接口数据中的IP地址的类型</div><div class="line">document.writeln(<span class="string">"地址类型："</span>+ILData[2]+<span class="string">"&lt;br /&gt;"</span>);         //输出接口数据中的IP地址的省市</div><div class="line">document.writeln(<span class="string">"地址类型："</span>+ILData[3]+<span class="string">"&lt;br /&gt;"</span>);         //输出接口数据中的IP地址的</div><div class="line">document.writeln(<span class="string">"地址类型："</span>+ILData[4]+<span class="string">"&lt;br /&gt;"</span>);         //输出接口数据中的IP地址的运营商</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h2 id="方法三："><a href="#方法三：" class="headerlink" title="方法三："></a>方法三：</h2><p>个人Robert Hashemian写的：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;script language=<span class="string">"JavaScript"</span> src=<span class="string">"http://www.hashemian.com/js/visitorIP.js.php"</span>&gt;&lt;/script&gt;</div><div class="line">&lt;script language=<span class="string">"JavaScript"</span>&gt;</div><div class="line">    VIH_BackColor = <span class="string">"palegreen"</span>;</div><div class="line">    VIH_ForeColor = <span class="string">"navy"</span>;</div><div class="line">    VIH_FontPix = <span class="string">"16"</span>;</div><div class="line">    VIH_DisplayFormat = <span class="string">"You are visiting from:&lt;br&gt;IP Address: %%IP%%&lt;br&gt;Host: %%HOST%%"</span>;</div><div class="line">    VIH_DisplayOnPage = <span class="string">"yes"</span>;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h2 id="方法四：（只针对IE且客户端的IE允许AcitiveX运行，通过平台：XP，SERVER03，2000）。"><a href="#方法四：（只针对IE且客户端的IE允许AcitiveX运行，通过平台：XP，SERVER03，2000）。" class="headerlink" title="方法四：（只针对IE且客户端的IE允许AcitiveX运行，通过平台：XP，SERVER03，2000）。"></a>方法四：（只针对IE且客户端的IE允许AcitiveX运行，通过平台：XP，SERVER03，2000）。</h2><p>利用ActiveXObject控件，ie浏览器里要开启此控件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;script language=<span class="string">"JavaScript"</span>&gt;</div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">GetLocalIPAddr</span></span>()&#123; var oSetting = null; var ip = null; try&#123; oSetting = new ActiveXObject(<span class="string">"rcbdyctl.Setting"</span>); ip = oSetting.GetIPAddress; <span class="keyword">if</span> (ip.length == 0)&#123; <span class="built_in">return</span> <span class="string">"没有连接到Internet"</span>; &#125; oSetting = null; &#125;catch(e)&#123; <span class="built_in">return</span> ip; &#125; <span class="built_in">return</span> ip; &#125; document.write(GetLocalIPAddr()+<span class="string">"&lt;br/&gt;"</span>)</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><ul>
+<li><a href="http://www.jb51.net/article/52484.htm" target="_blank" rel="external">JS获取客户端IP地址、MAC和主机名的7个方法汇总</a></li>
+<li><a href="http://www.jb51.net/article/43586.htm" target="_blank" rel="external">js获取客户端外网ip的简单实例</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;java获取客户端程序本身还有对应的对象来实现。而js却不行。搜罗了一些资料，发现比较全而好的前端获取客户端IP的方法基本都是通过三方接口。也就是调用别人写好的接口。用浏览器已有的控件ActiveXObject的控件方式，有一定的兼容性问题。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="frontend" scheme="http://www.missfli.com/categories/frontend/"/>
+    
+      <category term="js" scheme="http://www.missfli.com/categories/frontend/js/"/>
+    
+    
+      <category term="js" scheme="http://www.missfli.com/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ssm(struts2+spring3+mybatis3)问题集Q2</title>
+    <link href="http://www.missfli.com/2016/08/29/faq-ssm-q2/"/>
+    <id>http://www.missfli.com/2016/08/29/faq-ssm-q2/</id>
+    <published>2016-08-29T00:41:01.000Z</published>
+    <updated>2016-09-03T01:19:57.076Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Q"><a href="#Q" class="headerlink" title="Q:"></a>Q:</h2><p>java.lang.NoClassDefFoundError: org/objectweb/asm/ClassVisitor<br><a id="more"></a></p>
+<p>异常信息：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">SEVERE: Exception starting filter struts2</div><div class="line">java.lang.NoClassDefFoundError: org/objectweb/asm/ClassVisitor</div><div class="line">    at org.apache.struts2.convention.PackageBasedActionConfigBuilder.findActions(PackageBasedActionConfigBuilder.java:390)</div><div class="line">    at org.apache.struts2.convention.PackageBasedActionConfigBuilder.buildActionConfigs(PackageBasedActionConfigBuilder.java:347)</div><div class="line">    at org.apache.struts2.convention.ClasspathPackageProvider.loadPackages(ClasspathPackageProvider.java:53)</div><div class="line">    at com.opensymphony.xwork2.config.impl.DefaultConfiguration.reloadContainer(DefaultConfiguration.java:260)</div><div class="line">    at com.opensymphony.xwork2.config.ConfigurationManager.getConfiguration(ConfigurationManager.java:67)</div><div class="line">    at org.apache.struts2.dispatcher.Dispatcher.init_PreloadConfiguration(Dispatcher.java:429)</div><div class="line">    at org.apache.struts2.dispatcher.Dispatcher.init(Dispatcher.java:473)</div><div class="line">    at org.apache.struts2.dispatcher.ng.InitOperations.initDispatcher(InitOperations.java:74)</div><div class="line">    at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.init(StrutsPrepareAndExecuteFilter.java:51)</div><div class="line">    at org.apache.catalina.core.ApplicationFilterConfig.initFilter(ApplicationFilterConfig.java:281)</div><div class="line">    at org.apache.catalina.core.ApplicationFilterConfig.getFilter(ApplicationFilterConfig.java:262)</div><div class="line">    at org.apache.catalina.core.ApplicationFilterConfig.&lt;init&gt;(ApplicationFilterConfig.java:107)</div><div class="line">    at org.apache.catalina.core.StandardContext.filterStart(StandardContext.java:4775)</div><div class="line">    at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5452)</div><div class="line">    at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)</div><div class="line">    at org.apache.catalina.core.ContainerBase<span class="variable">$StartChild</span>.call(ContainerBase.java:1559)</div><div class="line">    at org.apache.catalina.core.ContainerBase<span class="variable">$StartChild</span>.call(ContainerBase.java:1549)</div><div class="line">    at java.util.concurrent.FutureTask<span class="variable">$Sync</span>.innerRun(Unknown Source)</div><div class="line">    at java.util.concurrent.FutureTask.run(Unknown Source)</div><div class="line">    at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)</div><div class="line">    at java.util.concurrent.ThreadPoolExecutor<span class="variable">$Worker</span>.run(Unknown Source)</div><div class="line">    at java.lang.Thread.run(Unknown Source)</div><div class="line">Caused by: java.lang.ClassNotFoundException: org.objectweb.asm.ClassVisitor</div><div class="line">    at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1714)</div><div class="line">    at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1559)</div><div class="line">    ... 22 more</div></pre></td></tr></table></figure></p>
+<h2 id="A"><a href="#A" class="headerlink" title="A:"></a>A:</h2><p>添加以下struts的jar包：</p>
+<ul>
+<li>asm-commons-3.3.jar</li>
+<li>asm-3.3.jar</li>
+<li>asm-tree-3.3.jar</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Q&quot;&gt;&lt;a href=&quot;#Q&quot; class=&quot;headerlink&quot; title=&quot;Q:&quot;&gt;&lt;/a&gt;Q:&lt;/h2&gt;&lt;p&gt;java.lang.NoClassDefFoundError: org/objectweb/asm/ClassVisitor&lt;br&gt;
+    
+    </summary>
+    
+      <category term="backdev" scheme="http://www.missfli.com/categories/backdev/"/>
+    
+    
+      <category term="ssm" scheme="http://www.missfli.com/tags/ssm/"/>
+    
+      <category term="tomcat7" scheme="http://www.missfli.com/tags/tomcat7/"/>
+    
+      <category term="spring3" scheme="http://www.missfli.com/tags/spring3/"/>
+    
+      <category term="struts2" scheme="http://www.missfli.com/tags/struts2/"/>
+    
+      <category term="mybatis3" scheme="http://www.missfli.com/tags/mybatis3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ssm(struts2+spring3+mybatis3)问题集Q1</title>
+    <link href="http://www.missfli.com/2016/08/29/faq-ssm-q1/"/>
+    <id>http://www.missfli.com/2016/08/29/faq-ssm-q1/</id>
+    <published>2016-08-29T00:41:01.000Z</published>
+    <updated>2016-09-03T01:20:01.339Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Q"><a href="#Q" class="headerlink" title="Q:"></a>Q:</h2><p>不允许有匹配 “[xX][mM][lL]” 的处理指令目标。<br><a id="more"></a></p>
+<p>异常信息：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">aused by: 不允许有匹配 <span class="string">"[xX][mM][lL]"</span> 的处理指令目标。 - file:/D:/apache-tomcat-7.0.70/webapps/security/WEB-INF/classes/struts.xml:1:7</div><div class="line">	at com.opensymphony.xwork2.util.DomHelper.parse(DomHelper.java:119)</div><div class="line">	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.loadConfigurationFiles(XmlConfigurationProvider.java:1021)</div><div class="line">	... 23 more</div><div class="line">Caused by: org.xml.sax.SAXParseException; systemId: file:/D:/apache-tomcat-7.0.70/webapps/security/WEB-INF/classes/struts.xml; lineNumber: 1; columnNumber: 7; 不允许有匹配 <span class="string">"[xX][mM][lL]"</span> 的处理指令目标。</div><div class="line">	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198)</div><div class="line">	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1388)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanPIData(XMLScanner.java:675)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanPIData(XMLDocumentFragmentScannerImpl.java:980)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanPI(XMLScanner.java:643)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl<span class="variable">$PrologDriver</span>.next(XMLDocumentScannerImpl.java:913)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:607)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:116)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:489)</div><div class="line">	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:835)</div><div class="line">	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764)</div><div class="line">	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:123)</div><div class="line">	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1210)</div><div class="line">	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl<span class="variable">$JAXPSAXParser</span>.parse(SAXParserImpl.java:568)</div><div class="line">	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:302)</div><div class="line">	at com.opensymphony.xwork2.util.DomHelper.parse(DomHelper.java:117)</div><div class="line">	... 24 more</div><div class="line">八月 29, 2016 10:20:43 上午 com.sun.faces.config.ConfigureListener contextInitialized</div></pre></td></tr></table></figure></p>
+<h2 id="A"><a href="#A" class="headerlink" title="A:"></a>A:</h2><p>看看struts.xml配置文件的声明 <code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</code> 前面是否有空格啥的。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Q&quot;&gt;&lt;a href=&quot;#Q&quot; class=&quot;headerlink&quot; title=&quot;Q:&quot;&gt;&lt;/a&gt;Q:&lt;/h2&gt;&lt;p&gt;不允许有匹配 “[xX][mM][lL]” 的处理指令目标。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="backdev" scheme="http://www.missfli.com/categories/backdev/"/>
+    
+    
+      <category term="ssm" scheme="http://www.missfli.com/tags/ssm/"/>
+    
+      <category term="tomcat7" scheme="http://www.missfli.com/tags/tomcat7/"/>
+    
+      <category term="spring3" scheme="http://www.missfli.com/tags/spring3/"/>
+    
+      <category term="struts2" scheme="http://www.missfli.com/tags/struts2/"/>
+    
+      <category term="mybatis3" scheme="http://www.missfli.com/tags/mybatis3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Jekyll Introduction</title>
+    <link href="http://www.missfli.com/2016/08/22/jekyll-introduction/"/>
+    <id>http://www.missfli.com/2016/08/22/jekyll-introduction/</id>
+    <published>2016-08-22T00:41:01.000Z</published>
+    <updated>2016-09-03T01:54:51.441Z</updated>
+    
+    <content type="html"><![CDATA[<p>Directly following the intro we’ll learn exactly <em>how</em> Jekyll does what it does.<br><a id="more"></a></p>
+<h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><h3 id="What-is-Jekyll"><a href="#What-is-Jekyll" class="headerlink" title="What is Jekyll?"></a>What is Jekyll?</h3><p>Jekyll is a parsing engine bundled as a ruby gem used to build static websites from<br>dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as “a simple, blog aware, static site generator”.<br><img src="/images/blog/jekyll-logo.png" alt="img"></p>
+<h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><p>This website is created with Jekyll. <a href="https://github.com/mojombo/jekyll/wiki/Sites" target="_blank" rel="external">Other Jekyll websites</a>.</p>
+<h3 id="What-does-Jekyll-Do"><a href="#What-does-Jekyll-Do" class="headerlink" title="What does Jekyll Do?"></a>What does Jekyll Do?</h3><p>Jekyll is a ruby gem you install on your local system.<br>Once there you can call <code>jekyll --server</code> on a directory and provided that directory<br>is setup in a way jekyll expects, it will do magic stuff like parse markdown/textile files,<br>compute categories, tags, permalinks, and construct your pages from layout templates and partials.</p>
+<p>Once parsed, Jekyll stores the result in a self-contained static <code>_site</code> folder.<br>The intention here is that you can serve all contents in this folder statically from a plain static web-server.</p>
+<p>You can think of Jekyll as a normalish dynamic blog but rather than parsing content, templates, and tags<br>on each request, Jekyll does this once <em>beforehand</em> and caches the <em>entire website</em></p>
+<h3 id="Why-Should-I-Care"><a href="#Why-Should-I-Care" class="headerlink" title="Why Should I Care?"></a>Why Should I Care?</h3><p>Therefore if you like to keep things simple and you prefer the command-line over an admin panel UI then give Jekyll a try.</p>
+<p><strong>Developers like Jekyll because we can write content like we write code:</strong></p>
+<ul>
+<li>Ability to write content in markdown or textile in your favorite text-editor.</li>
+<li>Ability to write and preview your content via localhost.</li>
+<li>No internet connection required.</li>
+<li>Ability to publish via git.</li>
+<li>Ability to host your blog on a static web-server.</li>
+<li>Ability to host freely on GitHub Pages.</li>
+<li>No database required.</li>
+</ul>
+<h1 id="How-Jekyll-Works"><a href="#How-Jekyll-Works" class="headerlink" title="How Jekyll Works"></a>How Jekyll Works</h1><p>The following is a complete but concise outline of exactly how Jekyll works.</p>
+<p>Be aware that core concepts are introduced in rapid succession without code examples.<br>This information is not intended to specifically teach you how to do anything, rather it<br>is intended to give you the <em>full picture</em> relative to what is going on in Jekyll-world.</p>
+<p>Learning these core concepts should help you avoid common frustrations and ultimately<br>help you better understand the code examples contained throughout Jekyll-Bootstrap.</p>
+<h2 id="Initial-Setup"><a href="#Initial-Setup" class="headerlink" title="Initial Setup"></a>Initial Setup</h2><p>After <a href="/index.html#start-now">installing jekyll</a> you’ll need to format your website directory in a way jekyll expects.<br>Jekyll-bootstrap conveniently provides the base directory format.</p>
+<h3 id="The-Jekyll-Application-Base-Format"><a href="#The-Jekyll-Application-Base-Format" class="headerlink" title="The Jekyll Application Base Format"></a>The Jekyll Application Base Format</h3><p>Jekyll expects your website directory to be laid out like so:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">.</div><div class="line">|-- _config.yml</div><div class="line">|-- _includes</div><div class="line">|-- _layouts</div><div class="line">|   |-- default.html</div><div class="line">|   |-- post.html</div><div class="line">|-- _posts</div><div class="line">|   |-- 2011-10-25-open-source-is-good.markdown</div><div class="line">|   |-- 2011-04-26-hello-world.markdown</div><div class="line">|-- _site</div><div class="line">|-- index.html</div><div class="line">|-- assets</div><div class="line">    |-- css</div><div class="line">        |-- style.css</div><div class="line">    |-- javascripts</div></pre></td></tr></table></figure></p>
+<ul>
+<li><p><strong>_config.yml</strong><br>  Stores configuration data.</p>
+</li>
+<li><p><strong>_includes</strong><br>  This folder is for partial views.</p>
+</li>
+<li><p><strong>_layouts</strong><br>  This folder is for the main templates your content will be inserted into.<br>  You can have different layouts for different pages or page sections.</p>
+</li>
+<li><p><strong>_posts</strong><br>  This folder contains your dynamic content/posts.<br>  the naming format is required to be <code>@YEAR-MONTH-DATE-title.MARKUP@</code>.</p>
+</li>
+<li><p><strong>_site</strong><br>  This is where the generated site will be placed once Jekyll is done transforming it.</p>
+</li>
+<li><p><strong>assets</strong><br>  This folder is not part of the standard jekyll structure.<br>  The assets folder represents <em>any generic</em> folder you happen to create in your root directory.<br>  Directories and files not properly formatted for jekyll will be left untouched for you to serve normally.</p>
+</li>
+</ul>
+<p>(read more: <a href="https://github.com/mojombo/jekyll/wiki/Usage" target="_blank" rel="external">https://github.com/mojombo/jekyll/wiki/Usage</a>)</p>
+<h3 id="Jekyll-Configuration"><a href="#Jekyll-Configuration" class="headerlink" title="Jekyll Configuration"></a>Jekyll Configuration</h3><p>Jekyll supports various configuration options that are fully outlined here:<br>(<a href="https://github.com/mojombo/jekyll/wiki/Configuration" target="_blank" rel="external">https://github.com/mojombo/jekyll/wiki/Configuration</a>)</p>
+<h3 id="Working-With-Posts"><a href="#Working-With-Posts" class="headerlink" title="Working With Posts"></a>Working With Posts</h3><p><strong>Creating a Post</strong><br>Posts are created by properly formatting a file and placing it the <code>_posts</code> folder.</p>
+<p><strong>Formatting</strong><br>If the data format is invalid Jekyll will not recognize the file as a post. The date and title are automatically parsed from the filename of the post file.<br>Additionally, each file must have <a href="https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter" target="_blank" rel="external">YAML Front-Matter</a> prepended to its content.<br>YAML Front-Matter is a valid YAML syntax specifying meta-data for the given file.</p>
+<p><strong>Categories</strong><br>Posts may be categorized by providing one or more categories in the YAML front matter.<br>Categories offer more significance over tags in that they can be reflected in the URL path to the given post.<br>Note categories in Jekyll work in a specific way.<br>If you define more than one category you are defining a category hierarchy “set”.<br>Example:</p>
+<pre><code>---
+title :  Hello World
+categories : [lessons, beginner]
+---
+</code></pre><p>This defines the category hierarchy “lessons/beginner”. Note this is <em>one category</em> node in Jekyll.<br>You won’t find “lessons” and “beginner” as two separate categories unless you define them elsewhere as singular categories.</p>
+<h3 id="Working-With-Pages"><a href="#Working-With-Pages" class="headerlink" title="Working With Pages"></a>Working With Pages</h3><p><strong>Creating a Page</strong><br>Pages are created by properly formatting a file and placing it anywhere in the root directory or subdirectories that do <em>not</em> start with an underscore.</p>
+<p><strong>Formatting</strong><br>In order to register as a Jekyll page the file must contain <a href="https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter" target="_blank" rel="external">YAML Front-Matter</a>.<br>Registering a page means 1) that Jekyll will process the page and 2) that the page object will be available in the <code>site.pages</code> array for inclusion into your templates.</p>
+<p><strong>Categories and Tags</strong><br>Pages do not compute categories nor tags so defining them will have no effect.</p>
+<p><strong>Sub-Directories</strong><br>If pages are defined in sub-directories, the path to the page will be reflected in the url.<br>Example:</p>
+<pre><code>.
+|-- people
+    |-- bob
+        |-- essay.html
+</code></pre><p>This page will be available at <code>http://yourdomain.com/people/bob/essay.html</code></p>
+<p><strong>Recommended Pages</strong></p>
+<ul>
+<li><strong>index.html</strong><br>You will always want to define the root index.html page as this will display on your root URL.</li>
+<li><strong>404.html</strong><br>Create a root 404.html page and GitHub Pages will serve it as your 404 response.</li>
+<li><strong>sitemap.html</strong><br>Generating a sitemap is good practice for SEO.</li>
+<li><strong>about.html</strong><br>A nice about page is easy to do and gives the human perspective to your website.</li>
+</ul>
+<h2 id="Templates-in-Jekyll"><a href="#Templates-in-Jekyll" class="headerlink" title="Templates in Jekyll"></a>Templates in Jekyll</h2><p>Templates are used to contain a page’s or post’s content.<br>All templates have access to a global site object variable: <code>site</code> as well as a page</p>
+<p><strong>Create a Template</strong><br>Templates are created by properly formatting a file and placing it in the <code>_layouts</code> directory.</p>
+<p><strong>Formatting</strong><br>Templates should be coded in HTML and contain YAML Front Matter.<br>All templates can contain Liquid code to work with your site’s data.</p>
+<p><strong>Rending Page/Post Content in a Template</strong><br>There is a special variable in all templates named : <code>content</code>.<br>The <code>content</code> variable holds the page/post content including any sub-template content</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;body&gt;</div><div class="line">  &lt;div id=<span class="string">"sidebar"</span>&gt; ... &lt;/div&gt;</div><div class="line">  &lt;div id=<span class="string">"main"</span>&gt;</div><div class="line">    |.&#123;content&#125;.|</div><div class="line">  &lt;/div&gt;</div><div class="line">&lt;/body&gt;</div></pre></td></tr></table></figure>
+<h2 id="Using-Liquid-for-Templating"><a href="#Using-Liquid-for-Templating" class="headerlink" title="Using Liquid for Templating"></a>Using Liquid for Templating</h2><p>Templating is perhaps the most confusing and frustrating part of Jekyll.<br>This is mainly due to the fact that Jekyll templates must use the Liquid Templating Language.</p>
+<h3 id="What-is-Liquid"><a href="#What-is-Liquid" class="headerlink" title="What is Liquid?"></a>What is Liquid?</h3><p><a href="https://github.com/Shopify/liquid" target="_blank" rel="external">Liquid</a> is a secure templating language developed by <a href="http://shopify.com" target="_blank" rel="external">Shopify</a>.<br>Liquid is designed for end-users to be able to execute logic within template files</p>
+<h3 id="Why-Do-We-Have-to-Use-Liquid"><a href="#Why-Do-We-Have-to-Use-Liquid" class="headerlink" title="Why Do We Have to Use Liquid?"></a>Why Do We Have to Use Liquid?</h3><p>GitHub uses Jekyll to power <a href="http://pages.github.com/" target="_blank" rel="external">GitHub Pages</a>.<br>GitHub cannot afford to run arbitrary code on their servers so they lock developers down via Liquid.</p>
+<h3 id="Liquid-is-Not-Programmer-Friendly"><a href="#Liquid-is-Not-Programmer-Friendly" class="headerlink" title="Liquid is Not Programmer-Friendly."></a>Liquid is Not Programmer-Friendly.</h3><p>The short story is liquid is not real code and its not intended to execute real code.<br>The point being you can’t do jackshit in liquid that hasn’t been allowed explicitly</p>
+<p><strong>Aside</strong><br>My personal stance is to not invest time trying to hack liquid. It’s really unnecessary<br><em>from a programmer’s</em> perspective. That is to say if you have the ability to run custom plugins (i.e. run arbitrary ruby code)<br>you are better off sticking with ruby. Toward that end I’ve built <a href="http://github.com/plusjade/mustache-with-jekyll" target="_blank" rel="external">Mustache-with-Jekyll</a></p>
+<h2 id="How-Jekyll-Parses-Files"><a href="#How-Jekyll-Parses-Files" class="headerlink" title="How Jekyll Parses Files"></a>How Jekyll Parses Files</h2><p>Remember Jekyll is a processing engine. There are two main types of parsing in Jekyll.</p>
+<ul>
+<li><strong>Content parsing.</strong><br>  This is done with textile or markdown.</li>
+<li><strong>Template parsing.</strong><br>This is done with the liquid templating language.</li>
+</ul>
+<p>And thus there are two main types of file formats needed for this parsing.</p>
+<ul>
+<li><strong>Post and Page files.</strong><br>All content in Jekyll is either a post or a page so valid posts and pages are parsed with markdown or textile.</li>
+<li><strong>Template files.</strong><br>  These files go in <code>_layouts</code> folder and contain your blogs <strong>templates</strong>. They should be made in HTML with the help of Liquid syntax.<br>  Since include files are simply injected into templates they are essentially parsed as if they were native to the template.</li>
+</ul>
+<p><strong>Arbitrary files and folders.</strong><br>Files that <em>are not</em> valid pages are treated as static content and pass through<br>Jekyll untouched and reside on your blog in the exact structure and format they originally existed in.</p>
+<h3 id="Formatting-Files-for-Parsing"><a href="#Formatting-Files-for-Parsing" class="headerlink" title="Formatting Files for Parsing."></a>Formatting Files for Parsing.</h3><p>We’ve outlined the need for valid formatting using <strong>YAML Front Matter</strong>.<br>Templates, posts, and pages all need to provide valid YAML Front Matter even if the Matter is empty.<br>This is the only way Jekyll knows you want the file processed.</p>
+<p>YAML Front Matter must be prepended to the top of template/post/page files:</p>
+<pre><code>---
+layout: post
+category : pages
+tags : [how-to, jekyll]
+---
+
+... contents ...
+</code></pre><p>Three hyphens on a new line start the Front-Matter block and three hyphens on a new line end the block.<br>The data inside the block must be valid YAML.</p>
+<p>Configuration parameters for YAML Front-Matter is outlined here:<br><a href="https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter" target="_blank" rel="external">A comprehensive explanation of YAML Front Matter</a></p>
+<h4 id="Defining-Layouts-for-Posts-and-Templates-Parsing"><a href="#Defining-Layouts-for-Posts-and-Templates-Parsing" class="headerlink" title="Defining Layouts for Posts and Templates Parsing."></a>Defining Layouts for Posts and Templates Parsing.</h4><p>The <code>layout</code> parameter in the YAML Front Matter defines the template file for which the given post or template should be injected into.<br>If a template file specifies its own layout, it is effectively being used as a <code>sub-template.</code></p>
+<h2 id="How-Jekyll-Generates-the-Final-Static-Files"><a href="#How-Jekyll-Generates-the-Final-Static-Files" class="headerlink" title="How Jekyll Generates the Final Static Files."></a>How Jekyll Generates the Final Static Files.</h2><p>Ultimately, Jekyll’s job is to generate a static representation of your website.<br>The following is an outline of how that’s done:</p>
+<ol>
+<li><p><strong>Jekyll collects data.</strong><br>Jekyll scans the posts directory and collects all posts files as post objects. It then scans the layout assets and collects those and finally scans other directories in search of pages.</p>
+</li>
+<li><p><strong>Jekyll computes data.</strong><br>Jekyll takes these objects, computes metadata (permalinks, tags, categories, titles, dates) from them and constructs one<br>big <code>site</code> object that holds all the posts, pages, layouts, and respective metadata.<br>At this stage your site is one big computed ruby object.</p>
+</li>
+<li><p><strong>Jekyll liquifies posts and templates.</strong><br>Next jekyll loops through each post file and converts (through markdown or textile) and <strong>liquifies</strong> the post inside of its respective layout(s).<br>Once the post is parsed and liquified inside the the proper layout structure, the layout itself is “liquified”.<br> <strong>Liquification</strong> is defined as follows: Jekyll initiates a Liquid template, and passes a simpler hash representation of the ruby site object as well as a simpler<br>hash representation of the ruby post object. These simplified data structures are what you have access to in the templates.</p>
+</li>
+<li><p><strong>Jekyll generates output.</strong><br> Finally the liquid templates are “rendered”, thereby processing any liquid syntax provided in the templates<br> and saving the final, static representation of the file.</p>
+</li>
+</ol>
+<p><strong>Notes.</strong><br>a global <code>site</code> hash that contains useful data. It is this data that you’ll iterate through and format</p>
+<p>Remember, in Jekyll you are an end-user. Your API has only two components:</p>
+<ol>
+<li>The manner in which you setup your directory.</li>
+<li>The liquid syntax and variables passed into the liquid templates.</li>
+</ol>
+<p>All the data objects available to you in the templates via Liquid are outlined in the <strong>API Section</strong> of Jekyll-Bootstrap.<br>You can also read the original documentation here: <a href="https://github.com/mojombo/jekyll/wiki/Template-Data" target="_blank" rel="external">https://github.com/mojombo/jekyll/wiki/Template-Data</a></p>
+<h2 id="Next-Steps"><a href="#Next-Steps" class="headerlink" title="Next Steps"></a>Next Steps</h2><p><strong>Thank you</strong> for reading this far.<br>Please take a look at <a href="!--￼3--&gt;&lt;!--￼4--"></a><br>or jump right into <a href="!--￼5--&gt;&lt;!--￼6--">Usage</a> if you’d like.</p>
+<h4 id="参考references"><a href="#参考references" class="headerlink" title="参考references"></a>参考references</h4><ul>
+<li><a href="http://www.baidu.com" target="_blank" rel="external">参考链接1</a></li>
+<li><a href="http://www.baidu.com" target="_blank" rel="external">参考链接1</a></li>
+<li><a href="http://www.baidu.com" target="_blank" rel="external">参考链接1</a></li>
+<li><a href="http://www.baidu.com" target="_blank" rel="external">参考链接1</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Directly following the intro we’ll learn exactly &lt;em&gt;how&lt;/em&gt; Jekyll does what it does.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="frontend" scheme="http://www.missfli.com/categories/frontend/"/>
+    
+    
+      <category term="jekyll" scheme="http://www.missfli.com/tags/jekyll/"/>
+    
+  </entry>
+  
+</feed>
