@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.missfli.com/"/>
-  <updated>2016-09-03T07:06:57.683Z</updated>
+  <updated>2016-09-04T16:19:00.770Z</updated>
   <id>http://www.missfli.com/</id>
   
   <author>
@@ -14,6 +14,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>jekyll和github pages搭建个人博客</title>
+    <link href="http://www.missfli.com/2016/09/04/jekyll-github-buildblog/"/>
+    <id>http://www.missfli.com/2016/09/04/jekyll-github-buildblog/</id>
+    <published>2016-09-04T14:24:32.000Z</published>
+    <updated>2016-09-04T16:19:00.770Z</updated>
+    
+    <content type="html"><![CDATA[<p>用过一些博客网站写博客，总会感觉要么这里差强人意，要么那里有些不舒服，然后搜集网上资料找博客平台，最后呢，发现还是得自己搭建。然后就发现了jekyll和github结合起来搭建博客不错，比较满意。虽然最后因为主题没自己喜欢的，编译没hexo快等等原因，而选择了重新用hexo和next。这里呢，不会讲详细的搭建细节，只是讲一下我的搭建历程。</p>
+<a id="more"></a>
+<p>发现了jekyll + github pages能搭建个人博客网站，虽然只能是静态页面，不过倒是蛮符合自己的需求的，然后就走上了这条坑爹的道路。反正这路上我是碰到不少坑。</p>
+<p><strong>域名注册解析</strong></p>
+<p>首先，我想博客网站有自己的域名，无意中发现阿里出了个<code>.xin</code>域名，然后兴冲冲的去阿里云官网去注册申请一个跟自己名字相关的域名，结果别人家注册了，最后想了个域名<code>www.nifei.xin</code>，中间部分更本人姓名谐音，然后连起来呢，寓意“你费点心”。付款后，才发现，坑啊，这种域名相对于其他类型的域名来说比较贵，并且国内域名（大陆）都要备案啊（方便政府监管呗），还有点小小不爽就是你只有域名的使用权，没有拥有权，有种租用的感觉。<br>哎，反正都付钱了，不管了。去github随便新建了个测试项目，开始着手域名解析过来，试试新域名的感觉。其实github针对每个账户是可以拥有一个专有的域名的（<code>username.github.io</code>）,你要是不介意这个域名了，也可以不去注册域名，也就不用解析域名了。跑到阿里云的域名管理区域，解析域名，发现一堆限制。看了一下他的具体解析规则，总结下来，就是<code>www.nifei.xin</code>的域名要解析，必须备案。然后查了一下发现备案短则两周，长则三周一个月。我那个去，火了，重新注册域名吧。<br>其实，也是之前看见<code>.xin</code>觉得新鲜，冲动了，没怎么搜相关资料进行详细了解和比较。这次做了各种比较后，去国外的网站<a href="https://hk.godaddy.com" target="_blank" rel="external">GoDaddy</a>注册了个新域名<code>www.missfli.com</code>。然后解析了，听说用域名服务商自己来解析比较慢，用国内的<a href="https://www.dnspod.cn/d]" target="_blank" rel="external">DNSpod</a>来解析比较快。也就是在这里解析，我才发现，其实之前的那个域名<code>www.nifei.xin</code>是可以解析的。只是之前的解析方式不对，所以没生效。</p>
+<p><strong>jekyll安装</strong></p>
+<p>接下来，就要开始搭建博客项目了。<a href="http://jekyll.bootcss.com/" target="_blank" rel="external">jekyll官网</a>有详细的安装步骤，当然，你也会发现他不推荐在windows上安装。所以，在windows可能会遇到各种坑，我就是那个倒霉的孩子，碰到了各种坑。<br>    比如：</p>
+<ul>
+<li>坑一：很多网上的安装教程（如<a href="http://pwnny.cn/original/2016/06/26/MakeBlog.html" target="_blank" rel="external">Jekyll和Github搭建个人静态博客</a>）在jekyll安装之前的步骤基本都一样的，就是<a href="http://railsinstaller.org/en" target="_blank" rel="external">ruby</a>的安装(用 RailsInstaller 来安装 Ruby 环境)。我就是按照这个步骤安装的，安装完后，用查看版本的命令<code>ruby -v</code>,<code>gem -v</code>都能看到对应的版本，也就是说ruby是安装成功滴。可是，等安装好后jekyll(用<code>jekyll -v</code>查看版本)用本地调试命令<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a>，总是不能正常访问。后来才发现，jekyll创建的默认项目对代码高亮支持是需要Pygments这个玩意的，所以最后，找到了<a href="http://www.madhur.co.in/blog/2011/09/01/runningjekyllwindows.html" target="_blank" rel="external">Running Jekyll on Windows</a>，才真正跑起来测试项目。</li>
+<li>坑二：特别是安装jekyll和相关插件时，由于要翻墙，所以有时候不一定会安装成功。如果你不仔细还以为安装成功了，结果跑不起来。解决方法：多安装几次直到安装成功。</li>
+<li>坑三：jekyll创建的默认项目。默认模板主题minima，要是你没有安装，也是跑不起来的。</li>
+<li>坑四：安装好后，启动项目本地调试，总是报错，这个错跟“bundler”相关，这时，你需要用命令<code>gem install bundle</code>安装bundler。</li>
+</ul>
+<p>环境搭建好了，就是博客项目开工的时候了。其实呢，有三种方式：</p>
+<ol>
+<li>完全自己定制博客</li>
+<li>找一份框架，修改后使用，比如<a href="http://jekyllbootstrap.com/" target="_blank" rel="external">http://jekyllbootstrap.com/</a></li>
+<li>从GitHub上fork别人的博客代码，在其中添加自己的文章，自己Google一下 github.io 博客<br>能找到不少博客,去fork,然后修改一下就好。 最近有一个 jekyll-now，在 GitHub 上已经获取了 1000+ 的fork，可以关注一下<a href="https://github.com/barryclark/jekyll-now" target="_blank" rel="external">https://github.com/barryclark/jekyll-now</a></li>
+</ol>
+<p>我是选的第一种。为什么呢？第二种，我把他的里面的所有主题都试了一下，感觉不太满意。第三种呢，也看过没找到满意的。还专门去<a href="http://jekyllthemes.org/" target="_blank" rel="external">jekyll主题</a>全部看了一遍，还是没有满意的。还有一点，就是这些博客没有针对中文字体做排版，切换成中文后看起来就没那么舒服了。选了第一种后，又给自己挖坑了。字体选择，logo设计，页面布局排版，网页适配，博客分类等等，这些还好，可以慢慢来优化。<br>关键还是其他需要引入的插件：</p>
+<ul>
+<li>评论插件（<a href="http://www.tuicool.com/articles/YZfem2" target="_blank" rel="external">jekyll配置有言评论插件</a>）</li>
+<li>分页功能（<a href="http://www.52ij.com/jishu/99014.html" target="_blank" rel="external">分页功能_jekyll 中使用分页功能</a>,但是好像jekyll的分页插件只能是博客首页，其他分类标签等等页面要使用分页的话，得自己另外写）</li>
+<li>文章目录树（<a href="http://www.111cn.net/sys/linux/70052.htm" target="_blank" rel="external">Jekyll 生成文章目录树配置</a>）</li>
+<li>文章分类索引（<a href="http://www.tuicool.com/articles/INBnMz" target="_blank" rel="external">使用Jekyll在Github上搭建个人博客（文章分类索引）</a>）</li>
+<li>代码高亮（<a href="http://www.2cto.com/kf/201602/489968.html" target="_blank" rel="external">Jekyll 代码高亮的几种选择</a>，<a href="https://highlightjs.org/download" target="_blank" rel="external">highlightjs</a>，<a href="https://highlightjs.org/static/demo" target="_blank" rel="external">代码高亮的各种样式</a>）</li>
+</ul>
+<p>当把相关需要的资料准备好，搞到一半就发现了next主题，眼前一亮，就是我想要的那种。但是他不是jekyll的，是hexo的。然后就去搞hexo+next了，还不错，很快就出来雏形了，瞬间就抛弃了jekyll。但是说不准以后还会去折腾jekyll，所以写了这篇文章。之前的jekyll的雏形项目地址：<a href="https://github.com/woaiwojia321314/jekyllblog" target="_blank" rel="external">https://github.com/woaiwojia321314/jekyllblog</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;用过一些博客网站写博客，总会感觉要么这里差强人意，要么那里有些不舒服，然后搜集网上资料找博客平台，最后呢，发现还是得自己搭建。然后就发现了jekyll和github结合起来搭建博客不错，比较满意。虽然最后因为主题没自己喜欢的，编译没hexo快等等原因，而选择了重新用hexo和next。这里呢，不会讲详细的搭建细节，只是讲一下我的搭建历程。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="jekyll" scheme="http://www.missfli.com/categories/jekyll/"/>
+    
+    
+      <category term="jekyll" scheme="http://www.missfli.com/tags/jekyll/"/>
+    
+      <category term="github" scheme="http://www.missfli.com/tags/github/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo免输入密码部署到github</title>
@@ -39,11 +91,11 @@
       <category term="hexo" scheme="http://www.missfli.com/categories/hexo/"/>
     
     
-      <category term="faq" scheme="http://www.missfli.com/tags/faq/"/>
-    
       <category term="hexo" scheme="http://www.missfli.com/tags/hexo/"/>
     
       <category term="git" scheme="http://www.missfli.com/tags/git/"/>
+    
+      <category term="faq" scheme="http://www.missfli.com/tags/faq/"/>
     
   </entry>
   
@@ -71,11 +123,11 @@
       <category term="hexo" scheme="http://www.missfli.com/categories/hexo/"/>
     
     
-      <category term="faq" scheme="http://www.missfli.com/tags/faq/"/>
-    
       <category term="hexo" scheme="http://www.missfli.com/tags/hexo/"/>
     
       <category term="git" scheme="http://www.missfli.com/tags/git/"/>
+    
+      <category term="faq" scheme="http://www.missfli.com/tags/faq/"/>
     
   </entry>
   
@@ -232,6 +284,8 @@
       <category term="backdev" scheme="http://www.missfli.com/categories/backdev/"/>
     
     
+      <category term="faq" scheme="http://www.missfli.com/tags/faq/"/>
+    
       <category term="ssm" scheme="http://www.missfli.com/tags/ssm/"/>
     
       <category term="tomcat7" scheme="http://www.missfli.com/tags/tomcat7/"/>
@@ -241,8 +295,6 @@
       <category term="struts2" scheme="http://www.missfli.com/tags/struts2/"/>
     
       <category term="mybatis3" scheme="http://www.missfli.com/tags/mybatis3/"/>
-    
-      <category term="faq" scheme="http://www.missfli.com/tags/faq/"/>
     
   </entry>
   
@@ -272,6 +324,8 @@
       <category term="backdev" scheme="http://www.missfli.com/categories/backdev/"/>
     
     
+      <category term="faq" scheme="http://www.missfli.com/tags/faq/"/>
+    
       <category term="ssm" scheme="http://www.missfli.com/tags/ssm/"/>
     
       <category term="tomcat7" scheme="http://www.missfli.com/tags/tomcat7/"/>
@@ -281,8 +335,6 @@
       <category term="struts2" scheme="http://www.missfli.com/tags/struts2/"/>
     
       <category term="mybatis3" scheme="http://www.missfli.com/tags/mybatis3/"/>
-    
-      <category term="faq" scheme="http://www.missfli.com/tags/faq/"/>
     
   </entry>
   
