@@ -199,11 +199,11 @@
       <category term="hexo" scheme="http://www.missfli.com/categories/hexo/"/>
     
     
-      <category term="faq" scheme="http://www.missfli.com/tags/faq/"/>
-    
       <category term="hexo" scheme="http://www.missfli.com/tags/hexo/"/>
     
       <category term="git" scheme="http://www.missfli.com/tags/git/"/>
+    
+      <category term="faq" scheme="http://www.missfli.com/tags/faq/"/>
     
   </entry>
   
@@ -231,11 +231,11 @@
       <category term="hexo" scheme="http://www.missfli.com/categories/hexo/"/>
     
     
-      <category term="faq" scheme="http://www.missfli.com/tags/faq/"/>
-    
       <category term="hexo" scheme="http://www.missfli.com/tags/hexo/"/>
     
       <category term="git" scheme="http://www.missfli.com/tags/git/"/>
+    
+      <category term="faq" scheme="http://www.missfli.com/tags/faq/"/>
     
   </entry>
   
@@ -372,41 +372,6 @@
   </entry>
   
   <entry>
-    <title>ssm(struts2+spring3+mybatis3)问题集Q1</title>
-    <link href="http://www.missfli.com/2016/08/29/faq-ssm-q1/"/>
-    <id>http://www.missfli.com/2016/08/29/faq-ssm-q1/</id>
-    <published>2016-08-29T00:41:01.000Z</published>
-    <updated>2016-09-03T06:46:03.996Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Q"><a href="#Q" class="headerlink" title="Q:"></a>Q:</h2><p>不允许有匹配 “[xX][mM][lL]” 的处理指令目标。<br><a id="more"></a></p>
-<p>异常信息：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">aused by: 不允许有匹配 <span class="string">"[xX][mM][lL]"</span> 的处理指令目标。 - file:/D:/apache-tomcat-7.0.70/webapps/security/WEB-INF/classes/struts.xml:1:7</div><div class="line">	at com.opensymphony.xwork2.util.DomHelper.parse(DomHelper.java:119)</div><div class="line">	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.loadConfigurationFiles(XmlConfigurationProvider.java:1021)</div><div class="line">	... 23 more</div><div class="line">Caused by: org.xml.sax.SAXParseException; systemId: file:/D:/apache-tomcat-7.0.70/webapps/security/WEB-INF/classes/struts.xml; lineNumber: 1; columnNumber: 7; 不允许有匹配 <span class="string">"[xX][mM][lL]"</span> 的处理指令目标。</div><div class="line">	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198)</div><div class="line">	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1388)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanPIData(XMLScanner.java:675)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanPIData(XMLDocumentFragmentScannerImpl.java:980)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanPI(XMLScanner.java:643)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl<span class="variable">$PrologDriver</span>.next(XMLDocumentScannerImpl.java:913)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:607)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:116)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:489)</div><div class="line">	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:835)</div><div class="line">	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764)</div><div class="line">	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:123)</div><div class="line">	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1210)</div><div class="line">	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl<span class="variable">$JAXPSAXParser</span>.parse(SAXParserImpl.java:568)</div><div class="line">	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:302)</div><div class="line">	at com.opensymphony.xwork2.util.DomHelper.parse(DomHelper.java:117)</div><div class="line">	... 24 more</div><div class="line">八月 29, 2016 10:20:43 上午 com.sun.faces.config.ConfigureListener contextInitialized</div></pre></td></tr></table></figure></p>
-<h2 id="A"><a href="#A" class="headerlink" title="A:"></a>A:</h2><p>看看struts.xml配置文件的声明 <code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</code> 前面是否有空格啥的。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Q&quot;&gt;&lt;a href=&quot;#Q&quot; class=&quot;headerlink&quot; title=&quot;Q:&quot;&gt;&lt;/a&gt;Q:&lt;/h2&gt;&lt;p&gt;不允许有匹配 “[xX][mM][lL]” 的处理指令目标。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="backdev" scheme="http://www.missfli.com/categories/backdev/"/>
-    
-    
-      <category term="ssm" scheme="http://www.missfli.com/tags/ssm/"/>
-    
-      <category term="tomcat7" scheme="http://www.missfli.com/tags/tomcat7/"/>
-    
-      <category term="spring3" scheme="http://www.missfli.com/tags/spring3/"/>
-    
-      <category term="struts2" scheme="http://www.missfli.com/tags/struts2/"/>
-    
-      <category term="mybatis3" scheme="http://www.missfli.com/tags/mybatis3/"/>
-    
-      <category term="faq" scheme="http://www.missfli.com/tags/faq/"/>
-    
-  </entry>
-  
-  <entry>
     <title>ssm(struts2+spring3+mybatis3)问题集Q2</title>
     <link href="http://www.missfli.com/2016/08/29/faq-ssm-q2/"/>
     <id>http://www.missfli.com/2016/08/29/faq-ssm-q2/</id>
@@ -432,6 +397,8 @@
       <category term="backdev" scheme="http://www.missfli.com/categories/backdev/"/>
     
     
+      <category term="faq" scheme="http://www.missfli.com/tags/faq/"/>
+    
       <category term="ssm" scheme="http://www.missfli.com/tags/ssm/"/>
     
       <category term="tomcat7" scheme="http://www.missfli.com/tags/tomcat7/"/>
@@ -442,7 +409,157 @@
     
       <category term="mybatis3" scheme="http://www.missfli.com/tags/mybatis3/"/>
     
+  </entry>
+  
+  <entry>
+    <title>ssm(struts2+spring3+mybatis3)问题集Q1</title>
+    <link href="http://www.missfli.com/2016/08/29/faq-ssm-q1/"/>
+    <id>http://www.missfli.com/2016/08/29/faq-ssm-q1/</id>
+    <published>2016-08-29T00:41:01.000Z</published>
+    <updated>2016-09-03T06:46:03.996Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Q"><a href="#Q" class="headerlink" title="Q:"></a>Q:</h2><p>不允许有匹配 “[xX][mM][lL]” 的处理指令目标。<br><a id="more"></a></p>
+<p>异常信息：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">aused by: 不允许有匹配 <span class="string">"[xX][mM][lL]"</span> 的处理指令目标。 - file:/D:/apache-tomcat-7.0.70/webapps/security/WEB-INF/classes/struts.xml:1:7</div><div class="line">	at com.opensymphony.xwork2.util.DomHelper.parse(DomHelper.java:119)</div><div class="line">	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.loadConfigurationFiles(XmlConfigurationProvider.java:1021)</div><div class="line">	... 23 more</div><div class="line">Caused by: org.xml.sax.SAXParseException; systemId: file:/D:/apache-tomcat-7.0.70/webapps/security/WEB-INF/classes/struts.xml; lineNumber: 1; columnNumber: 7; 不允许有匹配 <span class="string">"[xX][mM][lL]"</span> 的处理指令目标。</div><div class="line">	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198)</div><div class="line">	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1388)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanPIData(XMLScanner.java:675)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanPIData(XMLDocumentFragmentScannerImpl.java:980)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLScanner.scanPI(XMLScanner.java:643)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl<span class="variable">$PrologDriver</span>.next(XMLDocumentScannerImpl.java:913)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:607)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:116)</div><div class="line">	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:489)</div><div class="line">	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:835)</div><div class="line">	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:764)</div><div class="line">	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:123)</div><div class="line">	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1210)</div><div class="line">	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl<span class="variable">$JAXPSAXParser</span>.parse(SAXParserImpl.java:568)</div><div class="line">	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:302)</div><div class="line">	at com.opensymphony.xwork2.util.DomHelper.parse(DomHelper.java:117)</div><div class="line">	... 24 more</div><div class="line">八月 29, 2016 10:20:43 上午 com.sun.faces.config.ConfigureListener contextInitialized</div></pre></td></tr></table></figure></p>
+<h2 id="A"><a href="#A" class="headerlink" title="A:"></a>A:</h2><p>看看struts.xml配置文件的声明 <code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</code> 前面是否有空格啥的。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Q&quot;&gt;&lt;a href=&quot;#Q&quot; class=&quot;headerlink&quot; title=&quot;Q:&quot;&gt;&lt;/a&gt;Q:&lt;/h2&gt;&lt;p&gt;不允许有匹配 “[xX][mM][lL]” 的处理指令目标。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="backdev" scheme="http://www.missfli.com/categories/backdev/"/>
+    
+    
       <category term="faq" scheme="http://www.missfli.com/tags/faq/"/>
+    
+      <category term="ssm" scheme="http://www.missfli.com/tags/ssm/"/>
+    
+      <category term="tomcat7" scheme="http://www.missfli.com/tags/tomcat7/"/>
+    
+      <category term="spring3" scheme="http://www.missfli.com/tags/spring3/"/>
+    
+      <category term="struts2" scheme="http://www.missfli.com/tags/struts2/"/>
+    
+      <category term="mybatis3" scheme="http://www.missfli.com/tags/mybatis3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何把myeclipse中安装的SVN中文插件转变为英文版</title>
+    <link href="http://www.missfli.com/2014/11/14/myeclipse-svn-change-en/"/>
+    <id>http://www.missfli.com/2014/11/14/myeclipse-svn-change-en/</id>
+    <published>2014-11-14T03:28:41.000Z</published>
+    <updated>2016-09-09T03:52:31.278Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://blog.sina.com.cn/s/blog_ec2031db0102v6tl.html" target="_blank" rel="external">原地址</a><br>在Eclipse的configuration文件下找到config.ini文件，用写字板打开，在最后面添加上如下代码即可：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Set Subversion English Version</span></div><div class="line">osgi.nl=en_US</div></pre></td></tr></table></figure></p>
+<a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://blog.sina.com.cn/s/blog_ec2031db0102v6tl.html&quot;&gt;原地址&lt;/a&gt;&lt;br&gt;在Eclipse的configuration文件下找到config.ini文件，用写字板打开，在最后面添加上如下代码即可：&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Set Subversion English Version&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;osgi.nl=en_US&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="backdev" scheme="http://www.missfli.com/categories/backdev/"/>
+    
+    
+      <category term="myeclipse" scheme="http://www.missfli.com/tags/myeclipse/"/>
+    
+      <category term="svn" scheme="http://www.missfli.com/tags/svn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>oracle数据库安装卸载</title>
+    <link href="http://www.missfli.com/2014/07/11/oracle-install-and-uninstall/"/>
+    <id>http://www.missfli.com/2014/07/11/oracle-install-and-uninstall/</id>
+    <published>2014-07-11T03:29:37.000Z</published>
+    <updated>2016-09-09T03:43:58.612Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://blog.sina.com.cn/s/blog_ec2031db0102uwyw.html" target="_blank" rel="external">原地址</a><br>oracle的安装和卸载相对于mysqll而言要麻烦些，故记录在此。方便以后查阅。<br><a id="more"></a></p>
+<h2 id="Oracle-9i安装"><a href="#Oracle-9i安装" class="headerlink" title="Oracle 9i安装"></a>Oracle 9i安装</h2><ol>
+<li>安装文件目录必须放置于非汉字目录下；</li>
+<li>检查磁盘空间；</li>
+<li>注意安装文件路径，一般不要放在C盘;</li>
+<li>服务器安装时一般选择标准版或者企业版;</li>
+<li>数据库的端口：1521</li>
+</ol>
+<p><strong>Oracle数据库创建：</strong></p>
+<ol>
+<li>configuration and migration tools –&gt; database configuration assistant –&gt; 创建数据库 –&gt; New Database  –&gt; 数据库名（英文）</li>
+<li>enterprise manager console –&gt; 选择数据库，以系统管理员SYSDBA连接身份登录</li>
+<li>创建表空间：存储 –&gt; 表空间 –&gt; 名称：比如vcall，数据文件：vcall_1、vcall_2、vcall_3，类型：永久</li>
+<li>创建用户：安全性 –&gt; 用户 –&gt; 用户名，密码，表空间 –&gt; 角色：CONNECT,DBA</li>
+</ol>
+<h2 id="oracle-11g-2R安装"><a href="#oracle-11g-2R安装" class="headerlink" title="oracle 11g-2R安装"></a>oracle 11g-2R安装</h2><ol>
+<li>安装程序目录和安装目录都不能含中文，安装目录还不能含有下划线。</li>
+<li>密码是：首写字母大写，数字字母混合，不少于8位。</li>
+<li>11g默认账户密码不存在过期问题，如果是新建账户，则只有180天的有效期，需要修改。<br><code>select * from dba_profiles where profile=&#39;DEFAULT&#39; and RESOURCE_NAME like &#39;PASSWORD%&#39;</code><br>以上语句可以查看相关信息。<br>如果想设置密码不过期，可用管理员登陆，然后执行：<br><code>ALTER PROFILE DEFAULT LIMIT PASSWORD_LIFE_TIME UNLIMITED;</code></li>
+</ol>
+<h2 id="oracle数据库卸载"><a href="#oracle数据库卸载" class="headerlink" title="oracle数据库卸载"></a>oracle数据库卸载</h2><ol>
+<li><strong>关服务</strong><br>关闭oracle服务：services.msc</li>
+<li><strong>卸产品</strong><br>用oracle自带的卸载项，卸载相关产品。</li>
+<li><strong>删目录</strong><br>找到安装位置，删除oracle安装目录。</li>
+<li><strong>删注册表</strong><br>打开注册表：regedit ,然后删除以下目录：<ul>
+<li>注册oracle安装信息：<code>HKEY_LOCAL_MACHINE\SOFTWARE\ORACLE</code></li>
+<li>注册oracle服务：<code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\下oracle开头的服务名</code></li>
+<li>写oracle事件日志：<code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Application\</code>下oracle开头的目录</li>
+</ul>
+</li>
+<li><strong>删变量</strong><br>删除环境变量path中和oracle相关的内容（非必须的，不删也可以）。我的电脑–&gt;属性–&gt;高级–&gt;环境变量–&gt;PATH变量</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://blog.sina.com.cn/s/blog_ec2031db0102uwyw.html&quot;&gt;原地址&lt;/a&gt;&lt;br&gt;oracle的安装和卸载相对于mysqll而言要麻烦些，故记录在此。方便以后查阅。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="db" scheme="http://www.missfli.com/categories/db/"/>
+    
+    
+      <category term="oracle" scheme="http://www.missfli.com/tags/oracle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>linux设置中文输入法</title>
+    <link href="http://www.missfli.com/2014/07/11/linux-setting-chinese-input-method/"/>
+    <id>http://www.missfli.com/2014/07/11/linux-setting-chinese-input-method/</id>
+    <published>2014-07-11T03:05:04.000Z</published>
+    <updated>2016-09-09T03:33:46.670Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://blog.sina.com.cn/s/blog_ec2031db0102uwys.html" target="_blank" rel="external">原地址</a><br>有时候在linux环境下也是需要中文输入的。centos6自带有ibus输入法。<br><a id="more"></a></p>
+<p><strong>ibus未安装时</strong></p>
+<p><em>centos 6.2用yum安装ibus中文输入法:</em></p>
+<ol>
+<li>su root</li>
+<li>yum install “@Chinese Support”</li>
+<li>exit</li>
+<li>回到桌面，system-&gt;preferences-&gt;input method</li>
+<li>如果没有，先注销一下。</li>
+<li>按照提示添加输入法。</li>
+<li>最后 再次注销，登录即可。</li>
+</ol>
+<p><strong>ibus安装后：</strong></p>
+<p>system–&gt;preferences–&gt;input method,调出中文拼音即可。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;http://blog.sina.com.cn/s/blog_ec2031db0102uwys.html&quot;&gt;原地址&lt;/a&gt;&lt;br&gt;有时候在linux环境下也是需要中文输入的。centos6自带有ibus输入法。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="server" scheme="http://www.missfli.com/categories/server/"/>
+    
+    
+      <category term="linux" scheme="http://www.missfli.com/tags/linux/"/>
+    
+      <category term="输入法" scheme="http://www.missfli.com/tags/%E8%BE%93%E5%85%A5%E6%B3%95/"/>
     
   </entry>
   
