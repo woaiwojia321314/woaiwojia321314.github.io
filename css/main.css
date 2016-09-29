@@ -1548,7 +1548,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e8384e;
+  background: #ac8514;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2438,4 +2438,8 @@ hr {
 }
 .links-of-author a::before {
   background: #fc0;
+}
+.highlight.fold {
+  overflow: hidden;
+  height: 1em;
 }
