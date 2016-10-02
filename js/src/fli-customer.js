@@ -5,4 +5,17 @@
 /**
  * code block fold and unfold with dblclick event
  */
-document.body.onload=function(){var b=document.getElementsByClassName('highlight');for(var a=0;a<b.length;a++){var c=b[a];c.ondblclick=function(){var d=this.className;if(d.indexOf('fold')>-1){this.className=d.replace('fold','');}else{this.className=d+' fold';}}}};
+document.body.onload = function(){
+  var curCode = document.getElementsByClassName("highlight");
+  for(var i=0; i<curCode.length; i++){
+    var obj = curCode[i];
+    obj.ondblclick = function(){
+      var objClass = this.className;
+      if(objClass.indexOf("fold")>-1){
+        this.className=objClass.replace("fold","");
+      }else{
+        this.className=objClass+" fold";
+      }
+    }
+  }
+}
