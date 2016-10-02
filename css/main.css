@@ -1548,7 +1548,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffff38;
+  background: #fffb57;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2439,7 +2439,21 @@ hr {
 .links-of-author a::before {
   background: #fc0;
 }
+.highlight {
+  position: relative;
+}
+.highlight:before {
+  content: '双击展开(收起)代码块';
+  display: block;
+  position: absolute;
+  right: 0em;
+  top: 0;
+  width: 10em;
+  height: 1em;
+  z-index: 10;
+  color: #fc0;
+}
 .highlight.fold {
   overflow: hidden;
-  height: 1em;
+  height: 0.5em;
 }
