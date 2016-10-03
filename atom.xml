@@ -699,43 +699,6 @@
   </entry>
   
   <entry>
-    <title>js获取客户端真实IP</title>
-    <link href="http://www.missfli.com/2016/08/31/fetch-customer-id-js/"/>
-    <id>http://www.missfli.com/2016/08/31/fetch-customer-id-js/</id>
-    <published>2016-08-31T00:41:01.000Z</published>
-    <updated>2016-09-03T01:11:58.542Z</updated>
-    
-    <content type="html"><![CDATA[<p>java获取客户端程序本身还有对应的对象来实现。而js却不行。搜罗了一些资料，发现比较全而好的前端获取客户端IP的方法基本都是通过三方接口。也就是调用别人写好的接口。用浏览器已有的控件ActiveXObject的控件方式，有一定的兼容性问题。<br><a id="more"></a></p>
-<h2 id="方法一：（所有的平台及浏览器）"><a href="#方法一：（所有的平台及浏览器）" class="headerlink" title="方法一：（所有的平台及浏览器）"></a>方法一：（所有的平台及浏览器）</h2><p>使用搜狐接口：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;script src=<span class="string">"http://pv.sohu.com/cityjson?ie=utf-8"</span>&gt;&lt;/script&gt;</div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</div><div class="line">document.write(<span class="built_in">return</span>CitySN[<span class="string">"cip"</span>]+<span class="string">','</span>+<span class="built_in">return</span>CitySN[<span class="string">"cname"</span>])</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
-<h2 id="方法二：（所有的平台及浏览器）"><a href="#方法二：（所有的平台及浏览器）" class="headerlink" title="方法二：（所有的平台及浏览器）"></a>方法二：（所有的平台及浏览器）</h2><p>使用新浪接口：(我测试过，此方法好像不行。访问网站也不能访问了。)</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"http://counter.sina.com.cn/ip/"</span> charset=<span class="string">"gb2312"</span>&gt;&lt;/script&gt;       &lt;!--获取接口数据，注意charset --&gt;</div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</div><div class="line">document.writeln(<span class="string">"IP地址："</span>+ILData[0]+<span class="string">"&lt;br /&gt;"</span>);             //输出接口数据中的IP地址</div><div class="line">document.writeln(<span class="string">"地址类型："</span>+ILData[1]+<span class="string">"&lt;br /&gt;"</span>);         //输出接口数据中的IP地址的类型</div><div class="line">document.writeln(<span class="string">"地址类型："</span>+ILData[2]+<span class="string">"&lt;br /&gt;"</span>);         //输出接口数据中的IP地址的省市</div><div class="line">document.writeln(<span class="string">"地址类型："</span>+ILData[3]+<span class="string">"&lt;br /&gt;"</span>);         //输出接口数据中的IP地址的</div><div class="line">document.writeln(<span class="string">"地址类型："</span>+ILData[4]+<span class="string">"&lt;br /&gt;"</span>);         //输出接口数据中的IP地址的运营商</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
-<h2 id="方法三："><a href="#方法三：" class="headerlink" title="方法三："></a>方法三：</h2><p>个人Robert Hashemian写的：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;script language=<span class="string">"JavaScript"</span> src=<span class="string">"http://www.hashemian.com/js/visitorIP.js.php"</span>&gt;&lt;/script&gt;</div><div class="line">&lt;script language=<span class="string">"JavaScript"</span>&gt;</div><div class="line">    VIH_BackColor = <span class="string">"palegreen"</span>;</div><div class="line">    VIH_ForeColor = <span class="string">"navy"</span>;</div><div class="line">    VIH_FontPix = <span class="string">"16"</span>;</div><div class="line">    VIH_DisplayFormat = <span class="string">"You are visiting from:&lt;br&gt;IP Address: %%IP%%&lt;br&gt;Host: %%HOST%%"</span>;</div><div class="line">    VIH_DisplayOnPage = <span class="string">"yes"</span>;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
-<h2 id="方法四：（只针对IE且客户端的IE允许AcitiveX运行，通过平台：XP，SERVER03，2000）。"><a href="#方法四：（只针对IE且客户端的IE允许AcitiveX运行，通过平台：XP，SERVER03，2000）。" class="headerlink" title="方法四：（只针对IE且客户端的IE允许AcitiveX运行，通过平台：XP，SERVER03，2000）。"></a>方法四：（只针对IE且客户端的IE允许AcitiveX运行，通过平台：XP，SERVER03，2000）。</h2><p>利用ActiveXObject控件，ie浏览器里要开启此控件：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;script language=<span class="string">"JavaScript"</span>&gt;</div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">GetLocalIPAddr</span></span>()&#123; var oSetting = null; var ip = null; try&#123; oSetting = new ActiveXObject(<span class="string">"rcbdyctl.Setting"</span>); ip = oSetting.GetIPAddress; <span class="keyword">if</span> (ip.length == 0)&#123; <span class="built_in">return</span> <span class="string">"没有连接到Internet"</span>; &#125; oSetting = null; &#125;catch(e)&#123; <span class="built_in">return</span> ip; &#125; <span class="built_in">return</span> ip; &#125; document.write(GetLocalIPAddr()+<span class="string">"&lt;br/&gt;"</span>)</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
-<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><ul>
-<li><a href="http://www.jb51.net/article/52484.htm" target="_blank" rel="external">JS获取客户端IP地址、MAC和主机名的7个方法汇总</a></li>
-<li><a href="http://www.jb51.net/article/43586.htm" target="_blank" rel="external">js获取客户端外网ip的简单实例</a></li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;java获取客户端程序本身还有对应的对象来实现。而js却不行。搜罗了一些资料，发现比较全而好的前端获取客户端IP的方法基本都是通过三方接口。也就是调用别人写好的接口。用浏览器已有的控件ActiveXObject的控件方式，有一定的兼容性问题。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="frontend" scheme="http://www.missfli.com/categories/frontend/"/>
-    
-      <category term="js" scheme="http://www.missfli.com/categories/frontend/js/"/>
-    
-    
-      <category term="js" scheme="http://www.missfli.com/tags/js/"/>
-    
-  </entry>
-  
-  <entry>
     <title>java获取客户端真实IP（转载）</title>
     <link href="http://www.missfli.com/2016/08/31/fetch-customer-id-java/"/>
     <id>http://www.missfli.com/2016/08/31/fetch-customer-id-java/</id>
@@ -791,6 +754,43 @@
     
     
       <category term="java" scheme="http://www.missfli.com/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js获取客户端真实IP</title>
+    <link href="http://www.missfli.com/2016/08/31/fetch-customer-id-js/"/>
+    <id>http://www.missfli.com/2016/08/31/fetch-customer-id-js/</id>
+    <published>2016-08-31T00:41:01.000Z</published>
+    <updated>2016-09-03T01:11:58.542Z</updated>
+    
+    <content type="html"><![CDATA[<p>java获取客户端程序本身还有对应的对象来实现。而js却不行。搜罗了一些资料，发现比较全而好的前端获取客户端IP的方法基本都是通过三方接口。也就是调用别人写好的接口。用浏览器已有的控件ActiveXObject的控件方式，有一定的兼容性问题。<br><a id="more"></a></p>
+<h2 id="方法一：（所有的平台及浏览器）"><a href="#方法一：（所有的平台及浏览器）" class="headerlink" title="方法一：（所有的平台及浏览器）"></a>方法一：（所有的平台及浏览器）</h2><p>使用搜狐接口：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;script src=<span class="string">"http://pv.sohu.com/cityjson?ie=utf-8"</span>&gt;&lt;/script&gt;</div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</div><div class="line">document.write(<span class="built_in">return</span>CitySN[<span class="string">"cip"</span>]+<span class="string">','</span>+<span class="built_in">return</span>CitySN[<span class="string">"cname"</span>])</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h2 id="方法二：（所有的平台及浏览器）"><a href="#方法二：（所有的平台及浏览器）" class="headerlink" title="方法二：（所有的平台及浏览器）"></a>方法二：（所有的平台及浏览器）</h2><p>使用新浪接口：(我测试过，此方法好像不行。访问网站也不能访问了。)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"http://counter.sina.com.cn/ip/"</span> charset=<span class="string">"gb2312"</span>&gt;&lt;/script&gt;       &lt;!--获取接口数据，注意charset --&gt;</div><div class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</div><div class="line">document.writeln(<span class="string">"IP地址："</span>+ILData[0]+<span class="string">"&lt;br /&gt;"</span>);             //输出接口数据中的IP地址</div><div class="line">document.writeln(<span class="string">"地址类型："</span>+ILData[1]+<span class="string">"&lt;br /&gt;"</span>);         //输出接口数据中的IP地址的类型</div><div class="line">document.writeln(<span class="string">"地址类型："</span>+ILData[2]+<span class="string">"&lt;br /&gt;"</span>);         //输出接口数据中的IP地址的省市</div><div class="line">document.writeln(<span class="string">"地址类型："</span>+ILData[3]+<span class="string">"&lt;br /&gt;"</span>);         //输出接口数据中的IP地址的</div><div class="line">document.writeln(<span class="string">"地址类型："</span>+ILData[4]+<span class="string">"&lt;br /&gt;"</span>);         //输出接口数据中的IP地址的运营商</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h2 id="方法三："><a href="#方法三：" class="headerlink" title="方法三："></a>方法三：</h2><p>个人Robert Hashemian写的：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;script language=<span class="string">"JavaScript"</span> src=<span class="string">"http://www.hashemian.com/js/visitorIP.js.php"</span>&gt;&lt;/script&gt;</div><div class="line">&lt;script language=<span class="string">"JavaScript"</span>&gt;</div><div class="line">    VIH_BackColor = <span class="string">"palegreen"</span>;</div><div class="line">    VIH_ForeColor = <span class="string">"navy"</span>;</div><div class="line">    VIH_FontPix = <span class="string">"16"</span>;</div><div class="line">    VIH_DisplayFormat = <span class="string">"You are visiting from:&lt;br&gt;IP Address: %%IP%%&lt;br&gt;Host: %%HOST%%"</span>;</div><div class="line">    VIH_DisplayOnPage = <span class="string">"yes"</span>;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h2 id="方法四：（只针对IE且客户端的IE允许AcitiveX运行，通过平台：XP，SERVER03，2000）。"><a href="#方法四：（只针对IE且客户端的IE允许AcitiveX运行，通过平台：XP，SERVER03，2000）。" class="headerlink" title="方法四：（只针对IE且客户端的IE允许AcitiveX运行，通过平台：XP，SERVER03，2000）。"></a>方法四：（只针对IE且客户端的IE允许AcitiveX运行，通过平台：XP，SERVER03，2000）。</h2><p>利用ActiveXObject控件，ie浏览器里要开启此控件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;script language=<span class="string">"JavaScript"</span>&gt;</div><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">GetLocalIPAddr</span></span>()&#123; var oSetting = null; var ip = null; try&#123; oSetting = new ActiveXObject(<span class="string">"rcbdyctl.Setting"</span>); ip = oSetting.GetIPAddress; <span class="keyword">if</span> (ip.length == 0)&#123; <span class="built_in">return</span> <span class="string">"没有连接到Internet"</span>; &#125; oSetting = null; &#125;catch(e)&#123; <span class="built_in">return</span> ip; &#125; <span class="built_in">return</span> ip; &#125; document.write(GetLocalIPAddr()+<span class="string">"&lt;br/&gt;"</span>)</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><ul>
+<li><a href="http://www.jb51.net/article/52484.htm" target="_blank" rel="external">JS获取客户端IP地址、MAC和主机名的7个方法汇总</a></li>
+<li><a href="http://www.jb51.net/article/43586.htm" target="_blank" rel="external">js获取客户端外网ip的简单实例</a></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;java获取客户端程序本身还有对应的对象来实现。而js却不行。搜罗了一些资料，发现比较全而好的前端获取客户端IP的方法基本都是通过三方接口。也就是调用别人写好的接口。用浏览器已有的控件ActiveXObject的控件方式，有一定的兼容性问题。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="frontend" scheme="http://www.missfli.com/categories/frontend/"/>
+    
+      <category term="js" scheme="http://www.missfli.com/categories/frontend/js/"/>
+    
+    
+      <category term="js" scheme="http://www.missfli.com/tags/js/"/>
     
   </entry>
   
