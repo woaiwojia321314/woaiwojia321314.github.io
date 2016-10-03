@@ -1548,7 +1548,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f9ffff;
+  background: #ff2629;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2442,7 +2442,7 @@ hr {
 .highlight {
   position: relative;
 }
-.hightight-customer:before {
+.highlight:before {
   content: '双击展开(收起)代码块';
   display: block;
   position: absolute;
@@ -2455,5 +2455,5 @@ hr {
 }
 .highlight.fold {
   overflow: hidden;
-  height: 0.5em;
+  height: 1.5em;
 }
