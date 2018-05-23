@@ -81,5 +81,5 @@ theme: next
 ## http·½Ê½£ºhttps://github.com/woaiwojia321314/myblog.git
 deploy:
   type: git
-  repo: git@github.com:woaiwojia321314/myblog.git
+  repo: git@github.com:woaiwojia321314/woaiwojia321314.github.io.git
   branch: master
