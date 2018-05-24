@@ -40,7 +40,7 @@ keywords: "Hexo, NexT"
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss: false
+rss: 
 
 footer:
   # Specify the date when the site was setup.
@@ -137,11 +137,11 @@ scheme: Pisces
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
 social:
   GitHub: https://github.com/woaiwojia321314 || github
-  简书: https://www.jianshu.com/u/2e16695e0599
+  简书: https://www.jianshu.com/u/2e16695e0599 || envelope
   CSDN: https://blog.csdn.net/wolf_or_dog
-  #Î¢²©: http://weibo.com/your-user-name
-  #¶¹°ê: http://douban.com/people/your-user-name
-  #Öªºõ: http://www.zhihu.com/people/your-user-name
+  新浪微博: https://weibo.com/u/3961532891 || weibo
+  #豆瓣: http://douban.com/people/your-user-name
+  #知乎: http://www.zhihu.com/people/your-user-name
   #E-Mail: mailto:yourname@gmail.com || envelope
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
@@ -367,7 +367,7 @@ han: false
 #swiftype_key: 5511e2f44012590daef13e5a8167561f
 
 # Baidu Analytics ID
-baidu_analytics:
+baidu_analytics: 5511e2f44012590daef13e5a8167561f
 
 # Duoshuo ShortName
 #duoshuo_shortname:
@@ -546,8 +546,8 @@ rating:
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
   enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  app_id: 2jQMWT9vbcsLCSXmM4eQnnw9-gzGzoHsz
+  app_key: oCaxHVRLazUUb1hfKOe4a6kg
 
 # Another tool to show number of visitors to each article.
 # visit https://console.firebase.google.com/u/0/ to get apiKey and projectId
@@ -579,7 +579,7 @@ busuanzi_count:
 
 
 # Tencent analytics ID
-# tencent_analytics:
+tencent_analytics: 58511381
 
 # Tencent MTA ID
 # tencent_mta:
@@ -618,7 +618,7 @@ algolia_search:
 # Local search
 # Dependencies: https://github.com/flashlab/hexo-generator-search
 local_search:
-  enable: false
+  enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto

@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Fli
-subtitle: Fli's blog
-description: 狼行千里吃肉，狗行千里吃屎；活鱼逆流而上，死鱼随波逐流！
-author: fli
+title: Miss Fli
+subtitle: 狼行千里吃肉，狗行千里吃屎；﹏﹏﹏活鱼逆流而上，死鱼随波逐流！
+description: ▂▃▅▆███◣♥◢███▆▅▃▂
+author: 荔枝
 language: zh-Hans
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://missfli.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -83,3 +83,22 @@ deploy:
   type: git
   repo: git@github.com:woaiwojia321314/woaiwojia321314.github.io.git
   branch: master
+
+# local search 
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+# rss
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+#sitemap
+sitemap:
+  path: sitemap.xml

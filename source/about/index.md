@@ -1,33 +1,45 @@
 ---
-title: 关于
+title: 关于日常发文
 date: 2018-05-23 09:25:47
 ---
 
-hexo官网 https://hexo.io/zh-cn/
-next主题 http://theme-next.iissnan.com/
+[Hexo 官网](https://hexo.io/zh-cn/)
+[NexT 主题](http://theme-next.iissnan.com/)
 
-## 常用命令
+## 日常发文
 
-### 每次部署的步骤，可按以下三步来进行。
-hexo clean
-hexo generate
-hexo deploy
+### 日常发博文流程
+1. 打开 typora 写博文
+2. hexo clean #清空静态文件夹
+3. hexo generate #生成静态文件
+4. hexo server #浏览器预览效果
+5. git命令提交或 github 桌面端提交项目源码（gh-dev 分支）
+6. hexo deploy #发布部署（master 分支）
 
-### 一些常用命令：
-hexo new”postName” #新建文章
-hexo new page”pageName” #新建页面
+### Hexo 常用命令
+常见命令：
+
+```swift
+hexo new "postName" #新建文章
+hexo new page "pageName" #新建页面
 hexo generate #生成静态页面至public目录
-hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）
-hexo deploy #将.deploy目录部署到GitHub
-hexo help #查看帮助
-hexo version #查看Hexo的版本
+hexo server #开启预览访问端口（默认端口4000，'ctrl + c'关闭server）
+hexo deploy #部署到GitHub
+hexo help  # 查看帮助
+hexo version  #查看Hexo的版本
+```
 
-## 待办事项（博客网站）：
-1. 自定义样式：项目/themes/next/source/css/custom/custom.styl
-1. 百度统计，腾讯统计，google统计(暂时不加)。
-1. 多说评论
-1. 阅读次数统计LeanCloud。已加上，注意后续跟踪
-1. 搜索
-1. 打赏功能(暂时不加)
-1. 引入codepen的运行结果图：Embed – Result(其他html,js,css等等都不要选)，然后选择html（wordpress，iframe,html三种模板代码）。
-https://hexo.io/zh-cn/docs/tag-plugins.html#jsFiddle
+缩写：
+
+```swift
+hexo n == hexo new
+hexo g == hexo generate
+hexo s == hexo server
+hexo d == hexo deploy
+```
+组合命令：
+
+```swift
+hexo s -g #生成并本地预览
+hexo d -g #生成并上传
+```
