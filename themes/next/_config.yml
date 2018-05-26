@@ -834,9 +834,9 @@ enabled: true
 #gitalk settings
 gitalk: 
   enable: true    #用来做启用判断可以不用
-  clientID: '616a64f2f7134db40e6e'    #上面生成的往这里怼
-  clientSecret: '0b0d13238b0b1fcee22704ebb2b84330c960e850'   #同上
+  githubID: 905421889@qq.com #github账号
   repo: woaiwojia321314.github.io    #仓库名称
-  owner: 905421889@qq.com    #github用户名
-  admin: 905421889@qq.com
+  clientID: '616a64f2f7134db40e6e'    
+  clientSecret: '0b0d13238b0b1fcee22704ebb2b84330c960e850' 
+  adminUser: 905421889@qq.com #指定可初始化评论账户
   distractionFreeMode: true 
