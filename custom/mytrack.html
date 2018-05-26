@@ -88,16 +88,17 @@
 
 
 
-<meta name="description" content="▂▃▅▆███◣♥◢███▆▅▃▂">
+<meta name="description" content="body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:&quot;微软雅黑&quot;;} 	 	 	我的足迹   	    	// 百度地图API功能 	var map = new BMap.Map(&quot;allmap&quot;); 	var point = new BMap.Point(106">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Lychee&#39;s blog">
-<meta property="og:url" content="http://missfli.com/tags/Hexo/index.html">
+<meta property="og:url" content="http://missfli.com/custom/mytrack.html">
 <meta property="og:site_name" content="Lychee&#39;s blog">
-<meta property="og:description" content="▂▃▅▆███◣♥◢███▆▅▃▂">
+<meta property="og:description" content="body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:&quot;微软雅黑&quot;;} 	 	 	我的足迹   	    	// 百度地图API功能 	var map = new BMap.Map(&quot;allmap&quot;); 	var point = new BMap.Point(106">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-05-24T12:46:09.953Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Lychee&#39;s blog">
-<meta name="twitter:description" content="▂▃▅▆███◣♥◢███▆▅▃▂">
+<meta name="twitter:description" content="body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:&quot;微软雅黑&quot;;} 	 	 	我的足迹   	    	// 百度地图API功能 	var map = new BMap.Map(&quot;allmap&quot;); 	var point = new BMap.Point(106">
 
 
 
@@ -127,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="http://missfli.com/tags/Hexo/"/>
+  <link rel="canonical" href="http://missfli.com/custom/mytrack.html"/>
 
 
 
 
 
-  <title>标签: Hexo | Lychee's blog</title>
+  <title> | Lychee's blog</title>
   
 
 
@@ -162,7 +163,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -310,54 +311,67 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>Hexo<small>标签</small>
-        </h1>
-      </div>
+	<h1 class="post-title" itemprop="name headline"></h1>
+
+
+
+</header>
 
       
+      
+      
+      <div class="post-body">
         
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
         
-            <a class="post-title-link" href="/Hexo/github-hexo-next-01/" itemprop="url">
-              
-                <span itemprop="name">GitHub+Hexo（NexT主题）搭建博客</span>
-              
-            </a>
-        
-      </h2>
+          <!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<style type="text/css">
+		body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
+	</style>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=eti04Gax3sH1nAuDmtEV87RvuaNrtkBq"></script>
+	<title>我的足迹</title>
+</head>
+<body>
+	<div id="allmap"></div>
+</body>
+</html>
+<script type="text/javascript">
+	// 百度地图API功能
+	var map = new BMap.Map("allmap");
+	var point = new BMap.Point(106.91, 30.36); //四川省邻水县
+	map.centerAndZoom(point,6);
+	map.enableScrollWheelZoom(true);
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-05-23T15:39:04+08:00"
-              content="2018-05-23" >
-          05-23
-        </time>
+	// 创建地址解析器实例
+	// var myIcon = new BMap.Icon("https://upload-images.jianshu.io/upload_images/1464420-8c5590b13ad49791.png?", new BMap.Size(32,32));
+	// var myGeo = new BMap.Geocoder();
+	// var address = ['湖南省长沙市','湖南省株洲市攸县','湖南省常德市'];
+	// for (var i = address.length - 1; i >= 0; i--) {
+	// 	var pointTemp = myGeo.getPoint(address[i]);
+	// 	map.addOverlay(new BMap.Marker(pointTemp,{icon:myIcon}));
+	// };
+</script>
+
+        
       </div>
-
-    </header>
-  </article>
-
-
+      
+      
       
     </div>
-
+    
+    
+    
   </div>
-  
-  
-  
-
-  
 
 
           </div>
@@ -365,9 +379,10 @@
 
 
           
-  <div id="gitalk-container"></div>
 
+  
 
+  
 
         </div>
         
@@ -639,6 +654,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -679,6 +698,21 @@
 
 
 
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '',
+          clientSecret: '',
+          repo: 'woaiwojia321314.github.io',
+          owner: '',
+          admin: [''],
+          id: location.pathname,
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')           
+       </script>
 
 
   
