@@ -97,10 +97,11 @@ menu:
   categories: /categories/ || th
   tags: /tags/ || tags
   about: /about/ || user
-  schedule: /schedule/ || calendar
+  #schedule: /schedule/ || calendar
   sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
-  resources: /resources/ || download
+  #新增的菜单分类
+  #resources: /resources/ || download
 
 # Enable/Disable menu icons.
 menu_icons:
@@ -205,10 +206,10 @@ sidebar:
   offset: 12
 
   # Back to top in sidebar (only for Pisces | Gemini).
-  b2t: false
+  b2t: true
 
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
   # Enable sidebar on narrow view (only for Muse | Mist).
   onmobile: false
@@ -244,8 +245,8 @@ post_meta:
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
   item_text: true
-  wordcount: false
-  min2read: false
+  wordcount: true
+  min2read: true
   totalcount: false
   separated_meta: true
 
@@ -263,7 +264,7 @@ post_wordcount:
 
 # Declare license on posts
 post_copyright:
-  enable: false
+  enable: true
   license: CC BY-NC-SA 3.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
 
@@ -432,8 +433,8 @@ gitment:
 # Available value:
 #    button | slide
 # Warning: Baidu Share does not support https.
-#baidushare:
-##  type: button
+baidushare:
+  type: button
 
 # Share
 # This plugin is more useful in China, make sure you known how to use it.
@@ -689,7 +690,7 @@ motion:
 fancybox: true
 
 # Progress bar in the top during page loading.
-pace: false
+pace: true
 # Themes list:
 #pace-theme-big-counter
 #pace-theme-bounce
@@ -706,7 +707,7 @@ pace: false
 #pace-theme-minimal
 # For example
 # pace_theme: pace-theme-center-simple
-pace_theme: pace-theme-minimal
+pace_theme: pace-theme-bounce
 
 # Canvas-nest
 canvas_nest: false
@@ -825,3 +826,17 @@ images: images
 
 # Theme version
 version: 5.1.4
+
+# 文章末尾添加“本文结束”标记
+passage_end_tag:
+enabled: true
+# 评论功能
+#gitalk settings
+gitalk: 
+  enable: true    #用来做启用判断可以不用
+  clientID: '616a64f2f7134db40e6e'    #上面生成的往这里怼
+  clientSecret: '0b0d13238b0b1fcee22704ebb2b84330c960e850'   #同上
+  repo: woaiwojia321314.github.io    #仓库名称
+  owner: 905421889@qq.com    #github用户名
+  admin: 905421889@qq.com
+  distractionFreeMode: true 
