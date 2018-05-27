@@ -397,12 +397,12 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: false
-  appid:  # your leancloud application appid
-  appkey:  # your leancloud application appkey
-  notify: false # mail notifier , https://github.com/xCss/Valine/wiki
-  verify: false # Verification code
-  placeholder: Just go go # comment box placeholder
+  enable: true
+  appid: 2jQMWT9vbcsLCSXmM4eQnnw9-gzGzoHsz  # your leancloud application appid
+  appkey: oCaxHVRLazUUb1hfKOe4a6kg  # your leancloud application appkey
+  notify: true # mail notifier , https://github.com/xCss/Valine/wiki
+  verify: true # Verification code
+  placeholder: 说点...... # comment box placeholder
   avatar: mm # gravatar style
   guest_info: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
@@ -840,7 +840,7 @@ gitalk:
   enable: false
   githubID: woaiwojia321314 #github帐号 例：asdfv1929 
   repo: woaiwojia321314.github.io # 例：asdfv1929.github.io
-  clientID: 616a64f2f7134db40e6e #
-  clientSecret: 05d43837fd2a08420a81278d72060bd14d91216e #
+  clientID: 616a64f2f7134db40e6e #clientID
+  clientSecret: 05d43837fd2a08420a81278d72060bd14d91216e #clientSecret
   adminUser: woaiwojia321314 # 指定可初始化评论账户
   distractionFreeMode: true

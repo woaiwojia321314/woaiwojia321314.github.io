@@ -1,20 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Lychee&#39;s blog</title>
+  <title>Fli&#39;s Notes!</title>
   
   <subtitle>狼行千里吃肉，狗行千里吃屎；﹏﹏﹏活鱼逆流而上，死鱼随波逐流！</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://missfli.com/"/>
-  <updated>2018-05-24T02:42:59.342Z</updated>
+  <updated>2018-05-27T04:19:47.742Z</updated>
   <id>http://missfli.com/</id>
   
   <author>
-    <name>Lychee</name>
+    <name>Fli</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo NexT主题中添加网页音乐播放器功能</title>
+    <link href="http://missfli.com/2018/05/27/github-hexo-next-03/"/>
+    <id>http://missfli.com/2018/05/27/github-hexo-next-03/</id>
+    <published>2018-05-27T04:15:00.000Z</published>
+    <updated>2018-05-27T04:19:47.742Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;非原创，文章出处：&lt;a href=&quot;https://asdfv1929.github.io/2018/05/26/next-add-music/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://asdfv1929.github.io/2018/05/26/next-add-music/&lt;/a&gt; 。&lt;br&gt;为博客添加网页音乐播放器功能&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://missfli.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://missfli.com/tags/Hexo/"/>
+    
+      <category term="NexT" scheme="http://missfli.com/tags/NexT/"/>
+    
+      <category term="Web Music" scheme="http://missfli.com/tags/Web-Music/"/>
+    
+      <category term="Aplayer" scheme="http://missfli.com/tags/Aplayer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo NexT主题添加点击爱心效果</title>
+    <link href="http://missfli.com/2018/05/27/github-hexo-next-02/"/>
+    <id>http://missfli.com/2018/05/27/github-hexo-next-02/</id>
+    <published>2018-05-27T04:00:00.000Z</published>
+    <updated>2018-05-27T04:26:41.336Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;非原创，文章出处：&lt;a href=&quot;https://asdfv1929.github.io/2018/01/26/click-love/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://asdfv1929.github.io/2018/01/26/click-love/&lt;/a&gt; 。&lt;br&gt;给NexT主题内添加页面点击出现爱心的效果&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://missfli.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://missfli.com/tags/Hexo/"/>
+    
+      <category term="NexT" scheme="http://missfli.com/tags/NexT/"/>
+    
+  </entry>
   
   <entry>
     <title>GitHub+Hexo（NexT主题）搭建博客</title>

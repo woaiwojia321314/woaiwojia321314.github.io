@@ -1,6 +1,7 @@
 ---
 title: 关于日常发文
 date: 2018-05-23 09:25:47
+comments: false
 ---
 
 [Hexo 官网](https://hexo.io/zh-cn/)
@@ -84,6 +85,8 @@ hexo d -g #生成并上传
 * NexT主题优化（官网没有文档）二    5/27/2018
   * Hexo NexT主题添加点击爱心效果： https://asdfv1929.github.io/2018/01/26/click-love/
   * Hexo NexT主题中添加网页音乐播放器功能xxx：https://asdfv1929.github.io/2018/05/26/next-add-music/
-  * 人体时钟引入：hone hone clock
-* xxx评论系统筛选和配置 gitalk
-  * https://asdfv1929.github.io/2018/01/20/gitalk/
+  * 人体时钟引入xxx：hone hone clock
+* xxx评论系统筛选和配置  
+  * gitalk（没配置成功）：https://asdfv1929.github.io/2018/01/20/gitalk/
+  * Valine： https://valine.js.org/
+  * HyperComments：收费。后期看情况是否使用
