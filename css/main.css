@@ -1826,7 +1826,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #86ffe3;
+  background: #4aff42;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2995,7 +2995,7 @@ pre .javascript .function {
   }
 }
 ::selection {
-  background: #3194d0;
+/*background: #3194d0;*/
   color: #fff;
 }
 .site-author-image {
@@ -3021,17 +3021,19 @@ pre .javascript .function {
 }
 code {
   color: #c7254e;
-  background: #f6f6f6;
-  margin: 2px;
+  background: #f7f7f7;
+  margin: 2px 0.5em;
 }
-.highlight,
-pre {
-  margin: 5px 0;
-  padding: 5px;
-  border-radius: 3px;
+pre,
+.highlight {
+  color: #4d4d4d;
+  background: #f7f7f7;
+  border-radius: 5px;
 }
-.highlight,
-code,
-pre {
-  border: 1px solid #d6d6d6;
+.highlight .code pre {
+  background-color: #f7f7f7;
+}
+.highlight .gutter pre {
+  color: #869194;
+  background-color: #eff2f3;
 }
