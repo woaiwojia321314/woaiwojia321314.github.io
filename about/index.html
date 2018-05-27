@@ -80,8 +80,6 @@
 
 
 
-  
-
 
   <link rel="alternate" href="/atom.xml" title="Fli's Notes!" type="application/atom+xml" />
 
@@ -97,7 +95,7 @@
 <meta property="og:site_name" content="Fli&#39;s Notes!">
 <meta property="og:description" content="Hexo 官网NexT 主题 日常发文日常发博文流程 打开 typora 写博文 hexo clean #清空静态文件夹 hexo generate #生成静态文件 hexo server #浏览器预览效果 git命令提交或 github 桌面端提交项目源码（gh-dev 分支） hexo deploy #发布部署（master 分支）  Hexo 常用命令常见命令： 1234567hexo ne">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-27T04:50:13.279Z">
+<meta property="og:updated_time" content="2018-05-27T07:01:02.731Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于日常发文">
 <meta name="twitter:description" content="Hexo 官网NexT 主题 日常发文日常发博文流程 打开 typora 写博文 hexo clean #清空静态文件夹 hexo generate #生成静态文件 hexo server #浏览器预览效果 git命令提交或 github 桌面端提交项目源码（gh-dev 分支） hexo deploy #发布部署（master 分支）  Hexo 常用命令常见命令： 1234567hexo ne">
@@ -417,13 +415,6 @@
 
 
           
-
-  
-  <div id="gitalk-container"></div>
-
-  
-
-
 
         </div>
         
@@ -783,22 +774,29 @@
 
 
 
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: true,
+        appId: '2jQMWT9vbcsLCSXmM4eQnnw9-gzGzoHsz',
+        appKey: 'oCaxHVRLazUUb1hfKOe4a6kg',
+        placeholder: '说点......',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
-  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-   <script type="text/javascript">
-        var gitalk = new Gitalk({
-          clientID: '',
-          clientSecret: '',
-          repo: 'woaiwojia321314.github.io',
-          owner: 'woaiwojia321314',
-          admin: ['woaiwojia321314'],
-          id: location.pathname,
-          distractionFreeMode: 'true'
-        })
-        gitalk.render('gitalk-container')           
-       </script>
 
 
   
