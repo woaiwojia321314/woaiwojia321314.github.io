@@ -27,9 +27,13 @@ override: false
 # For example, you put your favicons into `hexo-site/source/images` directory.
 # Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
+  #small: /images/favicon-16x16-next.png
+  #medium: /images/favicon-32x32-next.png
+  #apple_touch_icon: /images/apple-touch-icon-next.png
+  #safari_pinned_tab: /images/logo.svg
+  small: /images/logo-16x16.png
+  medium: /images/logo-32x32.png
+  apple_touch_icon: /images/logo-180x180.png
   safari_pinned_tab: /images/logo.svg
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
@@ -564,19 +568,19 @@ firestore:
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
   # count values only if the other configs are false
-  enable: false
+  enable: true
   # custom uv span for the whole site
   site_uv: true
-  site_uv_header: <i class="fa fa-user"></i>
-  site_uv_footer:
+  site_uv_header: <i class="fa fa-user"></i>访客数
+  site_uv_footer: 人
   # custom pv span for the whole site
   site_pv: true
-  site_pv_header: <i class="fa fa-eye"></i>
-  site_pv_footer:
+  site_pv_header: <i class="fa fa-eye"></i>总访问量
+  site_pv_footer: 次
   # custom pv span for one page only
   page_pv: true
-  page_pv_header: <i class="fa fa-file-o"></i>
-  page_pv_footer:
+  page_pv_header: <i class="fa fa-file-o"></i>本文阅读量
+  page_pv_footer: 次
 
 
 # Tencent analytics ID
@@ -707,7 +711,7 @@ pace: true
 #pace-theme-minimal
 # For example
 # pace_theme: pace-theme-center-simple
-pace_theme: pace-theme-bounce
+pace_theme: pace-theme-minimal
 
 # Canvas-nest
 canvas_nest: false
@@ -833,10 +837,10 @@ enabled: true
 # 评论功能
 #gitalk settings
 gitalk: 
-  enable: true    #用来做启用判断可以不用
-  githubID: 905421889@qq.com #github账号
-  repo: woaiwojia321314.github.io    #仓库名称
-  clientID: '616a64f2f7134db40e6e'    
-  clientSecret: '0b0d13238b0b1fcee22704ebb2b84330c960e850' 
-  adminUser: 905421889@qq.com #指定可初始化评论账户
-  distractionFreeMode: true 
+  enable: false
+  githubID: woaiwojia321314 #github帐号 例：asdfv1929 
+  repo: woaiwojia321314.github.io # 例：asdfv1929.github.io
+  clientID: 616a64f2f7134db40e6e #
+  clientSecret: 05d43837fd2a08420a81278d72060bd14d91216e #
+  adminUser: woaiwojia321314 # 指定可初始化评论账户
+  distractionFreeMode: true
