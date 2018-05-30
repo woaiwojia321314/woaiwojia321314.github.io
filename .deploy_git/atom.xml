@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://missfli.com/"/>
-  <updated>2018-05-27T04:19:47.742Z</updated>
+  <updated>2018-05-29T01:39:38.072Z</updated>
   <id>http://missfli.com/</id>
   
   <author>
@@ -17,9 +17,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hexo NexT：在文章中嵌入 CodePen或 jsFiddle</title>
+    <link href="http://missfli.com/2018/05/29/github-hexo-next-04.html"/>
+    <id>http://missfli.com/2018/05/29/github-hexo-next-04.html</id>
+    <published>2018-05-28T16:30:00.000Z</published>
+    <updated>2018-05-29T01:39:38.072Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;建议直接去&lt;a href=&quot;&quot;&gt;博客网站原文&lt;/a&gt;看效果，因为简书的markdown不支持此语法的。&lt;br&gt;搞 IT 技术的人，写博客有时候需要在博文中展示一些实施的 demo 代码效果，这就涉及到需要在博文中嵌入 CodePen 或 jsFiddle，jsFiddle 有个国内版 &lt;a href=&quot;http://jsrun.net&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;jsrun&lt;/a&gt;，我就做了上面两种尝试，也就不讲其他的了。至于这两款需要翻墙，对于搞 IT 技术的你不算事儿吧。&lt;/p&gt;
+&lt;p&gt;提一句：需要拿出来做嵌入用的代码，你去你的 demo 页面找&lt;code&gt;Embed&lt;/code&gt;，中文版的好像叫&lt;code&gt;嵌入&lt;/code&gt;，里面有下面的嵌入代码的语法需要的参数。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://missfli.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://missfli.com/tags/Hexo/"/>
+    
+      <category term="CodePen" scheme="http://missfli.com/tags/CodePen/"/>
+    
+      <category term="jsFiddle" scheme="http://missfli.com/tags/jsFiddle/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo NexT主题中添加网页音乐播放器功能</title>
-    <link href="http://missfli.com/2018/05/27/github-hexo-next-03/"/>
-    <id>http://missfli.com/2018/05/27/github-hexo-next-03/</id>
+    <link href="http://missfli.com/2018/05/27/github-hexo-next-03.html"/>
+    <id>http://missfli.com/2018/05/27/github-hexo-next-03.html</id>
     <published>2018-05-27T04:15:00.000Z</published>
     <updated>2018-05-27T04:19:47.742Z</updated>
     
@@ -44,8 +69,8 @@
   
   <entry>
     <title>Hexo NexT主题添加点击爱心效果</title>
-    <link href="http://missfli.com/2018/05/27/github-hexo-next-02/"/>
-    <id>http://missfli.com/2018/05/27/github-hexo-next-02/</id>
+    <link href="http://missfli.com/2018/05/27/github-hexo-next-02.html"/>
+    <id>http://missfli.com/2018/05/27/github-hexo-next-02.html</id>
     <published>2018-05-27T04:00:00.000Z</published>
     <updated>2018-05-27T04:26:41.336Z</updated>
     
@@ -66,8 +91,8 @@
   
   <entry>
     <title>GitHub+Hexo（NexT主题）搭建博客</title>
-    <link href="http://missfli.com/2018/05/23/github-hexo-next-01/"/>
-    <id>http://missfli.com/2018/05/23/github-hexo-next-01/</id>
+    <link href="http://missfli.com/2018/05/23/github-hexo-next-01.html"/>
+    <id>http://missfli.com/2018/05/23/github-hexo-next-01.html</id>
     <published>2018-05-23T07:39:04.000Z</published>
     <updated>2018-05-24T02:42:59.342Z</updated>
     
@@ -90,10 +115,10 @@
   
   <entry>
     <title>markdown 常用语法（Hexo）</title>
-    <link href="http://missfli.com/2014/12/22/template/"/>
-    <id>http://missfli.com/2014/12/22/template/</id>
+    <link href="http://missfli.com/2014/12/22/template.html"/>
+    <id>http://missfli.com/2014/12/22/template.html</id>
     <published>2014-12-22T04:39:04.000Z</published>
-    <updated>2018-05-24T03:25:32.856Z</updated>
+    <updated>2018-05-28T16:23:27.016Z</updated>
     
     <summary type="html">
     

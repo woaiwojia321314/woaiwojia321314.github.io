@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Fli&#39;s Notes!</title>
+  
+  <subtitle>狼行千里吃肉，狗行千里吃屎；﹏﹏﹏活鱼逆流而上，死鱼随波逐流！</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://missfli.com/"/>
+  <updated>2018-05-29T08:47:43.370Z</updated>
+  <id>http://missfli.com/</id>
+  
+  <author>
+    <name>Fli</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>webstorm11--激活破解总结</title>
+    <link href="http://missfli.com/2018/05/29/webstorm-regitstcode.html"/>
+    <id>http://missfli.com/2018/05/29/webstorm-regitstcode.html</id>
+    <published>2018-05-29T09:20:00.000Z</published>
+    <updated>2018-05-29T08:47:43.370Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;网上的方法很多，什么注册机，输入 server 地址等等，特别是输入地址的，总会出现用了一段时间就会不行了，现在整理了网上了一些靠谱点的方法。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="webstorm" scheme="http://missfli.com/categories/webstorm/"/>
+    
+    
+      <category term="webstorm11" scheme="http://missfli.com/tags/webstorm11/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>photoshop 前端网页查看的基本设置</title>
+    <link href="http://missfli.com/2018/05/29/ps-front.html"/>
+    <id>http://missfli.com/2018/05/29/ps-front.html</id>
+    <published>2018-05-29T08:40:00.000Z</published>
+    <updated>2018-05-29T08:40:44.425Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;前端开发用 photoshop 查看网页的一些基本设置。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Photoshop" scheme="http://missfli.com/categories/Photoshop/"/>
+    
+    
+      <category term="Photoshop" scheme="http://missfli.com/tags/Photoshop/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo NexT主题中添加人体时钟 hone hone clock</title>
+    <link href="http://missfli.com/2018/05/29/github-hexo-next-07.html"/>
+    <id>http://missfli.com/2018/05/29/github-hexo-next-07.html</id>
+    <published>2018-05-29T08:10:00.000Z</published>
+    <updated>2018-05-29T08:02:51.961Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;给网站添加人体时钟 hone hone clock ，人体时钟是日本的出品，&lt;a href=&quot;http://chabudai.org/blog/?p=59&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;点此处去&lt;/a&gt;。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://missfli.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://missfli.com/tags/Hexo/"/>
+    
+      <category term="NexT" scheme="http://missfli.com/tags/NexT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo NexT主题中添加网页标题崩溃欺骗搞怪特效</title>
+    <link href="http://missfli.com/2018/05/29/github-hexo-next-06.html"/>
+    <id>http://missfli.com/2018/05/29/github-hexo-next-06.html</id>
+    <published>2018-05-29T06:45:00.000Z</published>
+    <updated>2018-05-29T06:46:58.909Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;文章出处： &lt;a href=&quot;https://asdfv1929.github.io/2018/01/25/crash-cheat/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://asdfv1929.github.io/2018/01/25/crash-cheat/&lt;/a&gt;  &lt;/p&gt;
+&lt;p&gt;给网页title添加一些搞怪特效 ，提高页面体验。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://missfli.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://missfli.com/tags/Hexo/"/>
+    
+      <category term="NexT" scheme="http://missfli.com/tags/NexT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo NexT主题评论功能的筛选对比</title>
+    <link href="http://missfli.com/2018/05/29/github-hexo-next-05.html"/>
+    <id>http://missfli.com/2018/05/29/github-hexo-next-05.html</id>
+    <published>2018-05-28T16:30:00.000Z</published>
+    <updated>2018-05-29T06:21:22.841Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;个人站点评论系统的选择的确让人头疼，我在这上面也折腾了很长时间，蛮难选的。大致整理了一下，看下表，后续深入了解后再更新此文。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://missfli.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://missfli.com/tags/Hexo/"/>
+    
+      <category term="NexT" scheme="http://missfli.com/tags/NexT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo NexT：在文章中嵌入 CodePen或 jsFiddle</title>
+    <link href="http://missfli.com/2018/05/29/github-hexo-next-04.html"/>
+    <id>http://missfli.com/2018/05/29/github-hexo-next-04.html</id>
+    <published>2018-05-28T16:30:00.000Z</published>
+    <updated>2018-05-29T01:46:43.561Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;建议直接去&lt;a href=&quot;http://www.missfli.com/2018/05/29/github-hexo-next-04.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;博客网站原文&lt;/a&gt;看效果，因为简书的markdown不支持此语法的。&lt;br&gt;搞 IT 技术的人，写博客有时候需要在博文中展示一些实施的 demo 代码效果，这就涉及到需要在博文中嵌入 CodePen 或 jsFiddle，jsFiddle 有个国内版 &lt;a href=&quot;http://jsrun.net&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;jsrun&lt;/a&gt;，我就做了上面两种尝试，也就不讲其他的了。至于这两款需要翻墙，对于搞 IT 技术的你不算事儿吧。&lt;/p&gt;
+&lt;p&gt;提一句：需要拿出来做嵌入用的代码，你去你的 demo 页面找&lt;code&gt;Embed&lt;/code&gt;，中文版的好像叫&lt;code&gt;嵌入&lt;/code&gt;，里面有下面的嵌入代码的语法需要的参数。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://missfli.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://missfli.com/tags/Hexo/"/>
+    
+      <category term="CodePen" scheme="http://missfli.com/tags/CodePen/"/>
+    
+      <category term="jsFiddle" scheme="http://missfli.com/tags/jsFiddle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo NexT主题中添加网页音乐播放器功能</title>
+    <link href="http://missfli.com/2018/05/27/github-hexo-next-03.html"/>
+    <id>http://missfli.com/2018/05/27/github-hexo-next-03.html</id>
+    <published>2018-05-27T04:15:00.000Z</published>
+    <updated>2018-05-27T04:19:47.742Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;非原创，文章出处：&lt;a href=&quot;https://asdfv1929.github.io/2018/05/26/next-add-music/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://asdfv1929.github.io/2018/05/26/next-add-music/&lt;/a&gt; 。&lt;br&gt;为博客添加网页音乐播放器功能&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://missfli.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://missfli.com/tags/Hexo/"/>
+    
+      <category term="NexT" scheme="http://missfli.com/tags/NexT/"/>
+    
+      <category term="Web Music" scheme="http://missfli.com/tags/Web-Music/"/>
+    
+      <category term="Aplayer" scheme="http://missfli.com/tags/Aplayer/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo NexT主题添加点击爱心效果</title>
+    <link href="http://missfli.com/2018/05/27/github-hexo-next-02.html"/>
+    <id>http://missfli.com/2018/05/27/github-hexo-next-02.html</id>
+    <published>2018-05-27T04:00:00.000Z</published>
+    <updated>2018-05-27T04:26:41.336Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;非原创，文章出处：&lt;a href=&quot;https://asdfv1929.github.io/2018/01/26/click-love/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://asdfv1929.github.io/2018/01/26/click-love/&lt;/a&gt; 。&lt;br&gt;给NexT主题内添加页面点击出现爱心的效果&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://missfli.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://missfli.com/tags/Hexo/"/>
+    
+      <category term="NexT" scheme="http://missfli.com/tags/NexT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Github 创建分支</title>
+    <link href="http://missfli.com/2018/05/24/github-new-branch.html"/>
+    <id>http://missfli.com/2018/05/24/github-new-branch.html</id>
+    <published>2018-05-24T02:23:00.000Z</published>
+    <updated>2018-05-29T09:37:56.524Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/top_code/article/details/51931916&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;文章出处&lt;/a&gt;&lt;br&gt;git 管理分钟的相关命令。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Git" scheme="http://missfli.com/categories/Git/"/>
+    
+    
+      <category term="Github" scheme="http://missfli.com/tags/Github/"/>
+    
+      <category term="Git" scheme="http://missfli.com/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Github 域名绑定</title>
+    <link href="http://missfli.com/2018/05/23/github-addon-domain.html"/>
+    <id>http://missfli.com/2018/05/23/github-addon-domain.html</id>
+    <published>2018-05-23T12:38:08.000Z</published>
+    <updated>2018-05-29T09:01:33.794Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;利用 Github pages 搭建静态网页项目时，Github 提个一个和用户名有关的免费域名：username.github.io 。当然如果你不满意，而自己又有个常见格式的域名（.com，.cn等等），那么绑定在一起呢。我是去&lt;a href=&quot;https://sg.godaddy.com/zh/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;godaddy&lt;/a&gt;购买的域名，据说域名服务商解析比较慢，所以采用了国内的&lt;a href=&quot;https://www.dnspod.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;DNSPod&lt;/a&gt;&lt;br&gt;来做域名解析，然后把域名的NS服务器指向 DNSPod。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="域名" scheme="http://missfli.com/tags/%E5%9F%9F%E5%90%8D/"/>
+    
+      <category term="Github" scheme="http://missfli.com/tags/Github/"/>
+    
+      <category term="Godaddy" scheme="http://missfli.com/tags/Godaddy/"/>
+    
+      <category term="DNSPod" scheme="http://missfli.com/tags/DNSPod/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>域名信息查询</title>
+    <link href="http://missfli.com/2018/05/23/domain-look.html"/>
+    <id>http://missfli.com/2018/05/23/domain-look.html</id>
+    <published>2018-05-23T12:20:08.000Z</published>
+    <updated>2018-05-29T09:03:00.595Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;你想知道网站域名的相关信息吗？其实很简单，跟谷哥或度娘说：whois，一大堆结果。在这里呢，就只给你推荐几个比较权威准确点的。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="域名" scheme="http://missfli.com/tags/%E5%9F%9F%E5%90%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IP 定位查询</title>
+    <link href="http://missfli.com/2018/05/23/ip-lqs.html"/>
+    <id>http://missfli.com/2018/05/23/ip-lqs.html</id>
+    <published>2018-05-23T12:10:08.000Z</published>
+    <updated>2018-05-29T09:04:59.834Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;有时候需要访客位置信息，这时你如果拿到访客的ip，那么通过下面的ip定位的方法就能做到了。搜集了不少资料，大致罗列了网上的方法，希望对你有用。国内国外大致就这些：淘宝，腾讯，新浪，百度，IP2Location,DB-IP,纯真IP数据库，MaxMind GeoLite2，当然还有其他的。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="IP" scheme="http://missfli.com/tags/IP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js 获取客户端真实 IP</title>
+    <link href="http://missfli.com/2018/05/23/ip-by-js.html"/>
+    <id>http://missfli.com/2018/05/23/ip-by-js.html</id>
+    <published>2018-05-23T10:10:08.000Z</published>
+    <updated>2018-05-29T09:10:16.605Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;java获取客户端程序本身还有对应的对象来实现。而js却不行。搜罗了一些资料，发现比较全而好的前端获取客户端IP的方法基本都是通过三方接口。也就是调用别人写好的接口。用浏览器已有的控件ActiveXObject的控件方式，有一定的兼容性问题。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="IP" scheme="http://missfli.com/tags/IP/"/>
+    
+      <category term="js" scheme="http://missfli.com/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GitHub+Hexo（NexT主题）搭建博客</title>
+    <link href="http://missfli.com/2018/05/23/github-hexo-next-01.html"/>
+    <id>http://missfli.com/2018/05/23/github-hexo-next-01.html</id>
+    <published>2018-05-23T07:39:04.000Z</published>
+    <updated>2018-05-24T02:42:59.342Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;由于曾经搭建过，但是不小心删掉了本地电脑上的源码，而 github 上也只有生成后的html页面代码，导致了没法继续发布新文章。并且那会儿倒腾的有些久，断断续续的弄得，也没写博文记录。现在重新搭建一次，并且记录一下。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://missfli.com/categories/Hexo/"/>
+    
+    
+      <category term="Github" scheme="http://missfli.com/tags/Github/"/>
+    
+      <category term="Hexo" scheme="http://missfli.com/tags/Hexo/"/>
+    
+      <category term="NexT" scheme="http://missfli.com/tags/NexT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Element ui之form表单使用</title>
+    <link href="http://missfli.com/2018/05/20/element-form.html"/>
+    <id>http://missfli.com/2018/05/20/element-form.html</id>
+    <published>2018-05-20T11:22:00.000Z</published>
+    <updated>2018-05-29T09:35:26.041Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;初次使用&lt;a href=&quot;http://element-cn.eleme.io/#/zh-CN/component/installation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Element ui&lt;/a&gt;，遇到不少坑。在此做些记录，方便日后查阅。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Element" scheme="http://missfli.com/categories/Element/"/>
+    
+    
+      <category term="Element" scheme="http://missfli.com/tags/Element/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue2 ：axios 使用之（一）</title>
+    <link href="http://missfli.com/2018/05/20/vue-axios.html"/>
+    <id>http://missfli.com/2018/05/20/vue-axios.html</id>
+    <published>2018-05-20T09:22:00.000Z</published>
+    <updated>2018-05-29T09:15:59.302Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;据说vuejs2.0已经不在维护vue-resource了，vuejs2.0 已经使用了axios了，并且官方也推荐使用axios 。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Vue2" scheme="http://missfli.com/categories/Vue2/"/>
+    
+    
+      <category term="Vue2" scheme="http://missfli.com/tags/Vue2/"/>
+    
+      <category term="axios" scheme="http://missfli.com/tags/axios/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue2 ：Mockjs 前端模拟假数据</title>
+    <link href="http://missfli.com/2018/05/19/vue-mockjs.html"/>
+    <id>http://missfli.com/2018/05/19/vue-mockjs.html</id>
+    <published>2018-05-19T04:22:00.000Z</published>
+    <updated>2018-05-29T09:17:39.952Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在前后端分离的大环境下，前端需要后端的接口去完成页面的渲染，但是大部分的情况下,前后端需要同时进行开发，这种情况下,后端还没完成数据输出，前端只好写静态模拟数据。面临一些问题：数据太长了，将数据写在js文件里，完成后挨个改url；某些逻辑复杂的代码，加入或去除模拟数据时得小心翼翼；想要尽可能还原真实的数据，要么编写更多代码，要么手动修改模拟数据；特殊的格式，例如IP,随机数，图片，地址，需要去收集等等。&lt;br&gt;Mock.js 正是这样一款类库，可以帮我们模拟生成一堆数据，也能解决那些问题。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Vue2" scheme="http://missfli.com/categories/Vue2/"/>
+    
+    
+      <category term="Vue2" scheme="http://missfli.com/tags/Vue2/"/>
+    
+      <category term="Mockjs" scheme="http://missfli.com/tags/Mockjs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue2 ：百度图表 Echarts</title>
+    <link href="http://missfli.com/2018/05/19/vue-echarts.html"/>
+    <id>http://missfli.com/2018/05/19/vue-echarts.html</id>
+    <published>2018-05-19T04:22:00.000Z</published>
+    <updated>2018-05-29T09:18:52.658Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在后台管理系统中，图表是一个很普遍的元素。目前常用的图标插件有 &lt;a href=&quot;http://www.chartjs.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;charts&lt;/a&gt;,  &lt;a href=&quot;http://echarts.baidu.com/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Echarts&lt;/a&gt;, &lt;a href=&quot;http://www.highcharts.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;highcharts&lt;/a&gt;。这次将介绍 Echarts 在 Vue 项目中的应用。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Vue2" scheme="http://missfli.com/categories/Vue2/"/>
+    
+    
+      <category term="Vue2" scheme="http://missfli.com/tags/Vue2/"/>
+    
+      <category term="Echarts" scheme="http://missfli.com/tags/Echarts/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue2 ：百度地图bmap</title>
+    <link href="http://missfli.com/2018/05/19/vue-bmap.html"/>
+    <id>http://missfli.com/2018/05/19/vue-bmap.html</id>
+    <published>2018-05-19T04:22:00.000Z</published>
+    <updated>2018-05-29T09:20:28.656Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;百度地图JavaScript API是一套由JavaScript语言编写的应用程序接口，可帮助您在网站中构建功能丰富、交互性强的地图应用，支持PC端和移动端基于浏览器的地图应用开发，且支持HTML5特性的地图开发。&lt;/p&gt;
+&lt;p&gt;该套API免费对外开放。自v1.5版本起，您需先申请密钥（ak）才可使用，接口无使用次数限制。&lt;/p&gt;
+&lt;p&gt;地址传送门：&lt;a href=&quot;http://lbsyun.baidu.com/index.php?title=jspopular&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://lbsyun.baidu.com/index.php?title=jspopular&lt;/a&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Vue2" scheme="http://missfli.com/categories/Vue2/"/>
+    
+    
+      <category term="Vue2" scheme="http://missfli.com/tags/Vue2/"/>
+    
+      <category term="百度地图" scheme="http://missfli.com/tags/%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue+element ui 之二：开发配置 webstorm</title>
+    <link href="http://missfli.com/2018/05/06/vue-element-02.html"/>
+    <id>http://missfli.com/2018/05/06/vue-element-02.html</id>
+    <published>2018-05-06T07:22:00.000Z</published>
+    <updated>2018-05-29T09:28:34.353Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;浏览器插件安装&quot;&gt;&lt;a href=&quot;#浏览器插件安装&quot; class=&quot;headerlink&quot; title=&quot;浏览器插件安装&quot;&gt;&lt;/a&gt;浏览器插件安装&lt;/h2&gt;&lt;p&gt;chrome浏览器：Vue.js devtools插件，去应用商店装上此插件。然后找到此插件对应的
+        
+      
+    
+    </summary>
+    
+      <category term="Vue2" scheme="http://missfli.com/categories/Vue2/"/>
+    
+    
+      <category term="Element" scheme="http://missfli.com/tags/Element/"/>
+    
+      <category term="Vue2" scheme="http://missfli.com/tags/Vue2/"/>
+    
+      <category term="webstorm" scheme="http://missfli.com/tags/webstorm/"/>
+    
+  </entry>
+  
+</feed>

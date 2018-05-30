@@ -3,12 +3,11 @@ layout: pages
 title: markdown 常用语法（Hexo）
 date: 2014-12-22 12:39:04
 categories:
-- Diary
+- class
 - 分类2
 tags:
-- PS3
-- Games
-- 标签3
+- tag1
+- 标签2
 ---
 
 摘要：Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
@@ -70,13 +69,34 @@ alert("This is a test js !!!!")
 # 代码块
 $ hexo new "My New Post"
 ```
+### codepen 和 jsfiddle 代码引入，相关设置见此文[]()。
+
+1. 在文章中嵌入codepen代码：
+
+```swift
+{% codepen userId|anonymous|anon slugHash theme [defaultTab [height [width]]] %}
+```
+
+{% codepen CiTA bgjKKE dark [css,result [265]] %}
+
+原链接：
+<p data-height="265" data-theme-id="dark" data-slug-hash="bgjKKE" data-default-tab="css,result" data-user="CiTA" data-embed-version="2" data-pen-title="CSS sidebar toggle" class="codepen">See the Pen <a href="https://codepen.io/CiTA/pen/bgjKKE/">CSS sidebar toggle</a> by Silvestar Bistrović (<a href="https://codepen.io/CiTA">@CiTA</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+2. 在文章中嵌入 jsFiddle 代码：
+
+```swift
+{% jsfiddle shorttag [tabs] [skin] [width] [height] %}
+```
+
+
 ## 分割线
 
 * * *
 ***
 *****
 - - -
---------------------------------------- 
+---------------------------------------
 
 ## 表格
 表格（:在两边， 文本居中；在左边，文本居中；在右边，文本居右）：

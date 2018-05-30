@@ -90,5 +90,9 @@
   {% include '_third-party/exturl.swig' %}
   <!-- 页面点击小红心 -->
   <script type="text/javascript" src="/js/src/clicklove.js"></script>
+  <!--崩溃欺骗-->
+  <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
+  <!--hone hone clock 人体时钟-->
+  <script type="text/javascript" src="/js/src/hone_hone_clock.js"></script>
 </body>
 </html>
