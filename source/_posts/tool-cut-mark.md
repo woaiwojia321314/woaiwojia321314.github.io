@@ -5,7 +5,7 @@ date: 2016-02-05 22:00:00
 categories:
 - tool
 tags:
-- ps
+- photoshop
 ---
 
 - [cutterman](http://www.cutterman.cn/v2/cutterman)(免费)--切图（ps 插件）

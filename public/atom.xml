@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://missfli.com/"/>
-  <updated>2018-05-29T08:47:43.370Z</updated>
+  <updated>2018-06-04T15:19:57.738Z</updated>
   <id>http://missfli.com/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue 使用预编译器 sass</title>
+    <link href="http://missfli.com/2018/06/04/vue-sass.html"/>
+    <id>http://missfli.com/2018/06/04/vue-sass.html</id>
+    <published>2018-06-04T06:30:00.000Z</published>
+    <updated>2018-06-04T15:19:57.738Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在基于 webpack 项目模板创建的项目（&lt;code&gt;vue init webpack my-project&lt;/code&gt;）中使用 sass。&lt;br&gt;在 webpack 中，所有的预处理器需要匹配对应的 loader。vue-loader 允许你使用其它 webpack loader 处理 Vue 组件的某一部分。它会根据 lang 属性自动推断出要使用的 loader。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="vue" scheme="http://missfli.com/categories/vue/"/>
+    
+    
+      <category term="vue" scheme="http://missfli.com/tags/vue/"/>
+    
+      <category term="sass" scheme="http://missfli.com/tags/sass/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>webstorm+gitlab 项目开发流程</title>
+    <link href="http://missfli.com/2018/06/04/webstorm-gitlab.html"/>
+    <id>http://missfli.com/2018/06/04/webstorm-gitlab.html</id>
+    <published>2018-06-04T03:00:00.000Z</published>
+    <updated>2018-06-04T15:20:08.284Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;以前都是作为一个 三方开发者 clone 别人的项目下来修改，现在需要自己作为项目的初始创建者发项目，碰到了不少坑。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="webstorm" scheme="http://missfli.com/tags/webstorm/"/>
+    
+      <category term="gitlab" scheme="http://missfli.com/tags/gitlab/"/>
+    
+  </entry>
   
   <entry>
     <title>webstorm11--激活破解总结</title>
@@ -365,28 +407,6 @@
   </entry>
   
   <entry>
-    <title>Vue2 ：Mockjs 前端模拟假数据</title>
-    <link href="http://missfli.com/2018/05/19/vue-mockjs.html"/>
-    <id>http://missfli.com/2018/05/19/vue-mockjs.html</id>
-    <published>2018-05-19T04:22:00.000Z</published>
-    <updated>2018-05-29T09:17:39.952Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;在前后端分离的大环境下，前端需要后端的接口去完成页面的渲染，但是大部分的情况下,前后端需要同时进行开发，这种情况下,后端还没完成数据输出，前端只好写静态模拟数据。面临一些问题：数据太长了，将数据写在js文件里，完成后挨个改url；某些逻辑复杂的代码，加入或去除模拟数据时得小心翼翼；想要尽可能还原真实的数据，要么编写更多代码，要么手动修改模拟数据；特殊的格式，例如IP,随机数，图片，地址，需要去收集等等。&lt;br&gt;Mock.js 正是这样一款类库，可以帮我们模拟生成一堆数据，也能解决那些问题。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Vue2" scheme="http://missfli.com/categories/Vue2/"/>
-    
-    
-      <category term="Vue2" scheme="http://missfli.com/tags/Vue2/"/>
-    
-      <category term="Mockjs" scheme="http://missfli.com/tags/Mockjs/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Vue2 ：百度图表 Echarts</title>
     <link href="http://missfli.com/2018/05/19/vue-echarts.html"/>
     <id>http://missfli.com/2018/05/19/vue-echarts.html</id>
@@ -429,36 +449,6 @@
       <category term="Vue2" scheme="http://missfli.com/tags/Vue2/"/>
     
       <category term="百度地图" scheme="http://missfli.com/tags/%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vue+element ui 之二：开发配置 webstorm</title>
-    <link href="http://missfli.com/2018/05/06/vue-element-02.html"/>
-    <id>http://missfli.com/2018/05/06/vue-element-02.html</id>
-    <published>2018-05-06T07:22:00.000Z</published>
-    <updated>2018-05-29T09:28:34.353Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;浏览器插件安装&quot;&gt;&lt;a href=&quot;#浏览器插件安装&quot; class=&quot;headerlink&quot; title=&quot;浏览器插件安装&quot;&gt;&lt;/a&gt;浏览器插件安装&lt;/h2&gt;&lt;p&gt;chrome浏览器：Vue.js devtools插件，去应用商店装上此插件。然后找到此插件对应的
-        
-      
-    
-    </summary>
-    
-      <category term="Vue2" scheme="http://missfli.com/categories/Vue2/"/>
-    
-    
-      <category term="Element" scheme="http://missfli.com/tags/Element/"/>
-    
-      <category term="Vue2" scheme="http://missfli.com/tags/Vue2/"/>
-    
-      <category term="webstorm" scheme="http://missfli.com/tags/webstorm/"/>
     
   </entry>
   

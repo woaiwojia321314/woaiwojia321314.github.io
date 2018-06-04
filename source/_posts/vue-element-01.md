@@ -16,16 +16,16 @@ node安装（npm跟node是配套的，无须单独安装），去[官网](https:
 <!-- more -->
 
 ## 一、直接用 Element 的项目模板
-Element 脚手架方式：
+Element 脚手架方式，[点此去](https://github.com/ElementUI/element-starter)：
 ```swift
 # 克隆项目 
 $ git clone https://github.com/ElementUI/element-starter.git
 # 查看目录
 $ ls
 # 进入项目目录
-$ cd houtai
-# 安装开发依赖,推荐使用npm安装，cnpm可能会丢包，或者各种兼容性问题(xx 相关依赖包名)
-$ npm install XX
+$ cd element-starter
+# 安装相关依赖包
+$ yarn
 # 运行
 $ npm run dev
 # 打包压缩
