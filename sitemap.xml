@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://missfli.com/2018/06/04/webstorm-gitlab.html</loc>
+    
+    <lastmod>2018-06-04T15:20:08.284Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://missfli.com/2018/06/04/vue-sass.html</loc>
+    
+    <lastmod>2018-06-04T15:19:57.738Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://missfli.com/2018/05/06/vue-element-01.html</loc>
+    
+    <lastmod>2018-05-30T08:11:20.217Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://missfli.com/2016/02/05/tool-cut-mark.html</loc>
+    
+    <lastmod>2018-05-30T02:48:40.048Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://missfli.com/2016/02/05/webkit-text-size-adjust.html</loc>
     
     <lastmod>2018-05-30T02:22:33.021Z</lastmod>
@@ -19,13 +47,6 @@
     <loc>http://missfli.com/2016/02/05/tool-html5-video.html</loc>
     
     <lastmod>2018-05-30T02:08:35.932Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://missfli.com/2016/02/05/tool-cut-mark.html</loc>
-    
-    <lastmod>2018-05-30T02:08:20.032Z</lastmod>
     
   </url>
   
@@ -124,13 +145,6 @@
     <loc>http://missfli.com/2018/04/27/node-version-upgrade.html</loc>
     
     <lastmod>2018-05-29T09:26:37.608Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://missfli.com/2018/05/06/vue-element-01.html</loc>
-    
-    <lastmod>2018-05-29T09:24:28.155Z</lastmod>
     
   </url>
   
@@ -296,7 +310,7 @@
   </url>
   
   <url>
-    <loc>http://missfli.com/custom/jobResume.html</loc>
+    <loc>http://missfli.com/custom/bio.html</loc>
     
     <lastmod>2018-04-22T03:23:58.491Z</lastmod>
     

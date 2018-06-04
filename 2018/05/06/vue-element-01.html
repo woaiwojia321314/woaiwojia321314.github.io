@@ -98,7 +98,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1464420-7036af73aa0a1ea9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1464420-7641e610d28c2900.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-05-29T09:24:28.155Z">
+<meta property="og:updated_time" content="2018-05-30T08:11:20.217Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="vue+element ui 之一：环境搭建和项目创建">
 <meta name="twitter:description" content="替换老技术ext.js，故而用Element UI。 node安装（npm跟node是配套的，无须单独安装），去官网下载安装就行。如果你已经有了，但是版本低了，需要升级，可以参考此文。Vue + Element UI 的项目搭建有两种方式：">
@@ -427,7 +427,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,158
+                  1,132
                 </span>
               
 
@@ -466,7 +466,7 @@
       
         <p>替换老技术ext.js，故而用<a href="http://element-cn.eleme.io/#/zh-CN/component/installation" target="_blank" rel="noopener">Element UI</a>。</p>
 <p>node安装（npm跟node是配套的，无须单独安装），去<a href="https://nodejs.org/en/" target="_blank" rel="noopener">官网</a>下载安装就行。如果你已经有了，但是版本低了，需要升级，可以参考<a href="https://www.jianshu.com/p/c46a45d177cb" target="_blank" rel="noopener">此文</a>。<br><strong>Vue + Element UI 的项目搭建有两种方式：</strong><br><a id="more"></a></p>
-<h2 id="一、直接用-Element-的项目模板"><a href="#一、直接用-Element-的项目模板" class="headerlink" title="一、直接用 Element 的项目模板"></a>一、直接用 Element 的项目模板</h2><p>Element 脚手架方式：<br><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># 克隆项目 </span><br><span class="line">$ git clone https:<span class="comment">//github.com/ElementUI/element-starter.git</span></span><br><span class="line"># 查看目录</span><br><span class="line">$ ls</span><br><span class="line"># 进入项目目录</span><br><span class="line">$ cd houtai</span><br><span class="line"># 安装开发依赖,推荐使用npm安装，cnpm可能会丢包，或者各种兼容性问题(xx 相关依赖包名)</span><br><span class="line">$ npm install <span class="type">XX</span></span><br><span class="line"># 运行</span><br><span class="line">$ npm run dev</span><br><span class="line"># 打包压缩</span><br><span class="line">$ npm run build</span><br></pre></td></tr></table></figure></p>
+<h2 id="一、直接用-Element-的项目模板"><a href="#一、直接用-Element-的项目模板" class="headerlink" title="一、直接用 Element 的项目模板"></a>一、直接用 Element 的项目模板</h2><p>Element 脚手架方式，<a href="https://github.com/ElementUI/element-starter" target="_blank" rel="noopener">点此去</a>：<br><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># 克隆项目 </span><br><span class="line">$ git clone https:<span class="comment">//github.com/ElementUI/element-starter.git</span></span><br><span class="line"># 查看目录</span><br><span class="line">$ ls</span><br><span class="line"># 进入项目目录</span><br><span class="line">$ cd element-starter</span><br><span class="line"># 安装相关依赖包</span><br><span class="line">$ yarn</span><br><span class="line"># 运行</span><br><span class="line">$ npm run dev</span><br><span class="line"># 打包压缩</span><br><span class="line">$ npm run build</span><br></pre></td></tr></table></figure></p>
 <h2 id="二、先搭建Vue项目，再引入Element-UI"><a href="#二、先搭建Vue项目，再引入Element-UI" class="headerlink" title="二、先搭建Vue项目，再引入Element UI"></a>二、先搭建Vue项目，再引入Element UI</h2><p>注：<br>1、查看 node,npm,vue,webpack 版本：<code>xx -v</code>，命令不对是，用<code>xx -help</code>查看相关命令。比如：<code>node -v</code>，<code>node -help</code>。（特例：vue 查看版本 <code>vue -V</code>）<br>2、需要再多个项目用的的用全局安装   <code>npm install xx -g 或 --global</code>，只是某个项目里用到的，进入该项目目录，再安装 <code>npm install xx   --save-dev 或 -D</code>。</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"># 安装node和npm（直接用的官网的安装文件安装的），查看一下版本号可以确认安装成功</span><br><span class="line">$ node -v</span><br><span class="line">$ npm -v</span><br><span class="line"># 安装vue，查看版本 vue -<span class="type">V</span></span><br><span class="line">$ npm install vue@<span class="number">2.5</span>.<span class="number">2</span> -g</span><br><span class="line"># 全局安装 vue-cli</span><br><span class="line">$ npm install vue-cli -g</span><br><span class="line"># 安装webpack</span><br><span class="line">$ npm install webpack -g</span><br><span class="line"># 创建一个基于 webpack 模板的新项目my-project</span><br><span class="line">$ vue <span class="keyword">init</span> webpack my-project</span><br><span class="line"># 进入项目目录</span><br><span class="line">$ cd my-project</span><br><span class="line"># 安装依赖，走你</span><br><span class="line">$ npm install <span class="type">XX</span></span><br><span class="line"># 运行项目</span><br><span class="line">$ npm run dev</span><br><span class="line"># 打包项目</span><br><span class="line">$ npm run build</span><br><span class="line"># 到此，vue的脚手架项目创建完成</span><br><span class="line"># 再引入element ui相关东西（i: install, -<span class="type">D</span>: --save -dev）：</span><br><span class="line">$ npm i element-ui@<span class="number">2.3</span>.<span class="number">6</span> -<span class="type">D</span></span><br></pre></td></tr></table></figure>
 <h2 id="相关目录情况"><a href="#相关目录情况" class="headerlink" title="相关目录情况"></a>相关目录情况</h2><p>项目创建完后的相关目录介绍如下图：<br><img src="https://upload-images.jianshu.io/upload_images/1464420-7036af73aa0a1ea9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="20180227145151434.png"></p>
@@ -669,7 +669,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">37</span>
+                  <span class="site-state-item-count">39</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -680,7 +680,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -691,7 +691,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">33</span>
+                  <span class="site-state-item-count">35</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
