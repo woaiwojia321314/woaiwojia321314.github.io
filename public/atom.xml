@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://missfli.com/"/>
-  <updated>2018-06-04T15:19:57.738Z</updated>
+  <updated>2018-06-06T07:56:02.966Z</updated>
   <id>http://missfli.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue 的ui组件库对比表</title>
+    <link href="http://missfli.com/2018/06/05/vue-ui-filter.html"/>
+    <id>http://missfli.com/2018/06/05/vue-ui-filter.html</id>
+    <published>2018-06-05T03:00:00.000Z</published>
+    <updated>2018-06-06T07:56:02.966Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;vue 发展迅速，生态圈也起来了。相应的 ui 组件库也蛮多的，如何选择，就得看需求了。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="vue" scheme="http://missfli.com/categories/vue/"/>
+    
+    
+      <category term="vue" scheme="http://missfli.com/tags/vue/"/>
+    
+  </entry>
   
   <entry>
     <title>vue 使用预编译器 sass</title>
@@ -407,15 +427,15 @@
   </entry>
   
   <entry>
-    <title>Vue2 ：百度图表 Echarts</title>
-    <link href="http://missfli.com/2018/05/19/vue-echarts.html"/>
-    <id>http://missfli.com/2018/05/19/vue-echarts.html</id>
+    <title>Vue2 ：Mockjs 前端模拟假数据</title>
+    <link href="http://missfli.com/2018/05/19/vue-mockjs.html"/>
+    <id>http://missfli.com/2018/05/19/vue-mockjs.html</id>
     <published>2018-05-19T04:22:00.000Z</published>
-    <updated>2018-05-29T09:18:52.658Z</updated>
+    <updated>2018-05-29T09:17:39.952Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;在后台管理系统中，图表是一个很普遍的元素。目前常用的图标插件有 &lt;a href=&quot;http://www.chartjs.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;charts&lt;/a&gt;,  &lt;a href=&quot;http://echarts.baidu.com/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Echarts&lt;/a&gt;, &lt;a href=&quot;http://www.highcharts.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;highcharts&lt;/a&gt;。这次将介绍 Echarts 在 Vue 项目中的应用。&lt;br&gt;
+      &lt;p&gt;在前后端分离的大环境下，前端需要后端的接口去完成页面的渲染，但是大部分的情况下,前后端需要同时进行开发，这种情况下,后端还没完成数据输出，前端只好写静态模拟数据。面临一些问题：数据太长了，将数据写在js文件里，完成后挨个改url；某些逻辑复杂的代码，加入或去除模拟数据时得小心翼翼；想要尽可能还原真实的数据，要么编写更多代码，要么手动修改模拟数据；特殊的格式，例如IP,随机数，图片，地址，需要去收集等等。&lt;br&gt;Mock.js 正是这样一款类库，可以帮我们模拟生成一堆数据，也能解决那些问题。&lt;br&gt;
     
     </summary>
     
@@ -424,31 +444,7 @@
     
       <category term="Vue2" scheme="http://missfli.com/tags/Vue2/"/>
     
-      <category term="Echarts" scheme="http://missfli.com/tags/Echarts/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vue2 ：百度地图bmap</title>
-    <link href="http://missfli.com/2018/05/19/vue-bmap.html"/>
-    <id>http://missfli.com/2018/05/19/vue-bmap.html</id>
-    <published>2018-05-19T04:22:00.000Z</published>
-    <updated>2018-05-29T09:20:28.656Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;百度地图JavaScript API是一套由JavaScript语言编写的应用程序接口，可帮助您在网站中构建功能丰富、交互性强的地图应用，支持PC端和移动端基于浏览器的地图应用开发，且支持HTML5特性的地图开发。&lt;/p&gt;
-&lt;p&gt;该套API免费对外开放。自v1.5版本起，您需先申请密钥（ak）才可使用，接口无使用次数限制。&lt;/p&gt;
-&lt;p&gt;地址传送门：&lt;a href=&quot;http://lbsyun.baidu.com/index.php?title=jspopular&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://lbsyun.baidu.com/index.php?title=jspopular&lt;/a&gt;&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Vue2" scheme="http://missfli.com/categories/Vue2/"/>
-    
-    
-      <category term="Vue2" scheme="http://missfli.com/tags/Vue2/"/>
-    
-      <category term="百度地图" scheme="http://missfli.com/tags/%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BE/"/>
+      <category term="Mockjs" scheme="http://missfli.com/tags/Mockjs/"/>
     
   </entry>
   
