@@ -1826,7 +1826,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #54ffe9;
+  background: #554a14;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2997,6 +2997,8 @@ pre .javascript .function {
 @media screen and (min-width: 720px) {
   body {
     background: url("/images/page-bg.jpg");
+/*background: url('https://coolbackgrounds.io/images/unsplash/josh-bean-medium-9501ba9f.jpg');*/
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50% 50%;
