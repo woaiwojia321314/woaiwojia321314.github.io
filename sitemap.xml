@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://missfli.com/README.html</loc>
+    
+    <lastmod>2018-06-10T06:21:31.043Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://missfli.com/2018/06/10/chrome-extensions.html</loc>
+    
+    <lastmod>2018-06-10T05:59:42.846Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://missfli.com/categories/index.html</loc>
+    
+    <lastmod>2018-06-10T05:58:20.751Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://missfli.com/about/index.html</loc>
+    
+    <lastmod>2018-06-10T05:57:36.276Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://missfli.com/2018/06/05/vue-ui-filter.html</loc>
     
     <lastmod>2018-06-06T07:56:02.966Z</lastmod>
@@ -233,13 +261,6 @@
   </url>
   
   <url>
-    <loc>http://missfli.com/about/index.html</loc>
-    
-    <lastmod>2018-05-29T08:19:43.201Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://missfli.com/2018/05/29/github-hexo-next-07.html</loc>
     
     <lastmod>2018-05-29T08:02:51.961Z</lastmod>
@@ -306,13 +327,6 @@
     <loc>http://missfli.com/tags/index.html</loc>
     
     <lastmod>2018-05-23T12:47:14.543Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://missfli.com/categories/index.html</loc>
-    
-    <lastmod>2018-05-23T12:46:21.884Z</lastmod>
     
   </url>
   

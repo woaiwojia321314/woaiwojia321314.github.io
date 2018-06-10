@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://missfli.com/"/>
-  <updated>2018-06-06T07:56:02.966Z</updated>
+  <updated>2018-06-10T05:59:42.846Z</updated>
   <id>http://missfli.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>chrome 浏览器常用插件-开发人员</title>
+    <link href="http://missfli.com/2018/06/10/chrome-extensions.html"/>
+    <id>http://missfli.com/2018/06/10/chrome-extensions.html</id>
+    <published>2018-06-10T06:00:00.000Z</published>
+    <updated>2018-06-10T05:59:42.846Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;作为前端开发人员，整理了一些 chrome 浏览器常用的插件（扩展程序）。&lt;br&gt; &lt;a href=&quot;https://chrome.google.com/webstore/category/extensions&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;chrome 应用商店&lt;/a&gt;插件有很多，复制名字搜索即可。&lt;br&gt;ps：需要翻墙。不想翻墙的，网上去搜搜离线安装的方式，很多滴。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="chrome" scheme="http://missfli.com/categories/chrome/"/>
+    
+    
+      <category term="chrome" scheme="http://missfli.com/tags/chrome/"/>
+    
+      <category term="插件" scheme="http://missfli.com/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>vue 的ui组件库对比表</title>
@@ -164,28 +186,6 @@
   </entry>
   
   <entry>
-    <title>Hexo NexT主题评论功能的筛选对比</title>
-    <link href="http://missfli.com/2018/05/29/github-hexo-next-05.html"/>
-    <id>http://missfli.com/2018/05/29/github-hexo-next-05.html</id>
-    <published>2018-05-28T16:30:00.000Z</published>
-    <updated>2018-05-29T06:21:22.841Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;个人站点评论系统的选择的确让人头疼，我在这上面也折腾了很长时间，蛮难选的。大致整理了一下，看下表，后续深入了解后再更新此文。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Hexo" scheme="http://missfli.com/categories/Hexo/"/>
-    
-    
-      <category term="Hexo" scheme="http://missfli.com/tags/Hexo/"/>
-    
-      <category term="NexT" scheme="http://missfli.com/tags/NexT/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Hexo NexT：在文章中嵌入 CodePen或 jsFiddle</title>
     <link href="http://missfli.com/2018/05/29/github-hexo-next-04.html"/>
     <id>http://missfli.com/2018/05/29/github-hexo-next-04.html</id>
@@ -207,6 +207,28 @@
       <category term="CodePen" scheme="http://missfli.com/tags/CodePen/"/>
     
       <category term="jsFiddle" scheme="http://missfli.com/tags/jsFiddle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo NexT主题评论功能的筛选对比</title>
+    <link href="http://missfli.com/2018/05/29/github-hexo-next-05.html"/>
+    <id>http://missfli.com/2018/05/29/github-hexo-next-05.html</id>
+    <published>2018-05-28T16:30:00.000Z</published>
+    <updated>2018-05-29T06:21:22.841Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;个人站点评论系统的选择的确让人头疼，我在这上面也折腾了很长时间，蛮难选的。大致整理了一下，看下表，后续深入了解后再更新此文。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://missfli.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://missfli.com/tags/Hexo/"/>
+    
+      <category term="NexT" scheme="http://missfli.com/tags/NexT/"/>
     
   </entry>
   
@@ -423,28 +445,6 @@
       <category term="Vue2" scheme="http://missfli.com/tags/Vue2/"/>
     
       <category term="axios" scheme="http://missfli.com/tags/axios/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vue2 ：Mockjs 前端模拟假数据</title>
-    <link href="http://missfli.com/2018/05/19/vue-mockjs.html"/>
-    <id>http://missfli.com/2018/05/19/vue-mockjs.html</id>
-    <published>2018-05-19T04:22:00.000Z</published>
-    <updated>2018-05-29T09:17:39.952Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;在前后端分离的大环境下，前端需要后端的接口去完成页面的渲染，但是大部分的情况下,前后端需要同时进行开发，这种情况下,后端还没完成数据输出，前端只好写静态模拟数据。面临一些问题：数据太长了，将数据写在js文件里，完成后挨个改url；某些逻辑复杂的代码，加入或去除模拟数据时得小心翼翼；想要尽可能还原真实的数据，要么编写更多代码，要么手动修改模拟数据；特殊的格式，例如IP,随机数，图片，地址，需要去收集等等。&lt;br&gt;Mock.js 正是这样一款类库，可以帮我们模拟生成一堆数据，也能解决那些问题。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Vue2" scheme="http://missfli.com/categories/Vue2/"/>
-    
-    
-      <category term="Vue2" scheme="http://missfli.com/tags/Vue2/"/>
-    
-      <category term="Mockjs" scheme="http://missfli.com/tags/Mockjs/"/>
     
   </entry>
   
