@@ -1,6 +1,8 @@
+---
 title: 关于日常发文
 date: 2018-05-23 09:25:47
 comments: false
+---
 
 [Hexo 官网](https://hexo.io/zh-cn/)
 [NexT 主题](http://theme-next.iissnan.com/)
