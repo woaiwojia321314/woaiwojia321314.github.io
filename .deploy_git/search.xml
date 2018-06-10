@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[chrome 浏览器常用插件-开发人员]]></title>
+    <url>%2F2018%2F06%2F10%2Fchrome-extensions.html</url>
+    <content type="text"><![CDATA[作为前端开发人员，整理了一些 chrome 浏览器常用的插件（扩展程序）。 chrome 应用商店插件有很多，复制名字搜索即可。ps：需要翻墙。不想翻墙的，网上去搜搜离线安装的方式，很多滴。 chrome 插件 （6/10/2018）注：有些可能描述不太准确，可自行在 chrome 应用商店搜出来，点开看相关的完整信息。 Adblock Plusdblock Plus 是超过 5 亿次下载的全球最受欢迎的广告拦截软件之一。 InfinityInfinity新标签页，基于Chrome的云应用服务，让你更优雅、轻松地使用Chrome。 MomentumMomentum新标签页，英文的，跟Infinity（中文的）类似。 二维码生成器可以生成当前页面二维码,手机直接扫二维码就可以访问当前页面。 Eye Dropper前端的取色器。它允许你从网页，颜色选择器和你的个人色彩历史中挑选颜色。 Page Ruler前端的尺子。计算页面元素间距、位置等信息的时候。绘制标尺以获取像素尺寸和位置，并测量任何网页上的元素。 FireShot可以截取整个网页、部分页面，然后支持导出为各种格式。捕捉网页截图，编辑并将它们保存为PDF，JPEG，GIF，PNG或BMP；上传，打印，在Photoshop中打开，复制到剪贴板或电子邮件 WEB前端助手(FeHelper)百度FE出品，功能超全的 Chrome 插件。FE助手：包括JSON格式化、二维码生成与解码、信息编解码、代码压缩、美化、页面取色、Markdown与HTML互转、网页滚动截屏、正则表达式、时间转换工具、编码规范检测、页面性能检测、Ajax接口调试。 PostmanPOST 接口调试终结者，异常强大的接口调试工具。稍稍有一点学习成本。 Google Mail Checker方便查看自己的 Gmail 邮件。 Octotree(github)在浏览器左侧展示 Github 项目的文件导航，使目录结构一目了然。 Awesome Autocomplete for GitHub(github)让你在 Github上使用搜索框的体验变得更好。 Porter Plug(github)在 Github 项目页中嵌入有关的图表信息，直观的展示当前项目的 Star Trend，能方便看到当前这个开源项目的发起时间，火爆趋势；对比较知名的项目还有相关的 News 展示。 OctoLinker(github)在 package.json或任意 .js 文件中，可以方便的对 require() 的 package进去点击，跳转去对应的 Github 页面。PS：特么不太好表达，建议你去这个插件的概述页，里面有个十来秒的视频，看完就明白了。 GitHub Hovercard(github)GitHub 增强工具，悬停可显示对应的用户、仓库、issue 等的详情。 BuiltWith通过使用此扩展来了解您正在访问的网站是什么。大到 Web Servers、服务端的 Frameworks 或 JS 框架，小到 meta、编码格式甚至 Analytics。 wappalyzerWappalyzer是一个跨平台的实用工具，可以揭示网站上使用的技术。 它检测内容管理系统，电子商务平台，Web框架，服务器软件，分析工具等等。 Library Sniffer for Google Chrome探测当前网页所使用的类库、框架和服务器环境，为开发者提供了方便。 DevTools Author纯装逼的插件，可以选择你的 Chrome 开发者工具的主题，且支持的主题超过25种，视觉装逼控必备。设置分大概三步，官网有文字说明，youtube 上的视频教程奉上(Customization With DevTools Author)[https://www.youtube.com/watch?v=AUZagMLMAJc] ps: 希望对你有用处，也欢迎你提供更多好用的插件，我会补上并更新。]]></content>
+      <categories>
+        <category>chrome</category>
+      </categories>
+      <tags>
+        <tag>chrome</tag>
+        <tag>插件</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[vue 的ui组件库对比表]]></title>
     <url>%2F2018%2F06%2F05%2Fvue-ui-filter.html</url>
     <content type="text"><![CDATA[vue 发展迅速，生态圈也起来了。相应的 ui 组件库也蛮多的，如何选择，就得看需求了。 vue 的 ui 组件库对比表相关 ui 库来源 awesomes 的关于vue 专题 -- DOM -- 框架部分。地址：https://www.awesomes.cn/subject/vue#Dom-%E6%A1%86%E6%9E%B6 针对上面列举的 ui 组件库，给个大致的对比表，仅供个人参考。（本来写了表格的，列太多，展示不好看，故转成了图片展示。） 上表格中，xxx 表示通过该官网或github链接没找到数据。第一轮筛选结果： 剩下：element, vuetify, at-ui, N3-components, atui, fish-ui × fish-ui 个人搞的，浏览器兼容性ie9+，但是他并没有测试，样式是less版的。文档只找到英文版。× at-ui和atui 功能比element少点。 第二轮筛选结果：element, vuetify, N3-components 。 根据 github 的 Watch，Star, Fork 排行。最后结果：element 。 ps：其实大部分源码都差不多，你喜欢哪个就用哪个。]]></content>
@@ -79,18 +91,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Hexo NexT主题评论功能的筛选对比]]></title>
-    <url>%2F2018%2F05%2F29%2Fgithub-hexo-next-05.html</url>
-    <content type="text"><![CDATA[个人站点评论系统的选择的确让人头疼，我在这上面也折腾了很长时间，蛮难选的。大致整理了一下，看下表，后续深入了解后再更新此文。 评论系统对比表 名称 推荐星数 介绍 多说 0 在2017年06月01日就关闭评论服务了 网易云跟贴 0 2017年08月01日也停止服务了 来必力 3 国外的，不能匿名评论，支持邮箱账号注册评论，据说容易出现乱码。 DISQUS 2 国外的，界面又丑，加载又慢。 畅言 4 国内的，不能匿名评论，，需要手机号验证。需要你的备案号，不然你网站没法长时间使用畅言。据说灌水厉害，这个功能目前已经是出于失灵与半失灵的状态，官方估计也没怎么维护了。 有言 3 国内的，支持匿名评论（默认关闭，需手动开启），但只是匿名，没有留联系方式的地方。 Facebook Comments 3 国外的，个人网站很少见人用，不做评论。 HyperComments 4 国外的，支持匿名评论，可以评论上传图片、影片等。功能还是比较强大，设置界面是英文，且没有中文支持。收费，只能免费试用14天。界面美观。 Valine 3 国内的，不能匿名评论，但也不需要注册那么麻烦，简单风格。 gitment 2 不推荐gitment因为作者弃坑了，一堆兼容问题没人修复，包括提交的pr都没合并。 gitalk 3 支持Markdown。 基于 GitHub Issues 的评论系统 ，面向程序员，不能匿名评论，需博主初始化话题，用户需登录 github 账号评论。 推荐星际评定不一定合理，自行搜集相关资料选择心仪的。我暂定的 Valine 。 参考 Hexo（NexT 主题）评论系统哪个好？ Hexo-NexT主题添加评论功能（来必力、Hypercomments、畅言、友言）]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>NexT</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Hexo NexT：在文章中嵌入 CodePen或 jsFiddle]]></title>
     <url>%2F2018%2F05%2F29%2Fgithub-hexo-next-04.html</url>
     <content type="text"><![CDATA[建议直接去博客网站原文看效果，因为简书的markdown不支持此语法的。搞 IT 技术的人，写博客有时候需要在博文中展示一些实施的 demo 代码效果，这就涉及到需要在博文中嵌入 CodePen 或 jsFiddle，jsFiddle 有个国内版 jsrun，我就做了上面两种尝试，也就不讲其他的了。至于这两款需要翻墙，对于搞 IT 技术的你不算事儿吧。 提一句：需要拿出来做嵌入用的代码，你去你的 demo 页面找Embed，中文版的好像叫嵌入，里面有下面的嵌入代码的语法需要的参数。 在文章中嵌入 CodePen去 Hexo 官方插件页搜索codepen，然后找到hexo-codepen，点过去。或者直接点击此处。里面有文档和示例，大致讲解一下。 1.安装npm 安装：$ npm install hexo-codepen --save或 yarn 安装：$ yarn add hexo-codepen 2.用法语法结构：1&#123;% codepen userId|anonymous|anon slugHash theme [defaultTab [height [width]]] %&#125; deme 链接： https://codepen.io/CiTA/pen/bgjKKE 在 CodePen 里面 Embed 出来的html代码：12&lt;p data-height="265" data-theme-id="dark" data-slug-hash="bgjKKE" data-default-tab="css,result" data-user="CiTA" data-embed-version="2" data-pen-title="CSS sidebar toggle" class="codepen"&gt;See the Pen &lt;a href="https://codepen.io/CiTA/pen/bgjKKE/"&gt;CSS sidebar toggle&lt;/a&gt; by Silvestar Bistrović (&lt;a href="https://codepen.io/CiTA"&gt;@CiTA&lt;/a&gt;) on &lt;a href="https://codepen.io"&gt;CodePen&lt;/a&gt;.&lt;/p&gt;&lt;script async src="https://production-assets.codepen.io/assets/embed/ei.js"&gt;&lt;/script&gt; 参数对应关系： 字段 值 userId CiTA slugHash bgjKKE theme dark defaultTab css,result height 265 width 默认为：100%，此值应根据您的博客主题进行调整 示例效果：12#替换参数后的语法：(*设置宽高时不要用%，会导致编译错误*)&#123;% codepen CiTA bgjKKE dark [css,result [265]] %&#125; 运行后的： 当然也可以直接嵌入源码（CodePen 中 Embed 出来的代码支持3种格式：WordPress Shortcode、iFrame、HTML） ，也能看到效果，只是这个会带有源码，体验不太好。效果如下： See the Pen CSS sidebar toggle by Silvestar Bistrović (@CiTA) on CodePen. 在文章中嵌入 jsFiddle这个就省掉了安装依赖包的步骤了，本来官网也提供了语法，只是没有具体的示例，网上找了半天没资料。就自己参考 CodePen 的方式做了一个逆向推理出来的。 用法语法结构（官网也就只提供了这个）：(设置宽高时不要用%，会导致编译错误)1&#123;% jsfiddle shorttag [tabs] [skin] [width] [height] %&#125; demo 链接： http://jsfiddle.net/AntBody/138zf8kk/?utm_source=website&amp;utm_medium=embed&amp;utm_campaign=138zf8kk 在文章中嵌入 jsfiddle 。 然后页面转化后，在浏览器里面开启调试控制台，看到如下图： 然后逆推，设置如下：1&#123;% jsfiddle AntBody/138zf8kk js,html,css,result light %&#125; 运行效果： 这些参数怎么对应过去的呢？看下图： 当然同样的，因为 jsfiddle 的Embed code 支持两种方式，也可以引入 iFarme 源码进来，因为本来 Hexo 的语法本来就是编译成 iframe 形式的。 另外说明一点，jsfiddle 的 demo 例子代码你得找到 Emebed才能看到相关需要的参数，如果找不到，可能就不知道怎么设置了。比如 Element UI 的随便一个例子： https://jsfiddle.net/api/post/library/pure/，不知道是不是因为没注册账号的原因引起的。（由于我一直用的codepen，就没去捉摸具体原因了。） 总结 codepen 嵌入 安装：$ npm install hexo-codepen --save 使用语法结构： 1&#123;% codepen userId|anonymous|anon slugHash theme [defaultTab [height [width]]] %&#125; 找到对应参数，对应过去就行。 jsfiddle 嵌入 使用语法结构： 1&#123;% jsfiddle shorttag [tabs] [skin] [width] [height] %&#125; 找到对应参数，对应过去就行。 至于其他的像 dabbet、jsrun、jsbin、runjs 等等就自己去尝试了。另外，由于 hexo 解析后都是 iframe 的结果形式，故而可以直接引入 iframe 的代码也行，只是效果体验会差些，毕竟连源码也显示出来了。至于，其他的 js 嵌入或 html+js 嵌入就自己去尝试了。codepen 里面尝试了一下，跟 iframe 引入方式效果一样。]]></content>
@@ -101,6 +101,18 @@
         <tag>Hexo</tag>
         <tag>CodePen</tag>
         <tag>jsFiddle</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo NexT主题评论功能的筛选对比]]></title>
+    <url>%2F2018%2F05%2F29%2Fgithub-hexo-next-05.html</url>
+    <content type="text"><![CDATA[个人站点评论系统的选择的确让人头疼，我在这上面也折腾了很长时间，蛮难选的。大致整理了一下，看下表，后续深入了解后再更新此文。 评论系统对比表 名称 推荐星数 介绍 多说 0 在2017年06月01日就关闭评论服务了 网易云跟贴 0 2017年08月01日也停止服务了 来必力 3 国外的，不能匿名评论，支持邮箱账号注册评论，据说容易出现乱码。 DISQUS 2 国外的，界面又丑，加载又慢。 畅言 4 国内的，不能匿名评论，，需要手机号验证。需要你的备案号，不然你网站没法长时间使用畅言。据说灌水厉害，这个功能目前已经是出于失灵与半失灵的状态，官方估计也没怎么维护了。 有言 3 国内的，支持匿名评论（默认关闭，需手动开启），但只是匿名，没有留联系方式的地方。 Facebook Comments 3 国外的，个人网站很少见人用，不做评论。 HyperComments 4 国外的，支持匿名评论，可以评论上传图片、影片等。功能还是比较强大，设置界面是英文，且没有中文支持。收费，只能免费试用14天。界面美观。 Valine 3 国内的，不能匿名评论，但也不需要注册那么麻烦，简单风格。 gitment 2 不推荐gitment因为作者弃坑了，一堆兼容问题没人修复，包括提交的pr都没合并。 gitalk 3 支持Markdown。 基于 GitHub Issues 的评论系统 ，面向程序员，不能匿名评论，需博主初始化话题，用户需登录 github 账号评论。 推荐星际评定不一定合理，自行搜集相关资料选择心仪的。我暂定的 Valine 。 参考 Hexo（NexT 主题）评论系统哪个好？ Hexo-NexT主题添加评论功能（来必力、Hypercomments、畅言、友言）]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
       </tags>
   </entry>
   <entry>

@@ -186,6 +186,28 @@
   </entry>
   
   <entry>
+    <title>Hexo NexT主题评论功能的筛选对比</title>
+    <link href="http://missfli.com/2018/05/29/github-hexo-next-05.html"/>
+    <id>http://missfli.com/2018/05/29/github-hexo-next-05.html</id>
+    <published>2018-05-28T16:30:00.000Z</published>
+    <updated>2018-05-29T06:21:22.841Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;个人站点评论系统的选择的确让人头疼，我在这上面也折腾了很长时间，蛮难选的。大致整理了一下，看下表，后续深入了解后再更新此文。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://missfli.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://missfli.com/tags/Hexo/"/>
+    
+      <category term="NexT" scheme="http://missfli.com/tags/NexT/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo NexT：在文章中嵌入 CodePen或 jsFiddle</title>
     <link href="http://missfli.com/2018/05/29/github-hexo-next-04.html"/>
     <id>http://missfli.com/2018/05/29/github-hexo-next-04.html</id>
@@ -207,28 +229,6 @@
       <category term="CodePen" scheme="http://missfli.com/tags/CodePen/"/>
     
       <category term="jsFiddle" scheme="http://missfli.com/tags/jsFiddle/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo NexT主题评论功能的筛选对比</title>
-    <link href="http://missfli.com/2018/05/29/github-hexo-next-05.html"/>
-    <id>http://missfli.com/2018/05/29/github-hexo-next-05.html</id>
-    <published>2018-05-28T16:30:00.000Z</published>
-    <updated>2018-05-29T06:21:22.841Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;个人站点评论系统的选择的确让人头疼，我在这上面也折腾了很长时间，蛮难选的。大致整理了一下，看下表，后续深入了解后再更新此文。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Hexo" scheme="http://missfli.com/categories/Hexo/"/>
-    
-    
-      <category term="Hexo" scheme="http://missfli.com/tags/Hexo/"/>
-    
-      <category term="NexT" scheme="http://missfli.com/tags/NexT/"/>
     
   </entry>
   
