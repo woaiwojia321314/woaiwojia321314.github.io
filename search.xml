@@ -91,6 +91,18 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Hexo NexT主题评论功能的筛选对比]]></title>
+    <url>%2F2018%2F05%2F29%2Fgithub-hexo-next-05.html</url>
+    <content type="text"><![CDATA[个人站点评论系统的选择的确让人头疼，我在这上面也折腾了很长时间，蛮难选的。大致整理了一下，看下表，后续深入了解后再更新此文。 评论系统对比表 名称 推荐星数 介绍 多说 0 在2017年06月01日就关闭评论服务了 网易云跟贴 0 2017年08月01日也停止服务了 来必力 3 国外的，不能匿名评论，支持邮箱账号注册评论，据说容易出现乱码。 DISQUS 2 国外的，界面又丑，加载又慢。 畅言 4 国内的，不能匿名评论，，需要手机号验证。需要你的备案号，不然你网站没法长时间使用畅言。据说灌水厉害，这个功能目前已经是出于失灵与半失灵的状态，官方估计也没怎么维护了。 有言 3 国内的，支持匿名评论（默认关闭，需手动开启），但只是匿名，没有留联系方式的地方。 Facebook Comments 3 国外的，个人网站很少见人用，不做评论。 HyperComments 4 国外的，支持匿名评论，可以评论上传图片、影片等。功能还是比较强大，设置界面是英文，且没有中文支持。收费，只能免费试用14天。界面美观。 Valine 3 国内的，不能匿名评论，但也不需要注册那么麻烦，简单风格。 gitment 2 不推荐gitment因为作者弃坑了，一堆兼容问题没人修复，包括提交的pr都没合并。 gitalk 3 支持Markdown。 基于 GitHub Issues 的评论系统 ，面向程序员，不能匿名评论，需博主初始化话题，用户需登录 github 账号评论。 推荐星际评定不一定合理，自行搜集相关资料选择心仪的。我暂定的 Valine 。 参考 Hexo（NexT 主题）评论系统哪个好？ Hexo-NexT主题添加评论功能（来必力、Hypercomments、畅言、友言）]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo NexT：在文章中嵌入 CodePen或 jsFiddle]]></title>
     <url>%2F2018%2F05%2F29%2Fgithub-hexo-next-04.html</url>
     <content type="text"><![CDATA[建议直接去博客网站原文看效果，因为简书的markdown不支持此语法的。搞 IT 技术的人，写博客有时候需要在博文中展示一些实施的 demo 代码效果，这就涉及到需要在博文中嵌入 CodePen 或 jsFiddle，jsFiddle 有个国内版 jsrun，我就做了上面两种尝试，也就不讲其他的了。至于这两款需要翻墙，对于搞 IT 技术的你不算事儿吧。 提一句：需要拿出来做嵌入用的代码，你去你的 demo 页面找Embed，中文版的好像叫嵌入，里面有下面的嵌入代码的语法需要的参数。 在文章中嵌入 CodePen去 Hexo 官方插件页搜索codepen，然后找到hexo-codepen，点过去。或者直接点击此处。里面有文档和示例，大致讲解一下。 1.安装npm 安装：$ npm install hexo-codepen --save或 yarn 安装：$ yarn add hexo-codepen 2.用法语法结构：1&#123;% codepen userId|anonymous|anon slugHash theme [defaultTab [height [width]]] %&#125; deme 链接： https://codepen.io/CiTA/pen/bgjKKE 在 CodePen 里面 Embed 出来的html代码：12&lt;p data-height="265" data-theme-id="dark" data-slug-hash="bgjKKE" data-default-tab="css,result" data-user="CiTA" data-embed-version="2" data-pen-title="CSS sidebar toggle" class="codepen"&gt;See the Pen &lt;a href="https://codepen.io/CiTA/pen/bgjKKE/"&gt;CSS sidebar toggle&lt;/a&gt; by Silvestar Bistrović (&lt;a href="https://codepen.io/CiTA"&gt;@CiTA&lt;/a&gt;) on &lt;a href="https://codepen.io"&gt;CodePen&lt;/a&gt;.&lt;/p&gt;&lt;script async src="https://production-assets.codepen.io/assets/embed/ei.js"&gt;&lt;/script&gt; 参数对应关系： 字段 值 userId CiTA slugHash bgjKKE theme dark defaultTab css,result height 265 width 默认为：100%，此值应根据您的博客主题进行调整 示例效果：12#替换参数后的语法：(*设置宽高时不要用%，会导致编译错误*)&#123;% codepen CiTA bgjKKE dark [css,result [265]] %&#125; 运行后的： 当然也可以直接嵌入源码（CodePen 中 Embed 出来的代码支持3种格式：WordPress Shortcode、iFrame、HTML） ，也能看到效果，只是这个会带有源码，体验不太好。效果如下： See the Pen CSS sidebar toggle by Silvestar Bistrović (@CiTA) on CodePen. 在文章中嵌入 jsFiddle这个就省掉了安装依赖包的步骤了，本来官网也提供了语法，只是没有具体的示例，网上找了半天没资料。就自己参考 CodePen 的方式做了一个逆向推理出来的。 用法语法结构（官网也就只提供了这个）：(设置宽高时不要用%，会导致编译错误)1&#123;% jsfiddle shorttag [tabs] [skin] [width] [height] %&#125; demo 链接： http://jsfiddle.net/AntBody/138zf8kk/?utm_source=website&amp;utm_medium=embed&amp;utm_campaign=138zf8kk 在文章中嵌入 jsfiddle 。 然后页面转化后，在浏览器里面开启调试控制台，看到如下图： 然后逆推，设置如下：1&#123;% jsfiddle AntBody/138zf8kk js,html,css,result light %&#125; 运行效果： 这些参数怎么对应过去的呢？看下图： 当然同样的，因为 jsfiddle 的Embed code 支持两种方式，也可以引入 iFarme 源码进来，因为本来 Hexo 的语法本来就是编译成 iframe 形式的。 另外说明一点，jsfiddle 的 demo 例子代码你得找到 Emebed才能看到相关需要的参数，如果找不到，可能就不知道怎么设置了。比如 Element UI 的随便一个例子： https://jsfiddle.net/api/post/library/pure/，不知道是不是因为没注册账号的原因引起的。（由于我一直用的codepen，就没去捉摸具体原因了。） 总结 codepen 嵌入 安装：$ npm install hexo-codepen --save 使用语法结构： 1&#123;% codepen userId|anonymous|anon slugHash theme [defaultTab [height [width]]] %&#125; 找到对应参数，对应过去就行。 jsfiddle 嵌入 使用语法结构： 1&#123;% jsfiddle shorttag [tabs] [skin] [width] [height] %&#125; 找到对应参数，对应过去就行。 至于其他的像 dabbet、jsrun、jsbin、runjs 等等就自己去尝试了。另外，由于 hexo 解析后都是 iframe 的结果形式，故而可以直接引入 iframe 的代码也行，只是效果体验会差些，毕竟连源码也显示出来了。至于，其他的 js 嵌入或 html+js 嵌入就自己去尝试了。codepen 里面尝试了一下，跟 iframe 引入方式效果一样。]]></content>
@@ -101,18 +113,6 @@
         <tag>Hexo</tag>
         <tag>CodePen</tag>
         <tag>jsFiddle</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hexo NexT主题评论功能的筛选对比]]></title>
-    <url>%2F2018%2F05%2F29%2Fgithub-hexo-next-05.html</url>
-    <content type="text"><![CDATA[个人站点评论系统的选择的确让人头疼，我在这上面也折腾了很长时间，蛮难选的。大致整理了一下，看下表，后续深入了解后再更新此文。 评论系统对比表 名称 推荐星数 介绍 多说 0 在2017年06月01日就关闭评论服务了 网易云跟贴 0 2017年08月01日也停止服务了 来必力 3 国外的，不能匿名评论，支持邮箱账号注册评论，据说容易出现乱码。 DISQUS 2 国外的，界面又丑，加载又慢。 畅言 4 国内的，不能匿名评论，，需要手机号验证。需要你的备案号，不然你网站没法长时间使用畅言。据说灌水厉害，这个功能目前已经是出于失灵与半失灵的状态，官方估计也没怎么维护了。 有言 3 国内的，支持匿名评论（默认关闭，需手动开启），但只是匿名，没有留联系方式的地方。 Facebook Comments 3 国外的，个人网站很少见人用，不做评论。 HyperComments 4 国外的，支持匿名评论，可以评论上传图片、影片等。功能还是比较强大，设置界面是英文，且没有中文支持。收费，只能免费试用14天。界面美观。 Valine 3 国内的，不能匿名评论，但也不需要注册那么麻烦，简单风格。 gitment 2 不推荐gitment因为作者弃坑了，一堆兼容问题没人修复，包括提交的pr都没合并。 gitalk 3 支持Markdown。 基于 GitHub Issues 的评论系统 ，面向程序员，不能匿名评论，需博主初始化话题，用户需登录 github 账号评论。 推荐星际评定不一定合理，自行搜集相关资料选择心仪的。我暂定的 Valine 。 参考 Hexo（NexT 主题）评论系统哪个好？ Hexo-NexT主题添加评论功能（来必力、Hypercomments、畅言、友言）]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>NexT</tag>
       </tags>
   </entry>
   <entry>
@@ -226,15 +226,15 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Vue2 ：Mockjs 前端模拟假数据]]></title>
-    <url>%2F2018%2F05%2F19%2Fvue-mockjs.html</url>
-    <content type="text"><![CDATA[在前后端分离的大环境下，前端需要后端的接口去完成页面的渲染，但是大部分的情况下,前后端需要同时进行开发，这种情况下,后端还没完成数据输出，前端只好写静态模拟数据。面临一些问题：数据太长了，将数据写在js文件里，完成后挨个改url；某些逻辑复杂的代码，加入或去除模拟数据时得小心翼翼；想要尽可能还原真实的数据，要么编写更多代码，要么手动修改模拟数据；特殊的格式，例如IP,随机数，图片，地址，需要去收集等等。Mock.js 正是这样一款类库，可以帮我们模拟生成一堆数据，也能解决那些问题。 安装mock官网npm安装：npm install mockjspackage文件中显示当前mockjs版本说明安装成功。(也可以引入cdn：&lt;script src=&quot;http://mockjs.com/dist/mock.js&quot;&gt;&lt;/script&gt;) mockjs 文件在main.js同级下建立mock.js文件：123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105// 引入mockjsconst Mock = require('mockjs');const qs = require('qs');// 获取 mock.Random 对象const Random = Mock.Random;// 登录const login = function() &#123; let status = false;//登录状态：ture--成功，false--失败 status = true; return &#123; status: status &#125;&#125;// 表格分页const tblList = function(param) &#123; param = param.body || '';//获取传过来的参数 // console.log(qs.parse(param));//因为axios的post带参数被qs.stringfy()转换了，需要转回来。 if(param == '')&#123; //无查询条件 let bookdata = Mock.mock(&#123; 'books|1-10': [&#123; 'sid|+1': 1, 'date': '@date("yyyy-MM-dd")', 'name': '@csentence()', 'address': '@county(true)', 'region': '双流区' &#125;] &#125;); // console.log(bookdata); return bookdata; &#125;else&#123; //带查询条件 let paramObj = qs.parse(param); console.log('input parameter：...'); console.log(paramObj); let books = []; for (let i = 0; i &lt; 10; i++) &#123; let newBook = &#123; // thumbnail_pic_s: Random.dataImage('300x250', 'mock的图片'), // Random.dataImage( size, text ) 生成一段随机的 Base64 图片编码 date: Random.date(), name: paramObj.name+Random.csentence(), address: Random.county(true), region: paramObj.region &#125; books.push(newBook) &#125; return &#123; books: books &#125; &#125;&#125;//图书列表const bookList = function(param) &#123; param = param.body || '';//获取传过来的参数 // console.log(qs.parse(param)); // 因为axios的post带参数被qs.stringfy()转换了，需要转回来。 let paramObj = qs.parse(param); console.log(paramObj); let nameInput = paramObj.name || ''; let books = []; for (let i = 0; i &lt; 10; i++) &#123; let temp = i+1; let newBook = &#123; sid: temp, // thumbnail_pic_s: Random.dataImage('300x250', 'mock的图片'), // Random.dataImage( size, text ) 生成一段随机的 Base64 图片编码 author: Random.name(2,4), name: '《'+nameInput+Random.csentence()+"》", publishAt: Random.date(), description: Random.cparagraph() &#125; books.push(newBook) &#125; return &#123; books: books &#125;&#125;//获取文件列表const fileList = function (param) &#123; param = param.body || '';//获取传过来的参数 // console.log(qs.parse(param)); // 因为axios的post带参数被qs.stringfy()转换了，需要转回来。 let paramObj = qs.parse(param); console.log(paramObj); let files = []; for (let i = 0; i &lt; 3; i++) &#123; let newFile = &#123; name: paramObj.username + i +'.png', url: Random.dataImage('300x250', 'mock的图片'), // Random.dataImage( size, text ) 生成一段随机的 Base64 图片编码 &#125; files.push(newFile) &#125; return &#123; fileList: files &#125;&#125;// Mock.mock( url, post/get , 返回的数据)；Mock.mock('/mk_login', 'post', login);// 登录Mock.mock('/mk_tbllist', 'post', tblList);// 表格分页Mock.mock('/mk_booklist', 'post',bookList);// 图书列表Mock.mock('/mk_fileupload', 'post',&#123;&#125;);// 文件上传Mock.mock('/mk_fetchFiles', 'post',fileList);// 获取文件列表 main.js 引入mock在main.js中引入mock文件：require(&#39;./mock&#39;); 使用vue文件中访问该接口mock：(调用的url接口和mock.js文件的Mock.mock( url, post/get , 返回的数据)的url接口一致，就能被mock拦截。)12345678910111213api.post('/mk_login', data) .then(res =&gt; &#123; console.log(res.data); if(res.data.status)&#123; // 登录成功 this.setUserInfo2(data); this.$router.replace('/home'); &#125; &#125;) .catch(error =&gt; &#123; console.log("login异常：") console.log(error) &#125;) 参考 vue中mock.js使用 【Mock.js】前端模拟假数据，不用在手拼了 Mockjs,再也不用追着后端小伙伴要接口了 使用Mock.js进行独立于后端的前端开发]]></content>
+    <title><![CDATA[Vue2 ：百度地图bmap]]></title>
+    <url>%2F2018%2F05%2F19%2Fvue-bmap.html</url>
+    <content type="text"><![CDATA[百度地图JavaScript API是一套由JavaScript语言编写的应用程序接口，可帮助您在网站中构建功能丰富、交互性强的地图应用，支持PC端和移动端基于浏览器的地图应用开发，且支持HTML5特性的地图开发。 该套API免费对外开放。自v1.5版本起，您需先申请密钥（ak）才可使用，接口无使用次数限制。 地址传送门：http://lbsyun.baidu.com/index.php?title=jspopular 申请密钥点击此处申请密钥，然后在首页index.html的head引入下面的js代码：&lt;script type=&quot;text/javascript&quot; src=&quot;http://api.map.baidu.com/api?v=2.0&amp;ak=密钥&quot;&gt;&lt;/script&gt;注意：建议先写个简单的html确认密钥正确可用后，再讲其引入vue的项目中。因为有些教程这里引入的js的src末尾带有 &amp;callback=init ，这个参数导致了报错（见下图），而始终无法正常使用百度地图api。 webpack 配置文件如果只是第一步，你调用百度地图api时，报错： Bmap is not defined ，那么就配置 webpack 配置文件（webpack.base.conf.js）的module.exports中加个externals：123456789module.exports = &#123; context: path.resolve(__dirname, '../'), entry: &#123; app: './src/main.js' &#125;, //百度地图配置20180518 externals: &#123; "BMap": "BMap" &#125;,...&#125; 调用12345678910111213141516171819202122232425262728293031323334&lt;template&gt; &lt;!--地图容器--&gt; &lt;div id="fli" class="fli"&gt;&lt;/div&gt;&lt;/template&gt;&lt;script&gt; export default &#123; name:'', data () &#123; return &#123; &#125; &#125;, mounted()&#123; var map = new BMap.Map('fli',&#123;enableMapClick:true&#125;); // 创建Map实例 map.centerAndZoom(new BMap.Point(104.06, 30.67), 11); // 初始化地图,设置中心点坐标和地图级别 //添加地图类型控件 map.addControl(new BMap.MapTypeControl(&#123; mapTypes:[ BMAP_NORMAL_MAP, BMAP_HYBRID_MAP ]&#125;)); map.setCurrentCity("成都"); // 设置地图显示的城市 此项是必须设置的 map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放 &#125;,&#125;&lt;/script&gt;&lt;style scoped&gt; .fli&#123; width: 100%; height: 100%; overflow: hidden; margin: 0; &#125;&lt;/style&gt; 另一种方式：异步加载跟百度api官网里的异步加载很像。首先跟入口 js（main.js）一样，新建一个 map.js 。（ak 就是你的密钥）123456789101112export function MP(ak) &#123; return new Promise(function (resolve, reject) &#123; window.onload = function () &#123; resolve(BMap) &#125; var script = document.createElement("script"); script.type = "text/javascript"; script.src = "http://api.map.baidu.com/api?v=2.0&amp;ak="+ak+"&amp;callback=init"; script.onerror = reject; document.head.appendChild(script); &#125;) &#125; 在页面中调用：1234567891011121314151617import &#123;MP&#125; from '@/map.js' export default &#123; data () &#123; return &#123; ak:'', // 这里就是百度地图密钥 &#125; &#125;, mounted()&#123; this.$nextTick(function() &#123; var _this = this; MP(_this.ak).then(BMap =&gt; &#123; // 百度地图API功能 ... &#125;) &#125;) &#125;,&#125; 注意：说到 src 末尾的 callback 参数，是否需要，值又是什么（ init, initialize ），自己去试验，随便写个简单的html，调试通了再引入vue。 小提示： 使用BMap的时候不需要import了，import反而会报错：BMap is not defined 注意一定要给bmap的div设置高度，否则会看不见 参考 前端框架Vue（9）——百度地图使用 vue调用百度地图api时Bmap没有定义的解决办法]]></content>
       <categories>
         <category>Vue2</category>
       </categories>
       <tags>
         <tag>Vue2</tag>
-        <tag>Mockjs</tag>
+        <tag>百度地图</tag>
       </tags>
   </entry>
   <entry>
@@ -250,15 +250,15 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Vue2 ：百度地图bmap]]></title>
-    <url>%2F2018%2F05%2F19%2Fvue-bmap.html</url>
-    <content type="text"><![CDATA[百度地图JavaScript API是一套由JavaScript语言编写的应用程序接口，可帮助您在网站中构建功能丰富、交互性强的地图应用，支持PC端和移动端基于浏览器的地图应用开发，且支持HTML5特性的地图开发。 该套API免费对外开放。自v1.5版本起，您需先申请密钥（ak）才可使用，接口无使用次数限制。 地址传送门：http://lbsyun.baidu.com/index.php?title=jspopular 申请密钥点击此处申请密钥，然后在首页index.html的head引入下面的js代码：&lt;script type=&quot;text/javascript&quot; src=&quot;http://api.map.baidu.com/api?v=2.0&amp;ak=密钥&quot;&gt;&lt;/script&gt;注意：建议先写个简单的html确认密钥正确可用后，再讲其引入vue的项目中。因为有些教程这里引入的js的src末尾带有 &amp;callback=init ，这个参数导致了报错（见下图），而始终无法正常使用百度地图api。 webpack 配置文件如果只是第一步，你调用百度地图api时，报错： Bmap is not defined ，那么就配置 webpack 配置文件（webpack.base.conf.js）的module.exports中加个externals：123456789module.exports = &#123; context: path.resolve(__dirname, '../'), entry: &#123; app: './src/main.js' &#125;, //百度地图配置20180518 externals: &#123; "BMap": "BMap" &#125;,...&#125; 调用12345678910111213141516171819202122232425262728293031323334&lt;template&gt; &lt;!--地图容器--&gt; &lt;div id="fli" class="fli"&gt;&lt;/div&gt;&lt;/template&gt;&lt;script&gt; export default &#123; name:'', data () &#123; return &#123; &#125; &#125;, mounted()&#123; var map = new BMap.Map('fli',&#123;enableMapClick:true&#125;); // 创建Map实例 map.centerAndZoom(new BMap.Point(104.06, 30.67), 11); // 初始化地图,设置中心点坐标和地图级别 //添加地图类型控件 map.addControl(new BMap.MapTypeControl(&#123; mapTypes:[ BMAP_NORMAL_MAP, BMAP_HYBRID_MAP ]&#125;)); map.setCurrentCity("成都"); // 设置地图显示的城市 此项是必须设置的 map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放 &#125;,&#125;&lt;/script&gt;&lt;style scoped&gt; .fli&#123; width: 100%; height: 100%; overflow: hidden; margin: 0; &#125;&lt;/style&gt; 另一种方式：异步加载跟百度api官网里的异步加载很像。首先跟入口 js（main.js）一样，新建一个 map.js 。（ak 就是你的密钥）123456789101112export function MP(ak) &#123; return new Promise(function (resolve, reject) &#123; window.onload = function () &#123; resolve(BMap) &#125; var script = document.createElement("script"); script.type = "text/javascript"; script.src = "http://api.map.baidu.com/api?v=2.0&amp;ak="+ak+"&amp;callback=init"; script.onerror = reject; document.head.appendChild(script); &#125;) &#125; 在页面中调用：1234567891011121314151617import &#123;MP&#125; from '@/map.js' export default &#123; data () &#123; return &#123; ak:'', // 这里就是百度地图密钥 &#125; &#125;, mounted()&#123; this.$nextTick(function() &#123; var _this = this; MP(_this.ak).then(BMap =&gt; &#123; // 百度地图API功能 ... &#125;) &#125;) &#125;,&#125; 注意：说到 src 末尾的 callback 参数，是否需要，值又是什么（ init, initialize ），自己去试验，随便写个简单的html，调试通了再引入vue。 小提示： 使用BMap的时候不需要import了，import反而会报错：BMap is not defined 注意一定要给bmap的div设置高度，否则会看不见 参考 前端框架Vue（9）——百度地图使用 vue调用百度地图api时Bmap没有定义的解决办法]]></content>
+    <title><![CDATA[Vue2 ：Mockjs 前端模拟假数据]]></title>
+    <url>%2F2018%2F05%2F19%2Fvue-mockjs.html</url>
+    <content type="text"><![CDATA[在前后端分离的大环境下，前端需要后端的接口去完成页面的渲染，但是大部分的情况下,前后端需要同时进行开发，这种情况下,后端还没完成数据输出，前端只好写静态模拟数据。面临一些问题：数据太长了，将数据写在js文件里，完成后挨个改url；某些逻辑复杂的代码，加入或去除模拟数据时得小心翼翼；想要尽可能还原真实的数据，要么编写更多代码，要么手动修改模拟数据；特殊的格式，例如IP,随机数，图片，地址，需要去收集等等。Mock.js 正是这样一款类库，可以帮我们模拟生成一堆数据，也能解决那些问题。 安装mock官网npm安装：npm install mockjspackage文件中显示当前mockjs版本说明安装成功。(也可以引入cdn：&lt;script src=&quot;http://mockjs.com/dist/mock.js&quot;&gt;&lt;/script&gt;) mockjs 文件在main.js同级下建立mock.js文件：123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105// 引入mockjsconst Mock = require('mockjs');const qs = require('qs');// 获取 mock.Random 对象const Random = Mock.Random;// 登录const login = function() &#123; let status = false;//登录状态：ture--成功，false--失败 status = true; return &#123; status: status &#125;&#125;// 表格分页const tblList = function(param) &#123; param = param.body || '';//获取传过来的参数 // console.log(qs.parse(param));//因为axios的post带参数被qs.stringfy()转换了，需要转回来。 if(param == '')&#123; //无查询条件 let bookdata = Mock.mock(&#123; 'books|1-10': [&#123; 'sid|+1': 1, 'date': '@date("yyyy-MM-dd")', 'name': '@csentence()', 'address': '@county(true)', 'region': '双流区' &#125;] &#125;); // console.log(bookdata); return bookdata; &#125;else&#123; //带查询条件 let paramObj = qs.parse(param); console.log('input parameter：...'); console.log(paramObj); let books = []; for (let i = 0; i &lt; 10; i++) &#123; let newBook = &#123; // thumbnail_pic_s: Random.dataImage('300x250', 'mock的图片'), // Random.dataImage( size, text ) 生成一段随机的 Base64 图片编码 date: Random.date(), name: paramObj.name+Random.csentence(), address: Random.county(true), region: paramObj.region &#125; books.push(newBook) &#125; return &#123; books: books &#125; &#125;&#125;//图书列表const bookList = function(param) &#123; param = param.body || '';//获取传过来的参数 // console.log(qs.parse(param)); // 因为axios的post带参数被qs.stringfy()转换了，需要转回来。 let paramObj = qs.parse(param); console.log(paramObj); let nameInput = paramObj.name || ''; let books = []; for (let i = 0; i &lt; 10; i++) &#123; let temp = i+1; let newBook = &#123; sid: temp, // thumbnail_pic_s: Random.dataImage('300x250', 'mock的图片'), // Random.dataImage( size, text ) 生成一段随机的 Base64 图片编码 author: Random.name(2,4), name: '《'+nameInput+Random.csentence()+"》", publishAt: Random.date(), description: Random.cparagraph() &#125; books.push(newBook) &#125; return &#123; books: books &#125;&#125;//获取文件列表const fileList = function (param) &#123; param = param.body || '';//获取传过来的参数 // console.log(qs.parse(param)); // 因为axios的post带参数被qs.stringfy()转换了，需要转回来。 let paramObj = qs.parse(param); console.log(paramObj); let files = []; for (let i = 0; i &lt; 3; i++) &#123; let newFile = &#123; name: paramObj.username + i +'.png', url: Random.dataImage('300x250', 'mock的图片'), // Random.dataImage( size, text ) 生成一段随机的 Base64 图片编码 &#125; files.push(newFile) &#125; return &#123; fileList: files &#125;&#125;// Mock.mock( url, post/get , 返回的数据)；Mock.mock('/mk_login', 'post', login);// 登录Mock.mock('/mk_tbllist', 'post', tblList);// 表格分页Mock.mock('/mk_booklist', 'post',bookList);// 图书列表Mock.mock('/mk_fileupload', 'post',&#123;&#125;);// 文件上传Mock.mock('/mk_fetchFiles', 'post',fileList);// 获取文件列表 main.js 引入mock在main.js中引入mock文件：require(&#39;./mock&#39;); 使用vue文件中访问该接口mock：(调用的url接口和mock.js文件的Mock.mock( url, post/get , 返回的数据)的url接口一致，就能被mock拦截。)12345678910111213api.post('/mk_login', data) .then(res =&gt; &#123; console.log(res.data); if(res.data.status)&#123; // 登录成功 this.setUserInfo2(data); this.$router.replace('/home'); &#125; &#125;) .catch(error =&gt; &#123; console.log("login异常：") console.log(error) &#125;) 参考 vue中mock.js使用 【Mock.js】前端模拟假数据，不用在手拼了 Mockjs,再也不用追着后端小伙伴要接口了 使用Mock.js进行独立于后端的前端开发]]></content>
       <categories>
         <category>Vue2</category>
       </categories>
       <tags>
         <tag>Vue2</tag>
-        <tag>百度地图</tag>
+        <tag>Mockjs</tag>
       </tags>
   </entry>
   <entry>
@@ -396,17 +396,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[html5视频转换工具]]></title>
-    <url>%2F2016%2F02%2F05%2Ftool-html5-video.html</url>
-    <content type="text"><![CDATA[10个免费的HTML5视频转换工具下载，搜过一些工具，跟此文的工具都差不多。然后下载了好几款试用了一下，最后比较满意的是any-video-converter。其他的，我就简单说说使用情况吧。先提一句：html5的视频播放格式编码要求：h264/mp4, theora/ogg, vp8/webm。 Miro Video Converter 能转，但是转完后就不能用。 Miro Video Converter 这个比较悲剧，找半天都没找到转成webm格式的地方。 Freemake Video Converter 能转，也能用，但是具体参数比较少。 Easy HTML5 Video 能转，并且比any-video-converter转的视频大小还小些，看了一下，视频没有失真没有出入。但是他丫的居然在右上角有个水印，导致了没法商用。 any-video-converter 能转的格式不全，还是收费的。 Online-Convert.Com 具体编码参数基本没有，懒得试了。 any-video-converter 各种格式和参数比较齐全，pc端手机端平板端的都有。转完还有demo页面。]]></content>
-      <categories>
-        <category>tool</category>
-      </categories>
-      <tags>
-        <tag>html5</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[网页(UI)设计--切图标注工具]]></title>
     <url>%2F2016%2F02%2F05%2Ftool-cut-mark.html</url>
     <content type="text"><![CDATA[cutterman(免费)–切图（ps 插件） parker(收费)–标注（ps 插件） PxCook(免费)–标注 ASSISTOR PS(免费)–切图，标注（ps 标注） BigShear(收费)–切图 markman(收费)–标注 标注的工具试过几个。PxCook和markman功能类似，不足：没法准确取色，特别是带透明色；无法准确获取文字（字体，字体大小，字体颜色，行高）。parker功能都有，但是外边距只能量2个图层，无法多个图层一起标注外边距。ASSISTOR PS功能都有，但是内边距需要自己手动拉个选框出来，再选中2个图层，才能量了。 切图类工具呢，虽然没怎么试过，不过大家都推荐cutterman。标注类工具呢，跟ps一起用的话，推荐ASSISTOR PS。单独用呢，用markman（mac版收费，windows有破解版，虽然官网说基本版免费，你用了就会发现啥叫基本功能了）和PxCook都行。 免费了！切图标记外挂神器ASSISTOR PS深入解读（上）免费了！切图标记外挂神器ASSISTOR PS深入解读（下）]]></content>
@@ -415,6 +404,17 @@
       </categories>
       <tags>
         <tag>photoshop</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[html5视频转换工具]]></title>
+    <url>%2F2016%2F02%2F05%2Ftool-html5-video.html</url>
+    <content type="text"><![CDATA[10个免费的HTML5视频转换工具下载，搜过一些工具，跟此文的工具都差不多。然后下载了好几款试用了一下，最后比较满意的是any-video-converter。其他的，我就简单说说使用情况吧。先提一句：html5的视频播放格式编码要求：h264/mp4, theora/ogg, vp8/webm。 Miro Video Converter 能转，但是转完后就不能用。 Miro Video Converter 这个比较悲剧，找半天都没找到转成webm格式的地方。 Freemake Video Converter 能转，也能用，但是具体参数比较少。 Easy HTML5 Video 能转，并且比any-video-converter转的视频大小还小些，看了一下，视频没有失真没有出入。但是他丫的居然在右上角有个水印，导致了没法商用。 any-video-converter 能转的格式不全，还是收费的。 Online-Convert.Com 具体编码参数基本没有，懒得试了。 any-video-converter 各种格式和参数比较齐全，pc端手机端平板端的都有。转完还有demo页面。]]></content>
+      <categories>
+        <category>tool</category>
+      </categories>
+      <tags>
+        <tag>html5</tag>
       </tags>
   </entry>
   <entry>
