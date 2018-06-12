@@ -91,7 +91,7 @@
 <meta name="description" content="▂▃▅▆███◣♥◢███▆▅▃▂">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Fli&#39;s Notes!">
-<meta property="og:url" content="http://missfli.com/tags/photoshop/index.html">
+<meta property="og:url" content="http://missfli.com/tags/Photoshop/index.html">
 <meta property="og:site_name" content="Fli&#39;s Notes!">
 <meta property="og:description" content="▂▃▅▆███◣♥◢███▆▅▃▂">
 <meta property="og:locale" content="zh-Hans">
@@ -127,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://missfli.com/tags/photoshop/"/>
+  <link rel="canonical" href="http://missfli.com/tags/Photoshop/"/>
 
 
 
 
 
-  <title>标签: photoshop | Fli's Notes!</title>
+  <title>标签: Photoshop | Fli's Notes!</title>
   
 
 
@@ -317,7 +317,7 @@
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h1>photoshop<small>标签</small>
+        <h1>Photoshop<small>标签</small>
         </h1>
       </div>
 
@@ -329,37 +329,9 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2016/02/06/ps-photo-2x.html" itemprop="url">
+            <a class="post-title-link" href="/2018/05/29/ps-front.html" itemprop="url">
               
-                <span itemprop="name">svg和@2x图（双倍图）切图--Photoshop CC</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-02-06T12:00:00+08:00"
-              content="2016-02-06" >
-          02-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2016/02/05/tool-cut-mark.html" itemprop="url">
-              
-                <span itemprop="name">网页(UI)设计--切图标注工具</span>
+                <span itemprop="name">photoshop 前端网页查看的基本设置</span>
               
             </a>
         
@@ -367,9 +339,9 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2016-02-05T22:00:00+08:00"
-              content="2016-02-05" >
-          02-05
+              datetime="2018-05-29T16:40:00+08:00"
+              content="2018-05-29" >
+          05-29
         </time>
       </div>
 
@@ -433,7 +405,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">41</span>
+                  <span class="site-state-item-count">43</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -444,7 +416,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -1055,6 +1027,46 @@
     });
 
     $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/clicklove.js"></script>
+  <!--崩溃欺骗-->
+  <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
+  <!--hone hone clock 人体时钟-->
+  <script type="text/javascript" src="/js/src/hone_hone_clock.js"></script>
+</body>
+</html>
+ose);
     $('.popup').click(function(e){
       e.stopPropagation();
     });

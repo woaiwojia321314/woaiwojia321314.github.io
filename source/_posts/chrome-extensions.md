@@ -10,7 +10,7 @@ tags:
 ---
 
 作为前端开发人员，整理了一些 chrome 浏览器常用的插件（扩展程序）。
- [chrome 应用商店](https://chrome.google.com/webstore/category/extensions)插件有很多，复制名字搜索即可。
+ [chrome 应用商店](https://chrome.google.com/webstore/category/extensions)插件有很多，复制名字搜索即可。不能翻墙的，可以去这个[chrome插件网](http://www.cnplugins.com/)看看插件。
 ps：需要翻墙。不想翻墙的，网上去搜搜离线安装的方式，很多滴。
 <!-- more -->
 

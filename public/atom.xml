@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://missfli.com/"/>
-  <updated>2018-06-10T05:59:42.846Z</updated>
+  <updated>2018-06-12T11:48:39.275Z</updated>
   <id>http://missfli.com/</id>
   
   <author>
@@ -17,15 +17,55 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>markdown文件的目录树生成</title>
+    <link href="http://missfli.com/2018/06/12/markdown-tree.html"/>
+    <id>http://missfli.com/2018/06/12/markdown-tree.html</id>
+    <published>2018-06-12T12:00:00.000Z</published>
+    <updated>2018-06-12T11:48:39.275Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近看 github 上项目，发现很多都有文档文件（README.md），看见里面有目录树，故而整理了一下。markdown文件的目录树生成的核心在于锚点。&lt;br&gt;ps：简书这里是不支持的，你要想加，可以参考&lt;a href=&quot;https://www.jianshu.com/p/d02157db09d2&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;简书自动生成目录小工具&lt;/a&gt;。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="markdown" scheme="http://missfli.com/categories/markdown/"/>
+    
+    
+      <category term="markdown" scheme="http://missfli.com/tags/markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>chrome 浏览器开发工具教程</title>
+    <link href="http://missfli.com/2018/06/12/chrome-devtool.html"/>
+    <id>http://missfli.com/2018/06/12/chrome-devtool.html</id>
+    <published>2018-06-11T16:00:00.000Z</published>
+    <updated>2018-06-11T15:53:47.778Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一直想找个时间整理 chrome 浏览器的开发工具的相关用法，之前没找到比较全的资料，自己也用的不深。现在找到了，整理下来，后续更新。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="chrome" scheme="http://missfli.com/categories/chrome/"/>
+    
+    
+      <category term="chrome" scheme="http://missfli.com/tags/chrome/"/>
+    
+  </entry>
+  
+  <entry>
     <title>chrome 浏览器常用插件-开发人员</title>
     <link href="http://missfli.com/2018/06/10/chrome-extensions.html"/>
     <id>http://missfli.com/2018/06/10/chrome-extensions.html</id>
     <published>2018-06-10T06:00:00.000Z</published>
-    <updated>2018-06-10T05:59:42.846Z</updated>
+    <updated>2018-06-11T15:51:08.725Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;作为前端开发人员，整理了一些 chrome 浏览器常用的插件（扩展程序）。&lt;br&gt; &lt;a href=&quot;https://chrome.google.com/webstore/category/extensions&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;chrome 应用商店&lt;/a&gt;插件有很多，复制名字搜索即可。&lt;br&gt;ps：需要翻墙。不想翻墙的，网上去搜搜离线安装的方式，很多滴。&lt;br&gt;
+      &lt;p&gt;作为前端开发人员，整理了一些 chrome 浏览器常用的插件（扩展程序）。&lt;br&gt; &lt;a href=&quot;https://chrome.google.com/webstore/category/extensions&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;chrome 应用商店&lt;/a&gt;插件有很多，复制名字搜索即可。不能翻墙的，可以去这个&lt;a href=&quot;http://www.cnplugins.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;chrome插件网&lt;/a&gt;看看插件。&lt;br&gt;ps：需要翻墙。不想翻墙的，网上去搜搜离线安装的方式，很多滴。&lt;br&gt;
     
     </summary>
     
@@ -186,28 +226,6 @@
   </entry>
   
   <entry>
-    <title>Hexo NexT主题评论功能的筛选对比</title>
-    <link href="http://missfli.com/2018/05/29/github-hexo-next-05.html"/>
-    <id>http://missfli.com/2018/05/29/github-hexo-next-05.html</id>
-    <published>2018-05-28T16:30:00.000Z</published>
-    <updated>2018-05-29T06:21:22.841Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;个人站点评论系统的选择的确让人头疼，我在这上面也折腾了很长时间，蛮难选的。大致整理了一下，看下表，后续深入了解后再更新此文。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Hexo" scheme="http://missfli.com/categories/Hexo/"/>
-    
-    
-      <category term="Hexo" scheme="http://missfli.com/tags/Hexo/"/>
-    
-      <category term="NexT" scheme="http://missfli.com/tags/NexT/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Hexo NexT：在文章中嵌入 CodePen或 jsFiddle</title>
     <link href="http://missfli.com/2018/05/29/github-hexo-next-04.html"/>
     <id>http://missfli.com/2018/05/29/github-hexo-next-04.html</id>
@@ -229,6 +247,28 @@
       <category term="CodePen" scheme="http://missfli.com/tags/CodePen/"/>
     
       <category term="jsFiddle" scheme="http://missfli.com/tags/jsFiddle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo NexT主题评论功能的筛选对比</title>
+    <link href="http://missfli.com/2018/05/29/github-hexo-next-05.html"/>
+    <id>http://missfli.com/2018/05/29/github-hexo-next-05.html</id>
+    <published>2018-05-28T16:30:00.000Z</published>
+    <updated>2018-05-29T06:21:22.841Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;个人站点评论系统的选择的确让人头疼，我在这上面也折腾了很长时间，蛮难选的。大致整理了一下，看下表，后续深入了解后再更新此文。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://missfli.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://missfli.com/tags/Hexo/"/>
+    
+      <category term="NexT" scheme="http://missfli.com/tags/NexT/"/>
     
   </entry>
   
@@ -403,48 +443,6 @@
       <category term="Hexo" scheme="http://missfli.com/tags/Hexo/"/>
     
       <category term="NexT" scheme="http://missfli.com/tags/NexT/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Element ui之form表单使用</title>
-    <link href="http://missfli.com/2018/05/20/element-form.html"/>
-    <id>http://missfli.com/2018/05/20/element-form.html</id>
-    <published>2018-05-20T11:22:00.000Z</published>
-    <updated>2018-05-29T09:35:26.041Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;初次使用&lt;a href=&quot;http://element-cn.eleme.io/#/zh-CN/component/installation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Element ui&lt;/a&gt;，遇到不少坑。在此做些记录，方便日后查阅。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Element" scheme="http://missfli.com/categories/Element/"/>
-    
-    
-      <category term="Element" scheme="http://missfli.com/tags/Element/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vue2 ：axios 使用之（一）</title>
-    <link href="http://missfli.com/2018/05/20/vue-axios.html"/>
-    <id>http://missfli.com/2018/05/20/vue-axios.html</id>
-    <published>2018-05-20T09:22:00.000Z</published>
-    <updated>2018-05-29T09:15:59.302Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;据说vuejs2.0已经不在维护vue-resource了，vuejs2.0 已经使用了axios了，并且官方也推荐使用axios 。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Vue2" scheme="http://missfli.com/categories/Vue2/"/>
-    
-    
-      <category term="Vue2" scheme="http://missfli.com/tags/Vue2/"/>
-    
-      <category term="axios" scheme="http://missfli.com/tags/axios/"/>
     
   </entry>
   

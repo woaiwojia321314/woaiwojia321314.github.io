@@ -1,25 +1,23 @@
 # 博客网站使用手册
 ---
 
-<h2 id="catalog">目录</h2>
+## 目录
 
-- [官网](#officerweb)
-
-- [日常发文](#dailyblogs)
-  - [日常发博文流程](#flow)
-  - [Hexo 常用命令](#commands)
-
-- [日程安排](#schedule)
+- [官网](#官网)
+- [日常发文](#日常发文)
+  - [日常发博文流程](#日常发博文流程)
+  - [常用命令](#常用命令)
+- [日程安排](#日程安排)
 
 
-<h2 id="officerweb">官网</h2>
+## 官网
 
 - [Hexo 官网](https://hexo.io/zh-cn/)
 - [NexT 主题](http://theme-next.iissnan.com/)
 
-<h2 id="dailyblogs">日常发文</h2>
+## 日常发文
 
-<h3 id="flow">日常发博文流程</h3>
+### 日常发博文流程
 
 1. 打开 typora 写博文
 2. //清空静态文件夹 / 生成静态文件 / 浏览器预览效果
@@ -27,7 +25,7 @@
 5. git命令提交或 github 桌面端提交项目源码（gh-dev 分支）
 6. hexo deploy #发布部署（master 分支）
 
-<h3 id="flow">Hexo 常用命令</h3>
+### 常用命令
 
 常见命令：
 
@@ -65,7 +63,7 @@ hexo clean && hexo g && hexo s
 hexo clean && hexo g && hexo d
 ```
 
-<h2 id="schedule">日常安排</h2>
+## 日程安排
 
 ps：待办事项（带有xxx表示未完成）
 
