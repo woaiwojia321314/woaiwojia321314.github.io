@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[markdown文件的目录树生成]]></title>
+    <url>%2F2018%2F06%2F12%2Fmarkdown-tree.html</url>
+    <content type="text"><![CDATA[最近看 github 上项目，发现很多都有文档文件（README.md），看见里面有目录树，故而整理了一下。至于发文的博客网站是否支持，就得看它们自己的考虑了。简书这里是不支持的，你要想加，可以参考简书自动生成目录小工具。 markdown文件的目录树生成的核心在于锚点。 工具类生成萝卜青菜，各有所爱。每个人用的 markdown 编辑器不一样，在线，离线，客户端，甚至 txt 。基本每个编辑器都有【目录生成】的功能。我用的 Typora ，我找了一下，段落--内容目录，确实能生成目录树，效果还不错。可是切换成源码一看，只是加了个[TOC]。怀着忐忑的心情，贴到简书里，恭喜你，不支持。当然不是所有能用 markdown 写文章的网站都不支持，我记得有支持的，好像CSDN就支持[TOC]。 当然如果你工具生成目录树的源码是markdown的代码，理论上能支持 markdown 发文章的都可以。这种源码长啥样，看下面的那种方式。 markdown语法就是用 markdown 语法手动写个目录，[去此处]。(https://github.com/woaiwojia321314/woaiwojia321314.github.io/tree/master)查看`README.md`文件。代码大致形式是这样：1234### 索引* [工具类生成](#工具类生成)* [markdown 语法](#markdown 语法)* [网页源码](#网页源码) 网页源码markdown文章最终是会编译成网页代码形式的，所以可以直接用网页代码里的 a 标签写锚点的形式写，去此处查看README.md文件。代码形式大致是这样的： ps：简书这里，都不支持。]]></content>
+      <categories>
+        <category>markdown</category>
+      </categories>
+      <tags>
+        <tag>markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[chrome 浏览器开发工具教程]]></title>
+    <url>%2F2018%2F06%2F12%2Fchrome-devtool.html</url>
+    <content type="text"><![CDATA[一直想找个时间整理 chrome 浏览器的开发工具的相关用法，之前没找到比较全的资料，自己也用的不深。现在找到了，整理下来，后续更新。 chrome 浏览器开发这工具教程感谢这位哥，卖烧烤夫斯基。 Chrome开发者工具不完全指南（一、基础功能篇） Chrome开发者工具不完全指南（二、进阶篇） Chrome开发者工具不完全指南：（三、性能篇） Chrome开发者工具不完全指南（四、性能进阶篇） Chrome开发者工具不完全指南（五、移动篇） Chrome开发者工具不完全指南（六、插件篇） 14 个你可能不知道的 JavaScript 调试技巧]]></content>
+      <categories>
+        <category>chrome</category>
+      </categories>
+      <tags>
+        <tag>chrome</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[chrome 浏览器常用插件-开发人员]]></title>
     <url>%2F2018%2F06%2F10%2Fchrome-extensions.html</url>
-    <content type="text"><![CDATA[作为前端开发人员，整理了一些 chrome 浏览器常用的插件（扩展程序）。 chrome 应用商店插件有很多，复制名字搜索即可。ps：需要翻墙。不想翻墙的，网上去搜搜离线安装的方式，很多滴。 chrome 插件 （6/10/2018）注：有些可能描述不太准确，可自行在 chrome 应用商店搜出来，点开看相关的完整信息。 Adblock Plusdblock Plus 是超过 5 亿次下载的全球最受欢迎的广告拦截软件之一。 InfinityInfinity新标签页，基于Chrome的云应用服务，让你更优雅、轻松地使用Chrome。 MomentumMomentum新标签页，英文的，跟Infinity（中文的）类似。 二维码生成器可以生成当前页面二维码,手机直接扫二维码就可以访问当前页面。 Eye Dropper前端的取色器。它允许你从网页，颜色选择器和你的个人色彩历史中挑选颜色。 Page Ruler前端的尺子。计算页面元素间距、位置等信息的时候。绘制标尺以获取像素尺寸和位置，并测量任何网页上的元素。 FireShot可以截取整个网页、部分页面，然后支持导出为各种格式。捕捉网页截图，编辑并将它们保存为PDF，JPEG，GIF，PNG或BMP；上传，打印，在Photoshop中打开，复制到剪贴板或电子邮件 WEB前端助手(FeHelper)百度FE出品，功能超全的 Chrome 插件。FE助手：包括JSON格式化、二维码生成与解码、信息编解码、代码压缩、美化、页面取色、Markdown与HTML互转、网页滚动截屏、正则表达式、时间转换工具、编码规范检测、页面性能检测、Ajax接口调试。 PostmanPOST 接口调试终结者，异常强大的接口调试工具。稍稍有一点学习成本。 Google Mail Checker方便查看自己的 Gmail 邮件。 Octotree(github)在浏览器左侧展示 Github 项目的文件导航，使目录结构一目了然。 Awesome Autocomplete for GitHub(github)让你在 Github上使用搜索框的体验变得更好。 Porter Plug(github)在 Github 项目页中嵌入有关的图表信息，直观的展示当前项目的 Star Trend，能方便看到当前这个开源项目的发起时间，火爆趋势；对比较知名的项目还有相关的 News 展示。 OctoLinker(github)在 package.json或任意 .js 文件中，可以方便的对 require() 的 package进去点击，跳转去对应的 Github 页面。PS：特么不太好表达，建议你去这个插件的概述页，里面有个十来秒的视频，看完就明白了。 GitHub Hovercard(github)GitHub 增强工具，悬停可显示对应的用户、仓库、issue 等的详情。 BuiltWith通过使用此扩展来了解您正在访问的网站是什么。大到 Web Servers、服务端的 Frameworks 或 JS 框架，小到 meta、编码格式甚至 Analytics。 wappalyzerWappalyzer是一个跨平台的实用工具，可以揭示网站上使用的技术。 它检测内容管理系统，电子商务平台，Web框架，服务器软件，分析工具等等。 Library Sniffer for Google Chrome探测当前网页所使用的类库、框架和服务器环境，为开发者提供了方便。 DevTools Author纯装逼的插件，可以选择你的 Chrome 开发者工具的主题，且支持的主题超过25种，视觉装逼控必备。设置分大概三步，官网有文字说明，youtube 上的视频教程奉上(Customization With DevTools Author)[https://www.youtube.com/watch?v=AUZagMLMAJc] ps: 希望对你有用处，也欢迎你提供更多好用的插件，我会补上并更新。]]></content>
+    <content type="text"><![CDATA[作为前端开发人员，整理了一些 chrome 浏览器常用的插件（扩展程序）。 chrome 应用商店插件有很多，复制名字搜索即可。不能翻墙的，可以去这个chrome插件网看看插件。ps：需要翻墙。不想翻墙的，网上去搜搜离线安装的方式，很多滴。 chrome 插件 （6/10/2018）注：有些可能描述不太准确，可自行在 chrome 应用商店搜出来，点开看相关的完整信息。 Adblock Plusdblock Plus 是超过 5 亿次下载的全球最受欢迎的广告拦截软件之一。 InfinityInfinity新标签页，基于Chrome的云应用服务，让你更优雅、轻松地使用Chrome。 MomentumMomentum新标签页，英文的，跟Infinity（中文的）类似。 二维码生成器可以生成当前页面二维码,手机直接扫二维码就可以访问当前页面。 Eye Dropper前端的取色器。它允许你从网页，颜色选择器和你的个人色彩历史中挑选颜色。 Page Ruler前端的尺子。计算页面元素间距、位置等信息的时候。绘制标尺以获取像素尺寸和位置，并测量任何网页上的元素。 FireShot可以截取整个网页、部分页面，然后支持导出为各种格式。捕捉网页截图，编辑并将它们保存为PDF，JPEG，GIF，PNG或BMP；上传，打印，在Photoshop中打开，复制到剪贴板或电子邮件 WEB前端助手(FeHelper)百度FE出品，功能超全的 Chrome 插件。FE助手：包括JSON格式化、二维码生成与解码、信息编解码、代码压缩、美化、页面取色、Markdown与HTML互转、网页滚动截屏、正则表达式、时间转换工具、编码规范检测、页面性能检测、Ajax接口调试。 PostmanPOST 接口调试终结者，异常强大的接口调试工具。稍稍有一点学习成本。 Google Mail Checker方便查看自己的 Gmail 邮件。 Octotree(github)在浏览器左侧展示 Github 项目的文件导航，使目录结构一目了然。 Awesome Autocomplete for GitHub(github)让你在 Github上使用搜索框的体验变得更好。 Porter Plug(github)在 Github 项目页中嵌入有关的图表信息，直观的展示当前项目的 Star Trend，能方便看到当前这个开源项目的发起时间，火爆趋势；对比较知名的项目还有相关的 News 展示。 OctoLinker(github)在 package.json或任意 .js 文件中，可以方便的对 require() 的 package进去点击，跳转去对应的 Github 页面。PS：特么不太好表达，建议你去这个插件的概述页，里面有个十来秒的视频，看完就明白了。 GitHub Hovercard(github)GitHub 增强工具，悬停可显示对应的用户、仓库、issue 等的详情。 BuiltWith通过使用此扩展来了解您正在访问的网站是什么。大到 Web Servers、服务端的 Frameworks 或 JS 框架，小到 meta、编码格式甚至 Analytics。 wappalyzerWappalyzer是一个跨平台的实用工具，可以揭示网站上使用的技术。 它检测内容管理系统，电子商务平台，Web框架，服务器软件，分析工具等等。 Library Sniffer for Google Chrome探测当前网页所使用的类库、框架和服务器环境，为开发者提供了方便。 DevTools Author纯装逼的插件，可以选择你的 Chrome 开发者工具的主题，且支持的主题超过25种，视觉装逼控必备。设置分大概三步，官网有文字说明，youtube 上的视频教程奉上(Customization With DevTools Author)[https://www.youtube.com/watch?v=AUZagMLMAJc] ps: 希望对你有用处，也欢迎你提供更多好用的插件，我会补上并更新。]]></content>
       <categories>
         <category>chrome</category>
       </categories>
@@ -197,9 +219,9 @@
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>Github</tag>
         <tag>Hexo</tag>
         <tag>NexT</tag>
+        <tag>Github</tag>
       </tags>
   </entry>
   <entry>
@@ -238,18 +260,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Vue2 ：百度图表 Echarts]]></title>
-    <url>%2F2018%2F05%2F19%2Fvue-echarts.html</url>
-    <content type="text"><![CDATA[在后台管理系统中，图表是一个很普遍的元素。目前常用的图标插件有 charts, Echarts, highcharts。这次将介绍 Echarts 在 Vue 项目中的应用。 一、安装插件npm 安装 Echarts ，进入项目目录：npm install echarts -S和 axios 类似，echarts 也不能通过 Vue.use() 进行全局调用通常是在需要使用图表的 .vue 文件中直接引入：import echarts from &#39;echarts&#39;另外一只方式：挂到vue上，再使用：在 main.js 中引入，然后修改原型链：12import echarts from 'echarts' Vue.prototype.$echarts = echarts 然后就可以全局使用了let myChart = this.$echarts.init(document.getElementById(&#39;myChart&#39;)) 二、创建图表需要注意的是，图表的容器必须指定宽高，也就是说 width，height 不能使用百分比，只能用 px。简单封装：Echarts.vue12345678910111213141516&lt;template&gt; &lt;div style="width: 500px;height: 300px" :id="id" :class="className"&gt;&lt;/div&gt;&lt;/template&gt;&lt;script&gt; import * as echarts from 'echarts'; export default &#123; props: ['options','id','className'], data: function () &#123; return &#123; &#125; &#125;, mounted: function()&#123; var myChart = echarts.init(document.getElementById(this.id)); myChart.setOption(this.options); &#125; &#125;&lt;/script&gt; 然后使用：1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859&lt;template&gt; &lt;div class="center"&gt; &lt;h3&gt;ECharts 入门示例&lt;/h3&gt; &lt;Echarts id="main" :options='options' class="echarts" style="width: 500px;height: 300px"&gt;&lt;/Echarts&gt; &lt;Echarts id="main2" :options='optionsLine' class="echarts" style="width: 500px;height: 300px"&gt;&lt;/Echarts&gt; &lt;/div&gt;&lt;/template&gt;&lt;script&gt; import * as echarts from 'echarts'; import Echarts from '@/components/Echarts/Echarts.vue'; //组件 export default &#123; data: function () &#123; return &#123; options:&#123; title: &#123; text: '柱形图Bar' &#125;, tooltip: &#123;&#125;, xAxis: &#123; data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子'] &#125;, yAxis: &#123;&#125;, series: [&#123; name: '销量', type: 'bar', data: [5, 20, 36, 10, 10, 20] &#125;] &#125;, optionsLine: &#123; title: &#123; text: '线状图Line' &#125;, xAxis: &#123; type: 'category', data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'] &#125;, yAxis: &#123; type: 'value' &#125;, series: [&#123; data: [820, 932, 901, 934, 1290, 1330, 1320], type: 'line' &#125;] &#125;, &#125; &#125;, components: &#123; 'Echarts': Echarts, &#125; &#125;&lt;/script&gt;&lt;style&gt; .echarts&#123; float: left; &#125;&lt;/style&gt; 三、按需引入上面引入的 echarts 包含了所有图表，但有时候我们只需要一两个基本图表，这时候完整的 echarts 就显得累赘。假如只需要创建一个饼图，那么可以这么做：1234567// 引入基本模板let echarts = require('echarts/lib/echarts')// 引入饼图组件require('echarts/lib/chart/pie')// 引入提示框和图例组件require('echarts/lib/component/tooltip')require('echarts/lib/component/legend') 可以按需引入的模块列表见 https://github.com/ecomfe/echarts/blob/master/index.js 其他如果在页面加载之后，仍需要图表自适应宽高，就需要用到 echarts 的媒体查询 参考 在Vue上初级使用ECharts 在vue-cli项目中使用echarts Vue 爬坑之路（八）—— 使用 Echarts 创建图表 做一个具有异步加载特性的 echarts-vue 组件 vue 将echarts封装为组件一键使用]]></content>
-      <categories>
-        <category>Vue2</category>
-      </categories>
-      <tags>
-        <tag>Vue2</tag>
-        <tag>Echarts</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Vue2 ：Mockjs 前端模拟假数据]]></title>
     <url>%2F2018%2F05%2F19%2Fvue-mockjs.html</url>
     <content type="text"><![CDATA[在前后端分离的大环境下，前端需要后端的接口去完成页面的渲染，但是大部分的情况下,前后端需要同时进行开发，这种情况下,后端还没完成数据输出，前端只好写静态模拟数据。面临一些问题：数据太长了，将数据写在js文件里，完成后挨个改url；某些逻辑复杂的代码，加入或去除模拟数据时得小心翼翼；想要尽可能还原真实的数据，要么编写更多代码，要么手动修改模拟数据；特殊的格式，例如IP,随机数，图片，地址，需要去收集等等。Mock.js 正是这样一款类库，可以帮我们模拟生成一堆数据，也能解决那些问题。 安装mock官网npm安装：npm install mockjspackage文件中显示当前mockjs版本说明安装成功。(也可以引入cdn：&lt;script src=&quot;http://mockjs.com/dist/mock.js&quot;&gt;&lt;/script&gt;) mockjs 文件在main.js同级下建立mock.js文件：123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105// 引入mockjsconst Mock = require('mockjs');const qs = require('qs');// 获取 mock.Random 对象const Random = Mock.Random;// 登录const login = function() &#123; let status = false;//登录状态：ture--成功，false--失败 status = true; return &#123; status: status &#125;&#125;// 表格分页const tblList = function(param) &#123; param = param.body || '';//获取传过来的参数 // console.log(qs.parse(param));//因为axios的post带参数被qs.stringfy()转换了，需要转回来。 if(param == '')&#123; //无查询条件 let bookdata = Mock.mock(&#123; 'books|1-10': [&#123; 'sid|+1': 1, 'date': '@date("yyyy-MM-dd")', 'name': '@csentence()', 'address': '@county(true)', 'region': '双流区' &#125;] &#125;); // console.log(bookdata); return bookdata; &#125;else&#123; //带查询条件 let paramObj = qs.parse(param); console.log('input parameter：...'); console.log(paramObj); let books = []; for (let i = 0; i &lt; 10; i++) &#123; let newBook = &#123; // thumbnail_pic_s: Random.dataImage('300x250', 'mock的图片'), // Random.dataImage( size, text ) 生成一段随机的 Base64 图片编码 date: Random.date(), name: paramObj.name+Random.csentence(), address: Random.county(true), region: paramObj.region &#125; books.push(newBook) &#125; return &#123; books: books &#125; &#125;&#125;//图书列表const bookList = function(param) &#123; param = param.body || '';//获取传过来的参数 // console.log(qs.parse(param)); // 因为axios的post带参数被qs.stringfy()转换了，需要转回来。 let paramObj = qs.parse(param); console.log(paramObj); let nameInput = paramObj.name || ''; let books = []; for (let i = 0; i &lt; 10; i++) &#123; let temp = i+1; let newBook = &#123; sid: temp, // thumbnail_pic_s: Random.dataImage('300x250', 'mock的图片'), // Random.dataImage( size, text ) 生成一段随机的 Base64 图片编码 author: Random.name(2,4), name: '《'+nameInput+Random.csentence()+"》", publishAt: Random.date(), description: Random.cparagraph() &#125; books.push(newBook) &#125; return &#123; books: books &#125;&#125;//获取文件列表const fileList = function (param) &#123; param = param.body || '';//获取传过来的参数 // console.log(qs.parse(param)); // 因为axios的post带参数被qs.stringfy()转换了，需要转回来。 let paramObj = qs.parse(param); console.log(paramObj); let files = []; for (let i = 0; i &lt; 3; i++) &#123; let newFile = &#123; name: paramObj.username + i +'.png', url: Random.dataImage('300x250', 'mock的图片'), // Random.dataImage( size, text ) 生成一段随机的 Base64 图片编码 &#125; files.push(newFile) &#125; return &#123; fileList: files &#125;&#125;// Mock.mock( url, post/get , 返回的数据)；Mock.mock('/mk_login', 'post', login);// 登录Mock.mock('/mk_tbllist', 'post', tblList);// 表格分页Mock.mock('/mk_booklist', 'post',bookList);// 图书列表Mock.mock('/mk_fileupload', 'post',&#123;&#125;);// 文件上传Mock.mock('/mk_fetchFiles', 'post',fileList);// 获取文件列表 main.js 引入mock在main.js中引入mock文件：require(&#39;./mock&#39;); 使用vue文件中访问该接口mock：(调用的url接口和mock.js文件的Mock.mock( url, post/get , 返回的数据)的url接口一致，就能被mock拦截。)12345678910111213api.post('/mk_login', data) .then(res =&gt; &#123; console.log(res.data); if(res.data.status)&#123; // 登录成功 this.setUserInfo2(data); this.$router.replace('/home'); &#125; &#125;) .catch(error =&gt; &#123; console.log("login异常：") console.log(error) &#125;) 参考 vue中mock.js使用 【Mock.js】前端模拟假数据，不用在手拼了 Mockjs,再也不用追着后端小伙伴要接口了 使用Mock.js进行独立于后端的前端开发]]></content>
@@ -259,6 +269,18 @@
       <tags>
         <tag>Vue2</tag>
         <tag>Mockjs</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Vue2 ：百度图表 Echarts]]></title>
+    <url>%2F2018%2F05%2F19%2Fvue-echarts.html</url>
+    <content type="text"><![CDATA[在后台管理系统中，图表是一个很普遍的元素。目前常用的图标插件有 charts, Echarts, highcharts。这次将介绍 Echarts 在 Vue 项目中的应用。 一、安装插件npm 安装 Echarts ，进入项目目录：npm install echarts -S和 axios 类似，echarts 也不能通过 Vue.use() 进行全局调用通常是在需要使用图表的 .vue 文件中直接引入：import echarts from &#39;echarts&#39;另外一只方式：挂到vue上，再使用：在 main.js 中引入，然后修改原型链：12import echarts from 'echarts' Vue.prototype.$echarts = echarts 然后就可以全局使用了let myChart = this.$echarts.init(document.getElementById(&#39;myChart&#39;)) 二、创建图表需要注意的是，图表的容器必须指定宽高，也就是说 width，height 不能使用百分比，只能用 px。简单封装：Echarts.vue12345678910111213141516&lt;template&gt; &lt;div style="width: 500px;height: 300px" :id="id" :class="className"&gt;&lt;/div&gt;&lt;/template&gt;&lt;script&gt; import * as echarts from 'echarts'; export default &#123; props: ['options','id','className'], data: function () &#123; return &#123; &#125; &#125;, mounted: function()&#123; var myChart = echarts.init(document.getElementById(this.id)); myChart.setOption(this.options); &#125; &#125;&lt;/script&gt; 然后使用：1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859&lt;template&gt; &lt;div class="center"&gt; &lt;h3&gt;ECharts 入门示例&lt;/h3&gt; &lt;Echarts id="main" :options='options' class="echarts" style="width: 500px;height: 300px"&gt;&lt;/Echarts&gt; &lt;Echarts id="main2" :options='optionsLine' class="echarts" style="width: 500px;height: 300px"&gt;&lt;/Echarts&gt; &lt;/div&gt;&lt;/template&gt;&lt;script&gt; import * as echarts from 'echarts'; import Echarts from '@/components/Echarts/Echarts.vue'; //组件 export default &#123; data: function () &#123; return &#123; options:&#123; title: &#123; text: '柱形图Bar' &#125;, tooltip: &#123;&#125;, xAxis: &#123; data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子'] &#125;, yAxis: &#123;&#125;, series: [&#123; name: '销量', type: 'bar', data: [5, 20, 36, 10, 10, 20] &#125;] &#125;, optionsLine: &#123; title: &#123; text: '线状图Line' &#125;, xAxis: &#123; type: 'category', data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'] &#125;, yAxis: &#123; type: 'value' &#125;, series: [&#123; data: [820, 932, 901, 934, 1290, 1330, 1320], type: 'line' &#125;] &#125;, &#125; &#125;, components: &#123; 'Echarts': Echarts, &#125; &#125;&lt;/script&gt;&lt;style&gt; .echarts&#123; float: left; &#125;&lt;/style&gt; 三、按需引入上面引入的 echarts 包含了所有图表，但有时候我们只需要一两个基本图表，这时候完整的 echarts 就显得累赘。假如只需要创建一个饼图，那么可以这么做：1234567// 引入基本模板let echarts = require('echarts/lib/echarts')// 引入饼图组件require('echarts/lib/chart/pie')// 引入提示框和图例组件require('echarts/lib/component/tooltip')require('echarts/lib/component/legend') 可以按需引入的模块列表见 https://github.com/ecomfe/echarts/blob/master/index.js 其他如果在页面加载之后，仍需要图表自适应宽高，就需要用到 echarts 的媒体查询 参考 在Vue上初级使用ECharts 在vue-cli项目中使用echarts Vue 爬坑之路（八）—— 使用 Echarts 创建图表 做一个具有异步加载特性的 echarts-vue 组件 vue 将echarts封装为组件一键使用]]></content>
+      <categories>
+        <category>Vue2</category>
+      </categories>
+      <tags>
+        <tag>Vue2</tag>
+        <tag>Echarts</tag>
       </tags>
   </entry>
   <entry>
@@ -367,8 +389,8 @@
     <url>%2F2016%2F03%2F21%2Fwebstorm-plugin-markdown.html</url>
     <content type="text"><![CDATA[Markdown的相关语法，自己去官网看，或网上搜资料很多的。这里讲一下webstorm安装使用markdown插件。 步骤 打开webstorm，File–&gt;Setting–&gt;输入plugin–&gt;Install JetBrains plugin…–&gt;输入markdown–&gt;点击右边的“Install”,安装完，重启webstorm。 新建test.md，然后编辑，如果没有效果的话。File–&gt;Setting–&gt;输入file type–&gt;找到Markdown–&gt;在下面的Registers Patterns添加上*.md。 参考： 用WebStorm编辑Markdown]]></content>
       <tags>
-        <tag>webstorm</tag>
         <tag>markdown</tag>
+        <tag>webstorm</tag>
       </tags>
   </entry>
   <entry>
@@ -396,17 +418,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[网页(UI)设计--切图标注工具]]></title>
-    <url>%2F2016%2F02%2F05%2Ftool-cut-mark.html</url>
-    <content type="text"><![CDATA[cutterman(免费)–切图（ps 插件） parker(收费)–标注（ps 插件） PxCook(免费)–标注 ASSISTOR PS(免费)–切图，标注（ps 标注） BigShear(收费)–切图 markman(收费)–标注 标注的工具试过几个。PxCook和markman功能类似，不足：没法准确取色，特别是带透明色；无法准确获取文字（字体，字体大小，字体颜色，行高）。parker功能都有，但是外边距只能量2个图层，无法多个图层一起标注外边距。ASSISTOR PS功能都有，但是内边距需要自己手动拉个选框出来，再选中2个图层，才能量了。 切图类工具呢，虽然没怎么试过，不过大家都推荐cutterman。标注类工具呢，跟ps一起用的话，推荐ASSISTOR PS。单独用呢，用markman（mac版收费，windows有破解版，虽然官网说基本版免费，你用了就会发现啥叫基本功能了）和PxCook都行。 免费了！切图标记外挂神器ASSISTOR PS深入解读（上）免费了！切图标记外挂神器ASSISTOR PS深入解读（下）]]></content>
-      <categories>
-        <category>tool</category>
-      </categories>
-      <tags>
-        <tag>photoshop</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[html5视频转换工具]]></title>
     <url>%2F2016%2F02%2F05%2Ftool-html5-video.html</url>
     <content type="text"><![CDATA[10个免费的HTML5视频转换工具下载，搜过一些工具，跟此文的工具都差不多。然后下载了好几款试用了一下，最后比较满意的是any-video-converter。其他的，我就简单说说使用情况吧。先提一句：html5的视频播放格式编码要求：h264/mp4, theora/ogg, vp8/webm。 Miro Video Converter 能转，但是转完后就不能用。 Miro Video Converter 这个比较悲剧，找半天都没找到转成webm格式的地方。 Freemake Video Converter 能转，也能用，但是具体参数比较少。 Easy HTML5 Video 能转，并且比any-video-converter转的视频大小还小些，看了一下，视频没有失真没有出入。但是他丫的居然在右上角有个水印，导致了没法商用。 any-video-converter 能转的格式不全，还是收费的。 Online-Convert.Com 具体编码参数基本没有，懒得试了。 any-video-converter 各种格式和参数比较齐全，pc端手机端平板端的都有。转完还有demo页面。]]></content>
@@ -415,6 +426,17 @@
       </categories>
       <tags>
         <tag>html5</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[网页(UI)设计--切图标注工具]]></title>
+    <url>%2F2016%2F02%2F05%2Ftool-cut-mark.html</url>
+    <content type="text"><![CDATA[cutterman(免费)–切图（ps 插件） parker(收费)–标注（ps 插件） PxCook(免费)–标注 ASSISTOR PS(免费)–切图，标注（ps 标注） BigShear(收费)–切图 markman(收费)–标注 标注的工具试过几个。PxCook和markman功能类似，不足：没法准确取色，特别是带透明色；无法准确获取文字（字体，字体大小，字体颜色，行高）。parker功能都有，但是外边距只能量2个图层，无法多个图层一起标注外边距。ASSISTOR PS功能都有，但是内边距需要自己手动拉个选框出来，再选中2个图层，才能量了。 切图类工具呢，虽然没怎么试过，不过大家都推荐cutterman。标注类工具呢，跟ps一起用的话，推荐ASSISTOR PS。单独用呢，用markman（mac版收费，windows有破解版，虽然官网说基本版免费，你用了就会发现啥叫基本功能了）和PxCook都行。 免费了！切图标记外挂神器ASSISTOR PS深入解读（上）免费了！切图标记外挂神器ASSISTOR PS深入解读（下）]]></content>
+      <categories>
+        <category>tool</category>
+      </categories>
+      <tags>
+        <tag>photoshop</tag>
       </tags>
   </entry>
   <entry>
