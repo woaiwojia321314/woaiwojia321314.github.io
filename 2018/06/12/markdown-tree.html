@@ -88,20 +88,21 @@
 
 
 
-<meta name="description" content="最近看 github 上项目，发现很多都有文档文件（README.md），看见里面有目录树，故而整理了一下。至于发文的博客网站是否支持，就得看它们自己的考虑了。简书这里是不支持的，你要想加，可以参考简书自动生成目录小工具。 markdown文件的目录树生成的核心在于锚点。">
+<meta name="description" content="最近看 github 上项目，发现很多都有文档文件（README.md），看见里面有目录树，故而整理了一下。markdown文件的目录树生成的核心在于锚点。ps：简书这里是不支持的，你要想加，可以参考简书自动生成目录小工具。">
 <meta name="keywords" content="markdown">
 <meta property="og:type" content="article">
 <meta property="og:title" content="markdown文件的目录树生成">
 <meta property="og:url" content="http://missfli.com/2018/06/12/markdown-tree.html">
 <meta property="og:site_name" content="Fli&#39;s Notes!">
-<meta property="og:description" content="最近看 github 上项目，发现很多都有文档文件（README.md），看见里面有目录树，故而整理了一下。至于发文的博客网站是否支持，就得看它们自己的考虑了。简书这里是不支持的，你要想加，可以参考简书自动生成目录小工具。 markdown文件的目录树生成的核心在于锚点。">
+<meta property="og:description" content="最近看 github 上项目，发现很多都有文档文件（README.md），看见里面有目录树，故而整理了一下。markdown文件的目录树生成的核心在于锚点。ps：简书这里是不支持的，你要想加，可以参考简书自动生成目录小工具。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1464420-030e20e279f59edb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1464420-bf6448d851134225.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-06-12T11:23:47.520Z">
+<meta property="og:updated_time" content="2018-06-12T11:48:39.275Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="markdown文件的目录树生成">
-<meta name="twitter:description" content="最近看 github 上项目，发现很多都有文档文件（README.md），看见里面有目录树，故而整理了一下。至于发文的博客网站是否支持，就得看它们自己的考虑了。简书这里是不支持的，你要想加，可以参考简书自动生成目录小工具。 markdown文件的目录树生成的核心在于锚点。">
-<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/1464420-bf6448d851134225.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta name="twitter:description" content="最近看 github 上项目，发现很多都有文档文件（README.md），看见里面有目录树，故而整理了一下。markdown文件的目录树生成的核心在于锚点。ps：简书这里是不支持的，你要想加，可以参考简书自动生成目录小工具。">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/1464420-030e20e279f59edb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -426,7 +427,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  440
+                  200
                 </span>
               
 
@@ -442,7 +443,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  1
                 </span>
               
             </div>
@@ -463,13 +464,12 @@
       
 
       
-        <p>最近看 github 上项目，发现很多都有文档文件（README.md），看见里面有目录树，故而整理了一下。至于发文的博客网站是否支持，就得看它们自己的考虑了。简书这里是不支持的，你要想加，可以参考<a href="https://www.jianshu.com/p/d02157db09d2" target="_blank" rel="noopener">简书自动生成目录小工具</a>。</p>
-<p>markdown文件的目录树生成的核心在于锚点。</p>
-<a id="more"></a>
-<h2 id="工具类生成"><a href="#工具类生成" class="headerlink" title="工具类生成"></a>工具类生成</h2><p>萝卜青菜，各有所爱。每个人用的 markdown 编辑器不一样，在线，离线，客户端，甚至 txt 。基本每个编辑器都有【目录生成】的功能。我用的 Typora ，我找了一下，<code>段落--内容目录</code>，确实能生成目录树，效果还不错。可是切换成源码一看，只是加了个<code>[TOC]</code>。怀着忐忑的心情，贴到简书里，恭喜你，不支持。当然不是所有能用 markdown 写文章的网站都不支持，我记得有支持的，好像CSDN就支持<code>[TOC]</code>。</p>
-<p>当然如果你工具生成目录树的源码是markdown的代码，理论上能支持 markdown 发文章的都可以。这种源码长啥样，看下面的那种方式。</p>
-<h2 id="markdown语法"><a href="#markdown语法" class="headerlink" title="markdown语法"></a>markdown语法</h2><p>就是用 markdown 语法手动写个目录，[去此处]。(<a href="https://github.com/woaiwojia321314/woaiwojia321314.github.io/tree/master)查看`README.md`文件。" target="_blank" rel="noopener">https://github.com/woaiwojia321314/woaiwojia321314.github.io/tree/master)查看`README.md`文件。</a><br>代码大致形式是这样：<br><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">### 索引</span><br><span class="line">* [工具类生成](#工具类生成)</span><br><span class="line">* [markdown 语法](#markdown 语法)</span><br><span class="line">* [网页源码](#网页源码)</span><br></pre></td></tr></table></figure></p>
-<h2 id="网页源码"><a href="#网页源码" class="headerlink" title="网页源码"></a>网页源码</h2><p>markdown文章最终是会编译成网页代码形式的，所以可以直接用网页代码里的 a 标签写锚点的形式写，<a href="https://github.com/nieweidong/fetool" target="_blank" rel="noopener">去此处</a>查看<code>README.md</code>文件。<br>代码形式大致是这样的：<br><img src="https://upload-images.jianshu.io/upload_images/1464420-bf6448d851134225.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="markdown-tree.png"></p>
+        <p>最近看 github 上项目，发现很多都有文档文件（README.md），看见里面有目录树，故而整理了一下。markdown文件的目录树生成的核心在于锚点。<br>ps：简书这里是不支持的，你要想加，可以参考<a href="https://www.jianshu.com/p/d02157db09d2" target="_blank" rel="noopener">简书自动生成目录小工具</a>。<br><a id="more"></a></p>
+<h2 id="工具类生成目录"><a href="#工具类生成目录" class="headerlink" title="工具类生成目录"></a>工具类生成目录</h2><p>基本每个编辑器都有【目录生成】的功能。我用的 Typora ，我找了一下，<code>段落--内容目录</code>，确实能生成目录树，效果还不错。切换成源码一看，只是加了个<code>[TOC]</code>。简书不支持，好像CSDN就支持<code>[TOC]</code>。</p>
+<h2 id="手写目录"><a href="#手写目录" class="headerlink" title="手写目录"></a>手写目录</h2><p><strong>第一种</strong>：<a href="https://github.com/woaiwojia321314/woaiwojia321314.github.io/tree/master" target="_blank" rel="noopener">去此处</a>查看<code>README.md</code>文件。</p>
+<p>截图如下：<br><img src="https://upload-images.jianshu.io/upload_images/1464420-030e20e279f59edb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="markdown-tree0.png"></p>
+<p><strong>第二种</strong>：<a href="https://github.com/nieweidong/fetool" target="_blank" rel="noopener">去此处</a>查看<code>README.md</code>文件。</p>
+<p>截图如下：<br><img src="https://upload-images.jianshu.io/upload_images/1464420-bf6448d851134225.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="markdown-tree.png"></p>
 <p>ps：简书这里，都不支持。</p>
 
       
@@ -746,7 +746,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#工具类生成"><span class="nav-number">1.</span> <span class="nav-text">工具类生成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#markdown语法"><span class="nav-number">2.</span> <span class="nav-text">markdown语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网页源码"><span class="nav-number">3.</span> <span class="nav-text">网页源码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#工具类生成目录"><span class="nav-number">1.</span> <span class="nav-text">工具类生成目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#手写目录"><span class="nav-number">2.</span> <span class="nav-text">手写目录</span></a></li></ol></div>
             
 
           </div>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://missfli.com/"/>
-  <updated>2018-06-12T11:23:47.520Z</updated>
+  <updated>2018-06-12T11:48:39.275Z</updated>
   <id>http://missfli.com/</id>
   
   <author>
@@ -21,12 +21,11 @@
     <link href="http://missfli.com/2018/06/12/markdown-tree.html"/>
     <id>http://missfli.com/2018/06/12/markdown-tree.html</id>
     <published>2018-06-12T12:00:00.000Z</published>
-    <updated>2018-06-12T11:23:47.520Z</updated>
+    <updated>2018-06-12T11:48:39.275Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;最近看 github 上项目，发现很多都有文档文件（README.md），看见里面有目录树，故而整理了一下。至于发文的博客网站是否支持，就得看它们自己的考虑了。简书这里是不支持的，你要想加，可以参考&lt;a href=&quot;https://www.jianshu.com/p/d02157db09d2&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;简书自动生成目录小工具&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;markdown文件的目录树生成的核心在于锚点。&lt;/p&gt;
+      &lt;p&gt;最近看 github 上项目，发现很多都有文档文件（README.md），看见里面有目录树，故而整理了一下。markdown文件的目录树生成的核心在于锚点。&lt;br&gt;ps：简书这里是不支持的，你要想加，可以参考&lt;a href=&quot;https://www.jianshu.com/p/d02157db09d2&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;简书自动生成目录小工具&lt;/a&gt;。&lt;br&gt;
     
     </summary>
     
@@ -227,28 +226,6 @@
   </entry>
   
   <entry>
-    <title>Hexo NexT主题评论功能的筛选对比</title>
-    <link href="http://missfli.com/2018/05/29/github-hexo-next-05.html"/>
-    <id>http://missfli.com/2018/05/29/github-hexo-next-05.html</id>
-    <published>2018-05-28T16:30:00.000Z</published>
-    <updated>2018-05-29T06:21:22.841Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;个人站点评论系统的选择的确让人头疼，我在这上面也折腾了很长时间，蛮难选的。大致整理了一下，看下表，后续深入了解后再更新此文。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Hexo" scheme="http://missfli.com/categories/Hexo/"/>
-    
-    
-      <category term="Hexo" scheme="http://missfli.com/tags/Hexo/"/>
-    
-      <category term="NexT" scheme="http://missfli.com/tags/NexT/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Hexo NexT：在文章中嵌入 CodePen或 jsFiddle</title>
     <link href="http://missfli.com/2018/05/29/github-hexo-next-04.html"/>
     <id>http://missfli.com/2018/05/29/github-hexo-next-04.html</id>
@@ -270,6 +247,28 @@
       <category term="CodePen" scheme="http://missfli.com/tags/CodePen/"/>
     
       <category term="jsFiddle" scheme="http://missfli.com/tags/jsFiddle/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo NexT主题评论功能的筛选对比</title>
+    <link href="http://missfli.com/2018/05/29/github-hexo-next-05.html"/>
+    <id>http://missfli.com/2018/05/29/github-hexo-next-05.html</id>
+    <published>2018-05-28T16:30:00.000Z</published>
+    <updated>2018-05-29T06:21:22.841Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;个人站点评论系统的选择的确让人头疼，我在这上面也折腾了很长时间，蛮难选的。大致整理了一下，看下表，后续深入了解后再更新此文。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://missfli.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://missfli.com/tags/Hexo/"/>
+    
+      <category term="NexT" scheme="http://missfli.com/tags/NexT/"/>
     
   </entry>
   
@@ -439,11 +438,11 @@
       <category term="Hexo" scheme="http://missfli.com/categories/Hexo/"/>
     
     
+      <category term="Github" scheme="http://missfli.com/tags/Github/"/>
+    
       <category term="Hexo" scheme="http://missfli.com/tags/Hexo/"/>
     
       <category term="NexT" scheme="http://missfli.com/tags/NexT/"/>
-    
-      <category term="Github" scheme="http://missfli.com/tags/Github/"/>
     
   </entry>
   
