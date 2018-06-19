@@ -13,6 +13,7 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}">
+    
 
   {% set container_class = "container " %}
   {% if theme.sidebar.position %}
@@ -94,5 +95,8 @@
   <script type="text/javascript" src="/js/src/crash_cheat.js"></script>
   <!--hone hone clock 人体时钟-->
   <script type="text/javascript" src="/js/src/hone_hone_clock.js"></script>
+  <!-- 代码块复制功能 -->
+  <script type="text/javascript" src="/js/src/clipboard.min.js"></script>  
+  <script type="text/javascript" src="/js/src/clipboard-use.js"></script>
 </body>
 </html>

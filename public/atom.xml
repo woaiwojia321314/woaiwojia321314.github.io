@@ -1,20 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Fli&#39;s Notes!</title>
+  <title>飞雨</title>
   
   <subtitle>狼行千里吃肉，狗行千里吃屎；﹏﹏﹏活鱼逆流而上，死鱼随波逐流！</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://missfli.com/"/>
-  <updated>2018-06-12T11:48:39.275Z</updated>
+  <updated>2018-06-19T08:57:11.571Z</updated>
   <id>http://missfli.com/</id>
   
   <author>
-    <name>Fli</name>
+    <name>飞雨</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo NexT主题代码块添加复制功能</title>
+    <link href="http://missfli.com/2018/06/19/github-hexo-next-08.html"/>
+    <id>http://missfli.com/2018/06/19/github-hexo-next-08.html</id>
+    <published>2018-06-19T09:10:00.000Z</published>
+    <updated>2018-06-19T08:57:11.571Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;为了提高博客代码块的用户体验，仅仅代码高亮还不行，最好还能一键复制代码。故此文将讲述Hexo NexT主题博客的代码块复制功能配置。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://missfli.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://missfli.com/tags/Hexo/"/>
+    
+      <category term="NexT" scheme="http://missfli.com/tags/NexT/"/>
+    
+  </entry>
   
   <entry>
     <title>markdown文件的目录树生成</title>
@@ -226,6 +248,28 @@
   </entry>
   
   <entry>
+    <title>Hexo NexT主题评论功能的筛选对比</title>
+    <link href="http://missfli.com/2018/05/29/github-hexo-next-05.html"/>
+    <id>http://missfli.com/2018/05/29/github-hexo-next-05.html</id>
+    <published>2018-05-28T16:30:00.000Z</published>
+    <updated>2018-05-29T06:21:22.841Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;个人站点评论系统的选择的确让人头疼，我在这上面也折腾了很长时间，蛮难选的。大致整理了一下，看下表，后续深入了解后再更新此文。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://missfli.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://missfli.com/tags/Hexo/"/>
+    
+      <category term="NexT" scheme="http://missfli.com/tags/NexT/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo NexT：在文章中嵌入 CodePen或 jsFiddle</title>
     <link href="http://missfli.com/2018/05/29/github-hexo-next-04.html"/>
     <id>http://missfli.com/2018/05/29/github-hexo-next-04.html</id>
@@ -247,28 +291,6 @@
       <category term="CodePen" scheme="http://missfli.com/tags/CodePen/"/>
     
       <category term="jsFiddle" scheme="http://missfli.com/tags/jsFiddle/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo NexT主题评论功能的筛选对比</title>
-    <link href="http://missfli.com/2018/05/29/github-hexo-next-05.html"/>
-    <id>http://missfli.com/2018/05/29/github-hexo-next-05.html</id>
-    <published>2018-05-28T16:30:00.000Z</published>
-    <updated>2018-05-29T06:21:22.841Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;个人站点评论系统的选择的确让人头疼，我在这上面也折腾了很长时间，蛮难选的。大致整理了一下，看下表，后续深入了解后再更新此文。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Hexo" scheme="http://missfli.com/categories/Hexo/"/>
-    
-    
-      <category term="Hexo" scheme="http://missfli.com/tags/Hexo/"/>
-    
-      <category term="NexT" scheme="http://missfli.com/tags/NexT/"/>
     
   </entry>
   
@@ -419,30 +441,6 @@
       <category term="IP" scheme="http://missfli.com/tags/IP/"/>
     
       <category term="js" scheme="http://missfli.com/tags/js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>GitHub+Hexo（NexT主题）搭建博客</title>
-    <link href="http://missfli.com/2018/05/23/github-hexo-next-01.html"/>
-    <id>http://missfli.com/2018/05/23/github-hexo-next-01.html</id>
-    <published>2018-05-23T07:39:04.000Z</published>
-    <updated>2018-05-24T02:42:59.342Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;由于曾经搭建过，但是不小心删掉了本地电脑上的源码，而 github 上也只有生成后的html页面代码，导致了没法继续发布新文章。并且那会儿倒腾的有些久，断断续续的弄得，也没写博文记录。现在重新搭建一次，并且记录一下。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Hexo" scheme="http://missfli.com/categories/Hexo/"/>
-    
-    
-      <category term="Github" scheme="http://missfli.com/tags/Github/"/>
-    
-      <category term="Hexo" scheme="http://missfli.com/tags/Hexo/"/>
-    
-      <category term="NexT" scheme="http://missfli.com/tags/NexT/"/>
     
   </entry>
   

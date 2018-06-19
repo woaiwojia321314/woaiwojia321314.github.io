@@ -219,9 +219,9 @@
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>Github</tag>
         <tag>Hexo</tag>
         <tag>NexT</tag>
+        <tag>Github</tag>
       </tags>
   </entry>
   <entry>
@@ -418,17 +418,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[网页(UI)设计--切图标注工具]]></title>
-    <url>%2F2016%2F02%2F05%2Ftool-cut-mark.html</url>
-    <content type="text"><![CDATA[cutterman(免费)–切图（ps 插件） parker(收费)–标注（ps 插件） PxCook(免费)–标注 ASSISTOR PS(免费)–切图，标注（ps 标注） BigShear(收费)–切图 markman(收费)–标注 标注的工具试过几个。PxCook和markman功能类似，不足：没法准确取色，特别是带透明色；无法准确获取文字（字体，字体大小，字体颜色，行高）。parker功能都有，但是外边距只能量2个图层，无法多个图层一起标注外边距。ASSISTOR PS功能都有，但是内边距需要自己手动拉个选框出来，再选中2个图层，才能量了。 切图类工具呢，虽然没怎么试过，不过大家都推荐cutterman。标注类工具呢，跟ps一起用的话，推荐ASSISTOR PS。单独用呢，用markman（mac版收费，windows有破解版，虽然官网说基本版免费，你用了就会发现啥叫基本功能了）和PxCook都行。 免费了！切图标记外挂神器ASSISTOR PS深入解读（上）免费了！切图标记外挂神器ASSISTOR PS深入解读（下）]]></content>
-      <categories>
-        <category>tool</category>
-      </categories>
-      <tags>
-        <tag>photoshop</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[html5视频转换工具]]></title>
     <url>%2F2016%2F02%2F05%2Ftool-html5-video.html</url>
     <content type="text"><![CDATA[10个免费的HTML5视频转换工具下载，搜过一些工具，跟此文的工具都差不多。然后下载了好几款试用了一下，最后比较满意的是any-video-converter。其他的，我就简单说说使用情况吧。先提一句：html5的视频播放格式编码要求：h264/mp4, theora/ogg, vp8/webm。 Miro Video Converter 能转，但是转完后就不能用。 Miro Video Converter 这个比较悲剧，找半天都没找到转成webm格式的地方。 Freemake Video Converter 能转，也能用，但是具体参数比较少。 Easy HTML5 Video 能转，并且比any-video-converter转的视频大小还小些，看了一下，视频没有失真没有出入。但是他丫的居然在右上角有个水印，导致了没法商用。 any-video-converter 能转的格式不全，还是收费的。 Online-Convert.Com 具体编码参数基本没有，懒得试了。 any-video-converter 各种格式和参数比较齐全，pc端手机端平板端的都有。转完还有demo页面。]]></content>
@@ -437,6 +426,17 @@
       </categories>
       <tags>
         <tag>html5</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[网页(UI)设计--切图标注工具]]></title>
+    <url>%2F2016%2F02%2F05%2Ftool-cut-mark.html</url>
+    <content type="text"><![CDATA[cutterman(免费)–切图（ps 插件） parker(收费)–标注（ps 插件） PxCook(免费)–标注 ASSISTOR PS(免费)–切图，标注（ps 标注） BigShear(收费)–切图 markman(收费)–标注 标注的工具试过几个。PxCook和markman功能类似，不足：没法准确取色，特别是带透明色；无法准确获取文字（字体，字体大小，字体颜色，行高）。parker功能都有，但是外边距只能量2个图层，无法多个图层一起标注外边距。ASSISTOR PS功能都有，但是内边距需要自己手动拉个选框出来，再选中2个图层，才能量了。 切图类工具呢，虽然没怎么试过，不过大家都推荐cutterman。标注类工具呢，跟ps一起用的话，推荐ASSISTOR PS。单独用呢，用markman（mac版收费，windows有破解版，虽然官网说基本版免费，你用了就会发现啥叫基本功能了）和PxCook都行。 免费了！切图标记外挂神器ASSISTOR PS深入解读（上）免费了！切图标记外挂神器ASSISTOR PS深入解读（下）]]></content>
+      <categories>
+        <category>tool</category>
+      </categories>
+      <tags>
+        <tag>photoshop</tag>
       </tags>
   </entry>
   <entry>

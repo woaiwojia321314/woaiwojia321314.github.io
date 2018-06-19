@@ -92,6 +92,7 @@ https://hexo.io/zh-cn/docs/tag-plugins.html#jsFiddle
   * Hexo NexT主题添加点击爱心效果： https://asdfv1929.github.io/2018/01/26/click-love/
   * Hexo NexT主题中添加网页音乐播放器功能xxx：https://asdfv1929.github.io/2018/05/26/next-add-music/
   * 人体时钟引入：hone hone clock
+  * 代码块复制功能clipboardjs    6/19/2018
 * 评论系统筛选和配置    5/27/2018  
   * gitalk（没配置成功）：https://asdfv1929.github.io/2018/01/20/gitalk/
   * Valine： https://valine.js.org/
