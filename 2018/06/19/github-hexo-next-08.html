@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Node," />
+  <meta name="keywords" content="Hexo,NexT," />
 
 
 
@@ -88,21 +88,20 @@
 
 
 
-<meta name="description" content="个人博客网站用的4.5的node，现在工作需要用element ui，需要node&amp;gt;=6，也就产生了node的升级需求。">
-<meta name="keywords" content="Node">
+<meta name="description" content="为了提高博客代码块的用户体验，仅仅代码高亮还不行，最好还能一键复制代码。故此文将讲述Hexo NexT主题博客的代码块复制功能配置。">
+<meta name="keywords" content="Hexo,NexT">
 <meta property="og:type" content="article">
-<meta property="og:title" content="node 升级版本">
-<meta property="og:url" content="http://missfli.com/2018/04/27/node-version-upgrade.html">
+<meta property="og:title" content="Hexo NexT主题代码块添加复制功能">
+<meta property="og:url" content="http://missfli.com/2018/06/19/github-hexo-next-08.html">
 <meta property="og:site_name" content="飞雨">
-<meta property="og:description" content="个人博客网站用的4.5的node，现在工作需要用element ui，需要node&amp;gt;=6，也就产生了node的升级需求。">
+<meta property="og:description" content="为了提高博客代码块的用户体验，仅仅代码高亮还不行，最好还能一键复制代码。故此文将讲述Hexo NexT主题博客的代码块复制功能配置。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1464420-8c9d26b576d51932.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1464420-760e4e07c6b88200.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-05-29T09:26:37.608Z">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1464420-6f9f4305c4a35056.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-06-19T08:57:11.571Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="node 升级版本">
-<meta name="twitter:description" content="个人博客网站用的4.5的node，现在工作需要用element ui，需要node&amp;gt;=6，也就产生了node的升级需求。">
-<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/1464420-8c9d26b576d51932.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta name="twitter:title" content="Hexo NexT主题代码块添加复制功能">
+<meta name="twitter:description" content="为了提高博客代码块的用户体验，仅仅代码高亮还不行，最好还能一键复制代码。故此文将讲述Hexo NexT主题博客的代码块复制功能配置。">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/1464420-6f9f4305c4a35056.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -132,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="http://missfli.com/2018/04/27/node-version-upgrade.html"/>
+  <link rel="canonical" href="http://missfli.com/2018/06/19/github-hexo-next-08.html"/>
 
 
 
 
 
-  <title>node 升级版本 | 飞雨</title>
+  <title>Hexo NexT主题代码块添加复制功能 | 飞雨</title>
   
 
 
@@ -330,7 +329,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://missfli.com/2018/04/27/node-version-upgrade.html">
+    <link itemprop="mainEntityOfPage" href="http://missfli.com/2018/06/19/github-hexo-next-08.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="飞雨">
@@ -347,7 +346,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">node 升级版本</h1>
+          <h1 class="post-title" itemprop="name headline">Hexo NexT主题代码块添加复制功能</h1>
         
 
         <div class="post-meta">
@@ -359,8 +358,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-27T17:00:00+08:00">
-                2018-04-27
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-19T17:10:00+08:00">
+                2018-06-19
               </time>
             
 
@@ -370,6 +369,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">Hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -378,8 +399,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/04/27/node-version-upgrade.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/04/27/node-version-upgrade.html" itemprop="commentCount"></span>
+                <a href="/2018/06/19/github-hexo-next-08.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/06/19/github-hexo-next-08.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -406,7 +427,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  302
+                  524
                 </span>
               
 
@@ -422,7 +443,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  3
                 </span>
               
             </div>
@@ -443,11 +464,21 @@
       
 
       
-        <p>个人博客网站用的4.5的node，现在工作需要用element ui，需要node&gt;=6，也就产生了node的升级需求。<br><a id="more"></a></p>
-<h2 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h2><p>node有一个模块叫n，是专门用来管理node.js的版本。<br><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 查看版本</span><br><span class="line">node -v </span><br><span class="line"># 清除npm cache</span><br><span class="line">npm cache clean -force</span><br><span class="line"># 安装n模块</span><br><span class="line">npm install -g n </span><br><span class="line"># 不行就这样：npm install -g n -f</span><br><span class="line"># 升级新版本（稳定版 stable ,最新版 latest ,指定版本号v8.<span class="number">11.1</span>）</span><br><span class="line">n latest</span><br><span class="line"># 查看版本号，确认是否升级成功</span><br><span class="line">node -v</span><br></pre></td></tr></table></figure></p>
-<h2 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h2><p>GNVM 是一个简单的 Windows 下 Node.js 多版本管理器，类似的 nvm nvmw nodist 。感谢一下这位哥（kenshin）吧，<a href="https://github.com/Kenshin/gnvm" target="_blank" rel="noopener">点此查看</a>，有详细的操作文档。<br>注：<em>不过，我好像运气不太好，方法一没搞定，方法二呢，node是升级成功了，可是npm升级时就不行了，可以看下面的截图。最后用方法三搞定的。</em><br><img src="https://upload-images.jianshu.io/upload_images/1464420-8c9d26b576d51932.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="node升级成功.png"></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/1464420-760e4e07c6b88200.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="npm升级失败.png"></p>
-<h2 id="方法三"><a href="#方法三" class="headerlink" title="方法三"></a>方法三</h2><p>去<a href="https://nodejs.org/en/" target="_blank" rel="noopener">官网</a>下载个你需要的版本，覆盖安装或先卸载再安装都行。不记得node的安装目录不要紧，<code>where node</code> 命令可以看到。everything 搜索工具也可以全盘搜索的。</p>
+        <p>为了提高博客代码块的用户体验，仅仅代码高亮还不行，最好还能一键复制代码。故此文将讲述Hexo NexT主题博客的代码块复制功能配置。<br><a id="more"></a></p>
+<h2 id="下载-clipboard-js"><a href="#下载-clipboard-js" class="headerlink" title="下载 clipboard.js"></a>下载 clipboard.js</h2><p>三方插件 clipboardjs ，相关介绍和兼容性我就不赘述了，去它<a href="https://clipboardjs.com/" target="_blank" rel="noopener">主页</a>或<a href="https://github.com/zenorocha/clipboard.js" target="_blank" rel="noopener">github</a>上看。</p>
+<p><strong>下载地址：</strong></p>
+<ul>
+<li><a href="https://raw.githubusercontent.com/zenorocha/clipboard.js/master/dist/clipboard.js" target="_blank" rel="noopener">clipboard.js</a></li>
+<li><a href="https://raw.githubusercontent.com/zenorocha/clipboard.js/master/dist/clipboard.min.js" target="_blank" rel="noopener">clipboard.min.js</a> <strong>推荐</strong></li>
+</ul>
+<p>保存文件<code>clipboard.js / clipboard.min.js</code> ，目录如下：<br><code>.\themes\next\source\js\src</code></p>
+<h2 id="clipboardjs-使用"><a href="#clipboardjs-使用" class="headerlink" title="clipboardjs 使用"></a>clipboardjs 使用</h2><p>也是在<code>.\themes\next\source\js\src</code>目录下，创建<code>clipboard-use.js</code>，文件内容如下：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*页面载入完成后，创建复制按钮*/</span></span><br><span class="line">!function (e, t, a) &#123; </span><br><span class="line">  <span class="comment">/* code */</span></span><br><span class="line">  <span class="keyword">var</span> initCopyCode = function()&#123;</span><br><span class="line">    <span class="keyword">var</span> copyHtml = '';</span><br><span class="line">    copyHtml += '&lt;button <span class="class"><span class="keyword">class</span>="<span class="title">btn</span>-<span class="title">copy</span>" <span class="title">data</span>-<span class="title">clipboard</span>-<span class="title">snippet</span>=""&gt;';</span></span><br><span class="line"><span class="class">    <span class="title">copyHtml</span> += '  &lt;<span class="title">i</span> <span class="title">class</span>="<span class="title">fa</span> <span class="title">fa</span>-<span class="title">globe</span>"&gt;&lt;/<span class="title">i</span>&gt;&lt;<span class="title">span</span>&gt;<span class="title">copy</span>&lt;/<span class="title">span</span>&gt;';</span></span><br><span class="line"><span class="class">    <span class="title">copyHtml</span> += '&lt;/<span class="title">button</span>&gt;';</span></span><br><span class="line"><span class="class">    <span class="title">$</span>(".<span class="title">highlight</span> .<span class="title">code</span> <span class="title">pre</span>").<span class="title">before</span>(<span class="title">copyHtml</span>);</span></span><br><span class="line"><span class="class">    <span class="title">new</span> <span class="title">ClipboardJS</span>('.<span class="title">btn</span>-<span class="title">copy</span>', </span>&#123;</span><br><span class="line">        target: function(trigger) &#123;</span><br><span class="line">            <span class="keyword">return</span> trigger.nextElementSibling;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  initCopyCode();</span><br><span class="line">&#125;(window, document);</span><br></pre></td></tr></table></figure>
+<p>在<code>.\themes\next\source\css\_custom\custom.styl</code>样式文件中添加下面代码：</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//代码块复制按钮</span></span><br><span class="line">.highlight&#123;</span><br><span class="line">  <span class="comment">//方便copy代码按钮（btn-copy）的定位</span></span><br><span class="line">  position: relative;</span><br><span class="line">&#125;</span><br><span class="line">.btn-copy &#123;</span><br><span class="line">    display: inline-block;</span><br><span class="line">    cursor: pointer;</span><br><span class="line">    background-color: #eee;</span><br><span class="line">    background-image: linear-gradient(#fcfcfc,#eee);</span><br><span class="line">    border: 1px solid #d5d5d5;</span><br><span class="line">    border-radius: 3px;</span><br><span class="line">    -webkit-user-select: <span class="keyword">none</span>;</span><br><span class="line">    -moz-user-select: <span class="keyword">none</span>;</span><br><span class="line">    -ms-user-select: <span class="keyword">none</span>;</span><br><span class="line">    user-select: <span class="keyword">none</span>;</span><br><span class="line">    -webkit-appearance: <span class="keyword">none</span>;</span><br><span class="line">    font-size: 13px;</span><br><span class="line">    font-weight: <span class="number">700</span>;</span><br><span class="line">    line-height: 20px;</span><br><span class="line">    color: #<span class="number">333</span>;</span><br><span class="line">    -webkit-transition: opacity .3s ease-<span class="keyword">in</span>-out;</span><br><span class="line">    -o-transition: opacity .3s ease-<span class="keyword">in</span>-out;</span><br><span class="line">    transition: opacity .3s ease-<span class="keyword">in</span>-out;</span><br><span class="line">    padding: 2px 6px;</span><br><span class="line">    position: absolute;</span><br><span class="line">    <span class="keyword">right</span>: 5px;</span><br><span class="line">    top: 5px;</span><br><span class="line">    opacity: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">.btn-copy span &#123;</span><br><span class="line">    margin-<span class="keyword">left</span>: 5px;</span><br><span class="line">&#125;</span><br><span class="line">.highlight:hover .btn-copy&#123;</span><br><span class="line">  opacity: <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>在<code>.\themes\next\layout\_layout.swig</code>文件中，添加引用（注：在 swig 末尾或 body 结束标签（<code>&lt;/body&gt;</code>）之前添加）：<br><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 代码块复制功能 --&gt;</span><br><span class="line">&lt;script type=<span class="string">"text/javascript"</span> src=<span class="string">"/js/src/clipboard.min.js"</span>&gt;&lt;/script&gt;  </span><br><span class="line">&lt;script type=<span class="string">"text/javascript"</span> src=<span class="string">"/js/src/clipboard-use.js"</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
+<p>想看效果的可以去<a href="http://www.missfli.com/" target="_blank" rel="noopener">我博客</a>看，截图如下:<br><img src="https://upload-images.jianshu.io/upload_images/1464420-6f9f4305c4a35056.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="copycode-btn.png"></p>
+<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p>懂代码的也可以将<code>clipboard.min.js</code>和<code>clipboard-use.js</code>合并为一个文件，再在<code>.\themes\next\layout\_layout.swig</code>文件中使用。当然<code>clipboard.min.js</code>也可以直接用三方cdn的方式引入也行。</p>
 
       
     </div>
@@ -475,7 +506,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="http://missfli.com/2018/04/27/node-version-upgrade.html" title="node 升级版本">http://missfli.com/2018/04/27/node-version-upgrade.html</a>
+    <a href="http://missfli.com/2018/06/19/github-hexo-next-08.html" title="Hexo NexT主题代码块添加复制功能">http://missfli.com/2018/06/19/github-hexo-next-08.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -490,7 +521,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Node/" rel="tag"><i class="fa fa-tag"></i> Node</a>
+            <a href="/tags/Hexo/" rel="tag"><i class="fa fa-tag"></i> Hexo</a>
+          
+            <a href="/tags/NexT/" rel="tag"><i class="fa fa-tag"></i> NexT</a>
           
         </div>
       
@@ -503,8 +536,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/25/scroll-more.html" rel="next" title="滚动到底部加载更多">
-                <i class="fa fa-chevron-left"></i> 滚动到底部加载更多
+              <a href="/2018/06/12/markdown-tree.html" rel="next" title="markdown文件的目录树生成">
+                <i class="fa fa-chevron-left"></i> markdown文件的目录树生成
               </a>
             
           </div>
@@ -512,10 +545,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/06/vue-element-01.html" rel="prev" title="vue+element ui 之一：环境搭建和项目创建">
-                vue+element ui 之一：环境搭建和项目创建 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -727,7 +756,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#方法一"><span class="nav-number">1.</span> <span class="nav-text">方法一</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法二"><span class="nav-number">2.</span> <span class="nav-text">方法二</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法三"><span class="nav-number">3.</span> <span class="nav-text">方法三</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#下载-clipboard-js"><span class="nav-number">1.</span> <span class="nav-text">下载 clipboard.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#clipboardjs-使用"><span class="nav-number">2.</span> <span class="nav-text">clipboardjs 使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#引用"><span class="nav-number">3.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#补充"><span class="nav-number">4.</span> <span class="nav-text">补充</span></a></li></ol></div>
             
 
           </div>
