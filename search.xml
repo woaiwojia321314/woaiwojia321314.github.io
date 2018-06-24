@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[用vue实现无限滚动]]></title>
+    <url>%2F2018%2F06%2F24%2Fvue-infinite-scroll.html</url>
+    <content type="text"><![CDATA[译文：https://alligator.io/vuejs/implementing-infinite-scroll/无限滚动在网络上占有一席之地，但它不适用于每个网站或应用程序。当用户需要加载大量数据或图像时，但又不想一次性加载完所有数据和图像时，它们特别有用。 Twitter，Facebook和Instagram等社交媒体多年来一直在推广。在您的网站或应用程序中集成自己的无限滚动比您想象的要容易。 本文将使用 Random User API(模拟后端返回数据)。该API将自己形容为“像Lorem Ipsum，但是对于人”。它不仅适用于此实现，而且对于模仿未来项目的用户配置文件也非常有用。 在你开始前，用 Vue CLI webpack-simple项目模板创建一个新的 Vue.js 项目。此例子将分别用 Axios 和MomentJS 来获取数据和日期格式。 $ vue init webpack-simple infinite-scroll-vuejs 获取初始用户数据有各种实现无限滚动的 npm 包，你可以使用你的 Vue 应用程序，但其中一些可能是太繁琐了。此文中，我们将不用那些插件或包，仅仅编写一个简单的 JavaScript 函数来实现无限滚动功能（当滚动到浏览器窗口底部时，获取一组新数据）。 在我们开始集成无限滚动之前，让我们在页面加载中获取并设置一些初始数据： App.vue 123456789101112131415161718data () &#123; return &#123; persons: [] &#125;&#125;,methods: &#123; getInitialUsers () &#123; for (var i = 0; i &lt; 5; i++) &#123; axios.get(`https://randomuser.me/api/`) .then(response =&gt; &#123; this.persons.push(response.data.results[0]); &#125;); &#125; &#125;&#125;,beforeMount() &#123; this.getInitialUsers();&#125; 注意： Random User API 一次只会返回一个随机用户数据，为了获得5个用户数据，需要发起五次请求。 如果您在 console 看到了五个用户数据，那就OK了！让我们通过模板中的这些数据进行迭代，然后继续： App.vue 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253&lt;template&gt; &lt;div id="app"&gt; &lt;h1&gt;Random User&lt;/h1&gt; &lt;div class="person" v-for="person in persons"&gt; &lt;div class="left"&gt; &lt;img :src="person.picture.large"&gt; &lt;/div&gt; &lt;div class="right"&gt; &lt;p&gt;&#123;&#123; person.name.first &#125;&#125; &#123;&#123; person.name.last &#125;&#125;&lt;/p&gt; &lt;ul&gt; &lt;li&gt; &lt;strong&gt;Birthday:&lt;/strong&gt; &#123;&#123; formatDate(person.dob) &#125;&#125; &lt;/li&gt; &lt;li class="text-capitalize"&gt; &lt;strong&gt;Location:&lt;/strong&gt; &#123;&#123; person.location.city &#125;&#125;, &#123;&#123; person.location.state &#125;&#125; &lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;&lt;/template&gt;&lt;script&gt;...&lt;/script&gt;&lt;style lang="scss"&gt; /* Optional Styles */ .person &#123; background: #ccc; border-radius: 2px; width: 20%; margin: 0 auto 15px auto; padding: 15px; img &#123; width: 100%; height: auto; border-radius: 2px; &#125; p:first-child &#123; text-transform: capitalize; font-size: 2rem; font-weight: 900; &#125; .text-capitalize &#123; text-transform: capitalize; &#125; &#125;&lt;/style&gt; 实现无限滚动逻辑现在你在此的目的……无限的滚动！ 在组件的方法中，您需要创建一个名为scroll()的新函数，并将其加载到mounted()生命周期方法中。 这个scroll()方法应该有一个简单的条件来计算页面的底部，判断它为true或false，并执行一些操作。我们将利用文档对象的documentElement.scrollTop，documentElement.offsetHeight属性和窗口的innerHeight属性来确定是否滚动到底部： 1234567window.onscroll = () =&gt; &#123; let bottomOfWindow = document.documentElement.scrollTop + window.innerHeight === document.documentElement.offsetHeight; if (bottomOfWindow) &#123; // Do something, anything! &#125;&#125;; 在这种情况下，让我们添加一个GET方法，使用Axios从随机用户API中获取另一个随机用户。 123456789101112131415161718methods: &#123; ..., scroll (person) &#123; window.onscroll = () =&gt; &#123; let bottomOfWindow = document.documentElement.scrollTop + window.innerHeight === document.documentElement.offsetHeight; if (bottomOfWindow) &#123; axios.get(`https://randomuser.me/api/`) .then(response =&gt; &#123; person.push(response.data.results[0]); &#125;); &#125; &#125;; &#125;,&#125;,mounted() &#123; this.scroll(this.person);&#125; 此功能只会在用户滚动到页面底部时发起服务请求，并向人员数组添加一个新的随机“用户”。此时，您应该可以无限滚动…并每次看到新的“用户”。 结尾无限滚动听起来吓人，但如所证明的那样，它非常简单。每次滚动到页面的底部时，我们都会使用 Axios 获取新数据，然后将这些数据推送到数组中。要延迟加载图像，只需将图像源推送到数据数组，在模板中遍历它，然后将&lt;img：src =&quot;&quot;&gt;绑定到数组。 ps： 此文核心就在【判断是否滚动到页面底部的逻辑上】，在此提供一个兼容性更好的写法，参考此文滚动到底部加载更多。]]></content>
+      <categories>
+        <category>vue</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+        <tag>scroll</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[js ==和===以及Object.is区别]]></title>
+    <url>%2F2018%2F06%2F22%2Fjs-equal-es56.html</url>
+    <content type="text"><![CDATA[平时经常用到数据比较，会用到不少特殊值（NaN, &#39;&#39;, null, undefined, 0, +0, -0,），这里整理一下数据比较方式（==和===以及Object.is）的区别。 ==和===以及Object.is区别JavasSript 是弱类型。==比较时，是值比较；===比较时，是类型和值比较；Object.is()比较时，跟===一样，但又有些区别。下面会一一介绍。 首先，==因为是值比较，故而在一些情况下会自动做类型转换再比较。也就是常说的js隐式转换。这里啰嗦一下，大致讲一下隐式转换。大多数情况下，大致遵守下面的规律：代码：1230 == ' ' //truenull == undefined //true[1] == true //true 特例：12[] == false //true![] == false //true 其次，===比较时，就是类型和值的比较了。大多数情况下我们会用===而不是==，至少在es5的版本里是这样的。12''===0 //false'0'===0 //false ps：最特殊的就是NaN了，在ES5的版本里，无论是==还是===，不管谁更NaN比较都是false，包括跟它自己比较。12345NaN==NaN //falseNaN=='' //falseNaN==0 //falseNaN==null //falseNaN==undefined //false 最后，ES6 中提供了新的 Object.is() 方法，它具有 === 的一些特点，而且更好、更精确，在一些特殊案例中表现的很好：1234Object.is(0 , ' '); //falseObject.is(null, undefined); //falseObject.is([1], true); //falseObject.is(NaN, NaN); //true，特别是这个 ps: Object.is()方法不兼容ie。 总结，来看看这三者的对比表： 参考 js中的隐式转换 为什么你应该在相等比较中使用 Object.is()-in-equality-comparison/) Object.is()]]></content>
+      <categories>
+        <category>js</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo NexT主题代码块添加复制功能]]></title>
     <url>%2F2018%2F06%2F19%2Fgithub-hexo-next-08.html</url>
     <content type="text"><![CDATA[为了提高博客代码块的用户体验，仅仅代码高亮还不行，最好还能一键复制代码。故此文将讲述Hexo NexT主题博客的代码块复制功能配置。 下载 clipboard.js三方插件 clipboardjs ，相关介绍和兼容性我就不赘述了，去它主页或github上看。 下载地址： clipboard.js clipboard.min.js 推荐 保存文件clipboard.js / clipboard.min.js ，目录如下：.\themes\next\source\js\src clipboardjs 使用也是在.\themes\next\source\js\src目录下，创建clipboard-use.js，文件内容如下： 1234567891011121314151617/*页面载入完成后，创建复制按钮*/!function (e, t, a) &#123; /* code */ var initCopyCode = function()&#123; var copyHtml = ''; copyHtml += '&lt;button class="btn-copy" data-clipboard-snippet=""&gt;'; copyHtml += ' &lt;i class="fa fa-globe"&gt;&lt;/i&gt;&lt;span&gt;copy&lt;/span&gt;'; copyHtml += '&lt;/button&gt;'; $(".highlight .code pre").before(copyHtml); new ClipboardJS('.btn-copy', &#123; target: function(trigger) &#123; return trigger.nextElementSibling; &#125; &#125;); &#125; initCopyCode();&#125;(window, document); 在.\themes\next\source\css\_custom\custom.styl样式文件中添加下面代码： 123456789101112131415161718192021222324252627282930313233343536//代码块复制按钮.highlight&#123; //方便copy代码按钮（btn-copy）的定位 position: relative;&#125;.btn-copy &#123; display: inline-block; cursor: pointer; background-color: #eee; background-image: linear-gradient(#fcfcfc,#eee); border: 1px solid #d5d5d5; border-radius: 3px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-appearance: none; font-size: 13px; font-weight: 700; line-height: 20px; color: #333; -webkit-transition: opacity .3s ease-in-out; -o-transition: opacity .3s ease-in-out; transition: opacity .3s ease-in-out; padding: 2px 6px; position: absolute; right: 5px; top: 5px; opacity: 0;&#125;.btn-copy span &#123; margin-left: 5px;&#125;.highlight:hover .btn-copy&#123; opacity: 1;&#125; 引用在.\themes\next\layout\_layout.swig文件中，添加引用（注：在 swig 末尾或 body 结束标签（&lt;/body&gt;）之前添加）：123&lt;!-- 代码块复制功能 --&gt;&lt;script type="text/javascript" src="/js/src/clipboard.min.js"&gt;&lt;/script&gt; &lt;script type="text/javascript" src="/js/src/clipboard-use.js"&gt;&lt;/script&gt; 想看效果的可以去我博客看，截图如下: 补充懂代码的也可以将clipboard.min.js和clipboard-use.js合并为一个文件，再在.\themes\next\layout\_layout.swig文件中使用。当然clipboard.min.js也可以直接用三方cdn的方式引入也行。]]></content>
@@ -231,9 +254,9 @@
         <category>Hexo</category>
       </categories>
       <tags>
+        <tag>Github</tag>
         <tag>Hexo</tag>
         <tag>NexT</tag>
-        <tag>Github</tag>
       </tags>
   </entry>
   <entry>
@@ -430,17 +453,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[html5视频转换工具]]></title>
-    <url>%2F2016%2F02%2F05%2Ftool-html5-video.html</url>
-    <content type="text"><![CDATA[10个免费的HTML5视频转换工具下载，搜过一些工具，跟此文的工具都差不多。然后下载了好几款试用了一下，最后比较满意的是any-video-converter。其他的，我就简单说说使用情况吧。先提一句：html5的视频播放格式编码要求：h264/mp4, theora/ogg, vp8/webm。 Miro Video Converter 能转，但是转完后就不能用。 Miro Video Converter 这个比较悲剧，找半天都没找到转成webm格式的地方。 Freemake Video Converter 能转，也能用，但是具体参数比较少。 Easy HTML5 Video 能转，并且比any-video-converter转的视频大小还小些，看了一下，视频没有失真没有出入。但是他丫的居然在右上角有个水印，导致了没法商用。 any-video-converter 能转的格式不全，还是收费的。 Online-Convert.Com 具体编码参数基本没有，懒得试了。 any-video-converter 各种格式和参数比较齐全，pc端手机端平板端的都有。转完还有demo页面。]]></content>
-      <categories>
-        <category>tool</category>
-      </categories>
-      <tags>
-        <tag>html5</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[网页(UI)设计--切图标注工具]]></title>
     <url>%2F2016%2F02%2F05%2Ftool-cut-mark.html</url>
     <content type="text"><![CDATA[cutterman(免费)–切图（ps 插件） parker(收费)–标注（ps 插件） PxCook(免费)–标注 ASSISTOR PS(免费)–切图，标注（ps 标注） BigShear(收费)–切图 markman(收费)–标注 标注的工具试过几个。PxCook和markman功能类似，不足：没法准确取色，特别是带透明色；无法准确获取文字（字体，字体大小，字体颜色，行高）。parker功能都有，但是外边距只能量2个图层，无法多个图层一起标注外边距。ASSISTOR PS功能都有，但是内边距需要自己手动拉个选框出来，再选中2个图层，才能量了。 切图类工具呢，虽然没怎么试过，不过大家都推荐cutterman。标注类工具呢，跟ps一起用的话，推荐ASSISTOR PS。单独用呢，用markman（mac版收费，windows有破解版，虽然官网说基本版免费，你用了就会发现啥叫基本功能了）和PxCook都行。 免费了！切图标记外挂神器ASSISTOR PS深入解读（上）免费了！切图标记外挂神器ASSISTOR PS深入解读（下）]]></content>
@@ -449,6 +461,17 @@
       </categories>
       <tags>
         <tag>photoshop</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[html5视频转换工具]]></title>
+    <url>%2F2016%2F02%2F05%2Ftool-html5-video.html</url>
+    <content type="text"><![CDATA[10个免费的HTML5视频转换工具下载，搜过一些工具，跟此文的工具都差不多。然后下载了好几款试用了一下，最后比较满意的是any-video-converter。其他的，我就简单说说使用情况吧。先提一句：html5的视频播放格式编码要求：h264/mp4, theora/ogg, vp8/webm。 Miro Video Converter 能转，但是转完后就不能用。 Miro Video Converter 这个比较悲剧，找半天都没找到转成webm格式的地方。 Freemake Video Converter 能转，也能用，但是具体参数比较少。 Easy HTML5 Video 能转，并且比any-video-converter转的视频大小还小些，看了一下，视频没有失真没有出入。但是他丫的居然在右上角有个水印，导致了没法商用。 any-video-converter 能转的格式不全，还是收费的。 Online-Convert.Com 具体编码参数基本没有，懒得试了。 any-video-converter 各种格式和参数比较齐全，pc端手机端平板端的都有。转完还有demo页面。]]></content>
+      <categories>
+        <category>tool</category>
+      </categories>
+      <tags>
+        <tag>html5</tag>
       </tags>
   </entry>
   <entry>
