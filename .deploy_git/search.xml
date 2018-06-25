@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[用vue实现无限滚动]]></title>
+    <url>%2F2018%2F06%2F24%2Fvue-infinite-scroll.html</url>
+    <content type="text"><![CDATA[译文：https://alligator.io/vuejs/implementing-infinite-scroll/无限滚动在网络上占有一席之地，但它不适用于每个网站或应用程序。当用户需要加载大量数据或图像时，但又不想一次性加载完所有数据和图像时，它们特别有用。 Twitter，Facebook和Instagram等社交媒体多年来一直在推广。在您的网站或应用程序中集成自己的无限滚动比您想象的要容易。 本文将使用 Random User API(模拟后端返回数据)。该API将自己形容为“像Lorem Ipsum，但是对于人”。它不仅适用于此实现，而且对于模仿未来项目的用户配置文件也非常有用。 在你开始前，用 Vue CLI webpack-simple项目模板创建一个新的 Vue.js 项目。此例子将分别用 Axios 和MomentJS 来获取数据和日期格式。 $ vue init webpack-simple infinite-scroll-vuejs 获取初始用户数据有各种实现无限滚动的 npm 包，你可以使用你的 Vue 应用程序，但其中一些可能是太繁琐了。此文中，我们将不用那些插件或包，仅仅编写一个简单的 JavaScript 函数来实现无限滚动功能（当滚动到浏览器窗口底部时，获取一组新数据）。 在我们开始集成无限滚动之前，让我们在页面加载中获取并设置一些初始数据： App.vue 123456789101112131415161718data () &#123; return &#123; persons: [] &#125;&#125;,methods: &#123; getInitialUsers () &#123; for (var i = 0; i &lt; 5; i++) &#123; axios.get(`https://randomuser.me/api/`) .then(response =&gt; &#123; this.persons.push(response.data.results[0]); &#125;); &#125; &#125;&#125;,beforeMount() &#123; this.getInitialUsers();&#125; 注意： Random User API 一次只会返回一个随机用户数据，为了获得5个用户数据，需要发起五次请求。 如果您在 console 看到了五个用户数据，那就OK了！让我们通过模板中的这些数据进行迭代，然后继续： App.vue 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253&lt;template&gt; &lt;div id="app"&gt; &lt;h1&gt;Random User&lt;/h1&gt; &lt;div class="person" v-for="person in persons"&gt; &lt;div class="left"&gt; &lt;img :src="person.picture.large"&gt; &lt;/div&gt; &lt;div class="right"&gt; &lt;p&gt;&#123;&#123; person.name.first &#125;&#125; &#123;&#123; person.name.last &#125;&#125;&lt;/p&gt; &lt;ul&gt; &lt;li&gt; &lt;strong&gt;Birthday:&lt;/strong&gt; &#123;&#123; formatDate(person.dob) &#125;&#125; &lt;/li&gt; &lt;li class="text-capitalize"&gt; &lt;strong&gt;Location:&lt;/strong&gt; &#123;&#123; person.location.city &#125;&#125;, &#123;&#123; person.location.state &#125;&#125; &lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;&lt;/template&gt;&lt;script&gt;...&lt;/script&gt;&lt;style lang="scss"&gt; /* Optional Styles */ .person &#123; background: #ccc; border-radius: 2px; width: 20%; margin: 0 auto 15px auto; padding: 15px; img &#123; width: 100%; height: auto; border-radius: 2px; &#125; p:first-child &#123; text-transform: capitalize; font-size: 2rem; font-weight: 900; &#125; .text-capitalize &#123; text-transform: capitalize; &#125; &#125;&lt;/style&gt; 实现无限滚动逻辑现在你在此的目的……无限的滚动！ 在组件的方法中，您需要创建一个名为scroll()的新函数，并将其加载到mounted()生命周期方法中。 这个scroll()方法应该有一个简单的条件来计算页面的底部，判断它为true或false，并执行一些操作。我们将利用文档对象的documentElement.scrollTop，documentElement.offsetHeight属性和窗口的innerHeight属性来确定是否滚动到底部： 1234567window.onscroll = () =&gt; &#123; let bottomOfWindow = document.documentElement.scrollTop + window.innerHeight === document.documentElement.offsetHeight; if (bottomOfWindow) &#123; // Do something, anything! &#125;&#125;; 在这种情况下，让我们添加一个GET方法，使用Axios从随机用户API中获取另一个随机用户。 123456789101112131415161718methods: &#123; ..., scroll (person) &#123; window.onscroll = () =&gt; &#123; let bottomOfWindow = document.documentElement.scrollTop + window.innerHeight === document.documentElement.offsetHeight; if (bottomOfWindow) &#123; axios.get(`https://randomuser.me/api/`) .then(response =&gt; &#123; person.push(response.data.results[0]); &#125;); &#125; &#125;; &#125;,&#125;,mounted() &#123; this.scroll(this.person);&#125; 此功能只会在用户滚动到页面底部时发起服务请求，并向人员数组添加一个新的随机“用户”。此时，您应该可以无限滚动…并每次看到新的“用户”。 结尾无限滚动听起来吓人，但如所证明的那样，它非常简单。每次滚动到页面的底部时，我们都会使用 Axios 获取新数据，然后将这些数据推送到数组中。要延迟加载图像，只需将图像源推送到数据数组，在模板中遍历它，然后将&lt;img：src =&quot;&quot;&gt;绑定到数组。 ps： 此文核心就在【判断是否滚动到页面底部的逻辑上】，在此提供一个兼容性更好的写法，参考此文滚动到底部加载更多。]]></content>
+      <categories>
+        <category>vue</category>
+      </categories>
+      <tags>
+        <tag>vue</tag>
+        <tag>scroll</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[js ==和===以及Object.is区别]]></title>
+    <url>%2F2018%2F06%2F22%2Fjs-equal-es56.html</url>
+    <content type="text"><![CDATA[平时经常用到数据比较，会用到不少特殊值（NaN, &#39;&#39;, null, undefined, 0, +0, -0,），这里整理一下数据比较方式（==和===以及Object.is）的区别。 ==和===以及Object.is区别JavasSript 是弱类型。==比较时，是值比较；===比较时，是类型和值比较；Object.is()比较时，跟===一样，但又有些区别。下面会一一介绍。 首先，==因为是值比较，故而在一些情况下会自动做类型转换再比较。也就是常说的js隐式转换。这里啰嗦一下，大致讲一下隐式转换。大多数情况下，大致遵守下面的规律：代码：1230 == ' ' //truenull == undefined //true[1] == true //true 特例：12[] == false //true![] == false //true 其次，===比较时，就是类型和值的比较了。大多数情况下我们会用===而不是==，至少在es5的版本里是这样的。12''===0 //false'0'===0 //false ps：最特殊的就是NaN了，在ES5的版本里，无论是==还是===，不管谁更NaN比较都是false，包括跟它自己比较。12345NaN==NaN //falseNaN=='' //falseNaN==0 //falseNaN==null //falseNaN==undefined //false 最后，ES6 中提供了新的 Object.is() 方法，它具有 === 的一些特点，而且更好、更精确，在一些特殊案例中表现的很好：1234Object.is(0 , ' '); //falseObject.is(null, undefined); //falseObject.is([1], true); //falseObject.is(NaN, NaN); //true，特别是这个 ps: Object.is()方法不兼容ie。 总结，来看看这三者的对比表： 参考 js中的隐式转换 为什么你应该在相等比较中使用 Object.is()-in-equality-comparison/) Object.is()]]></content>
+      <categories>
+        <category>js</category>
+      </categories>
+      <tags>
+        <tag>js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo NexT主题代码块添加复制功能]]></title>
+    <url>%2F2018%2F06%2F19%2Fgithub-hexo-next-08.html</url>
+    <content type="text"><![CDATA[为了提高博客代码块的用户体验，仅仅代码高亮还不行，最好还能一键复制代码。故此文将讲述Hexo NexT主题博客的代码块复制功能配置。 下载 clipboard.js三方插件 clipboardjs ，相关介绍和兼容性我就不赘述了，去它主页或github上看。 下载地址： clipboard.js clipboard.min.js 推荐 保存文件clipboard.js / clipboard.min.js ，目录如下：.\themes\next\source\js\src clipboardjs 使用也是在.\themes\next\source\js\src目录下，创建clipboard-use.js，文件内容如下： 1234567891011121314151617/*页面载入完成后，创建复制按钮*/!function (e, t, a) &#123; /* code */ var initCopyCode = function()&#123; var copyHtml = ''; copyHtml += '&lt;button class="btn-copy" data-clipboard-snippet=""&gt;'; copyHtml += ' &lt;i class="fa fa-globe"&gt;&lt;/i&gt;&lt;span&gt;copy&lt;/span&gt;'; copyHtml += '&lt;/button&gt;'; $(".highlight .code pre").before(copyHtml); new ClipboardJS('.btn-copy', &#123; target: function(trigger) &#123; return trigger.nextElementSibling; &#125; &#125;); &#125; initCopyCode();&#125;(window, document); 在.\themes\next\source\css\_custom\custom.styl样式文件中添加下面代码： 123456789101112131415161718192021222324252627282930313233343536//代码块复制按钮.highlight&#123; //方便copy代码按钮（btn-copy）的定位 position: relative;&#125;.btn-copy &#123; display: inline-block; cursor: pointer; background-color: #eee; background-image: linear-gradient(#fcfcfc,#eee); border: 1px solid #d5d5d5; border-radius: 3px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-appearance: none; font-size: 13px; font-weight: 700; line-height: 20px; color: #333; -webkit-transition: opacity .3s ease-in-out; -o-transition: opacity .3s ease-in-out; transition: opacity .3s ease-in-out; padding: 2px 6px; position: absolute; right: 5px; top: 5px; opacity: 0;&#125;.btn-copy span &#123; margin-left: 5px;&#125;.highlight:hover .btn-copy&#123; opacity: 1;&#125; 引用在.\themes\next\layout\_layout.swig文件中，添加引用（注：在 swig 末尾或 body 结束标签（&lt;/body&gt;）之前添加）：123&lt;!-- 代码块复制功能 --&gt;&lt;script type="text/javascript" src="/js/src/clipboard.min.js"&gt;&lt;/script&gt; &lt;script type="text/javascript" src="/js/src/clipboard-use.js"&gt;&lt;/script&gt; 想看效果的可以去我博客看，截图如下: 补充懂代码的也可以将clipboard.min.js和clipboard-use.js合并为一个文件，再在.\themes\next\layout\_layout.swig文件中使用。当然clipboard.min.js也可以直接用三方cdn的方式引入也行。]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[markdown文件的目录树生成]]></title>
     <url>%2F2018%2F06%2F12%2Fmarkdown-tree.html</url>
     <content type="text"><![CDATA[最近看 github 上项目，发现很多都有文档文件（README.md），看见里面有目录树，故而整理了一下。markdown文件的目录树生成的核心在于锚点。ps：简书这里是不支持的，你要想加，可以参考简书自动生成目录小工具。 工具类生成目录基本每个编辑器都有【目录生成】的功能。我用的 Typora ，我找了一下，段落--内容目录，确实能生成目录树，效果还不错。切换成源码一看，只是加了个[TOC]。简书不支持，好像CSDN就支持[TOC]。 手写目录第一种：去此处查看README.md文件。 截图如下： 第二种：去此处查看README.md文件。 截图如下： ps：简书这里，都不支持。]]></content>
@@ -113,6 +148,18 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Hexo NexT主题评论功能的筛选对比]]></title>
+    <url>%2F2018%2F05%2F29%2Fgithub-hexo-next-05.html</url>
+    <content type="text"><![CDATA[个人站点评论系统的选择的确让人头疼，我在这上面也折腾了很长时间，蛮难选的。大致整理了一下，看下表，后续深入了解后再更新此文。 评论系统对比表 名称 推荐星数 介绍 多说 0 在2017年06月01日就关闭评论服务了 网易云跟贴 0 2017年08月01日也停止服务了 来必力 3 国外的，不能匿名评论，支持邮箱账号注册评论，据说容易出现乱码。 DISQUS 2 国外的，界面又丑，加载又慢。 畅言 4 国内的，不能匿名评论，，需要手机号验证。需要你的备案号，不然你网站没法长时间使用畅言。据说灌水厉害，这个功能目前已经是出于失灵与半失灵的状态，官方估计也没怎么维护了。 有言 3 国内的，支持匿名评论（默认关闭，需手动开启），但只是匿名，没有留联系方式的地方。 Facebook Comments 3 国外的，个人网站很少见人用，不做评论。 HyperComments 4 国外的，支持匿名评论，可以评论上传图片、影片等。功能还是比较强大，设置界面是英文，且没有中文支持。收费，只能免费试用14天。界面美观。 Valine 3 国内的，不能匿名评论，但也不需要注册那么麻烦，简单风格。 gitment 2 不推荐gitment因为作者弃坑了，一堆兼容问题没人修复，包括提交的pr都没合并。 gitalk 3 支持Markdown。 基于 GitHub Issues 的评论系统 ，面向程序员，不能匿名评论，需博主初始化话题，用户需登录 github 账号评论。 推荐星际评定不一定合理，自行搜集相关资料选择心仪的。我暂定的 Valine 。 参考 Hexo（NexT 主题）评论系统哪个好？ Hexo-NexT主题添加评论功能（来必力、Hypercomments、畅言、友言）]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>NexT</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo NexT：在文章中嵌入 CodePen或 jsFiddle]]></title>
     <url>%2F2018%2F05%2F29%2Fgithub-hexo-next-04.html</url>
     <content type="text"><![CDATA[建议直接去博客网站原文看效果，因为简书的markdown不支持此语法的。搞 IT 技术的人，写博客有时候需要在博文中展示一些实施的 demo 代码效果，这就涉及到需要在博文中嵌入 CodePen 或 jsFiddle，jsFiddle 有个国内版 jsrun，我就做了上面两种尝试，也就不讲其他的了。至于这两款需要翻墙，对于搞 IT 技术的你不算事儿吧。 提一句：需要拿出来做嵌入用的代码，你去你的 demo 页面找Embed，中文版的好像叫嵌入，里面有下面的嵌入代码的语法需要的参数。 在文章中嵌入 CodePen去 Hexo 官方插件页搜索codepen，然后找到hexo-codepen，点过去。或者直接点击此处。里面有文档和示例，大致讲解一下。 1.安装npm 安装：$ npm install hexo-codepen --save或 yarn 安装：$ yarn add hexo-codepen 2.用法语法结构：1&#123;% codepen userId|anonymous|anon slugHash theme [defaultTab [height [width]]] %&#125; deme 链接： https://codepen.io/CiTA/pen/bgjKKE 在 CodePen 里面 Embed 出来的html代码：12&lt;p data-height="265" data-theme-id="dark" data-slug-hash="bgjKKE" data-default-tab="css,result" data-user="CiTA" data-embed-version="2" data-pen-title="CSS sidebar toggle" class="codepen"&gt;See the Pen &lt;a href="https://codepen.io/CiTA/pen/bgjKKE/"&gt;CSS sidebar toggle&lt;/a&gt; by Silvestar Bistrović (&lt;a href="https://codepen.io/CiTA"&gt;@CiTA&lt;/a&gt;) on &lt;a href="https://codepen.io"&gt;CodePen&lt;/a&gt;.&lt;/p&gt;&lt;script async src="https://production-assets.codepen.io/assets/embed/ei.js"&gt;&lt;/script&gt; 参数对应关系： 字段 值 userId CiTA slugHash bgjKKE theme dark defaultTab css,result height 265 width 默认为：100%，此值应根据您的博客主题进行调整 示例效果：12#替换参数后的语法：(*设置宽高时不要用%，会导致编译错误*)&#123;% codepen CiTA bgjKKE dark [css,result [265]] %&#125; 运行后的： 当然也可以直接嵌入源码（CodePen 中 Embed 出来的代码支持3种格式：WordPress Shortcode、iFrame、HTML） ，也能看到效果，只是这个会带有源码，体验不太好。效果如下： See the Pen CSS sidebar toggle by Silvestar Bistrović (@CiTA) on CodePen. 在文章中嵌入 jsFiddle这个就省掉了安装依赖包的步骤了，本来官网也提供了语法，只是没有具体的示例，网上找了半天没资料。就自己参考 CodePen 的方式做了一个逆向推理出来的。 用法语法结构（官网也就只提供了这个）：(设置宽高时不要用%，会导致编译错误)1&#123;% jsfiddle shorttag [tabs] [skin] [width] [height] %&#125; demo 链接： http://jsfiddle.net/AntBody/138zf8kk/?utm_source=website&amp;utm_medium=embed&amp;utm_campaign=138zf8kk 在文章中嵌入 jsfiddle 。 然后页面转化后，在浏览器里面开启调试控制台，看到如下图： 然后逆推，设置如下：1&#123;% jsfiddle AntBody/138zf8kk js,html,css,result light %&#125; 运行效果： 这些参数怎么对应过去的呢？看下图： 当然同样的，因为 jsfiddle 的Embed code 支持两种方式，也可以引入 iFarme 源码进来，因为本来 Hexo 的语法本来就是编译成 iframe 形式的。 另外说明一点，jsfiddle 的 demo 例子代码你得找到 Emebed才能看到相关需要的参数，如果找不到，可能就不知道怎么设置了。比如 Element UI 的随便一个例子： https://jsfiddle.net/api/post/library/pure/，不知道是不是因为没注册账号的原因引起的。（由于我一直用的codepen，就没去捉摸具体原因了。） 总结 codepen 嵌入 安装：$ npm install hexo-codepen --save 使用语法结构： 1&#123;% codepen userId|anonymous|anon slugHash theme [defaultTab [height [width]]] %&#125; 找到对应参数，对应过去就行。 jsfiddle 嵌入 使用语法结构： 1&#123;% jsfiddle shorttag [tabs] [skin] [width] [height] %&#125; 找到对应参数，对应过去就行。 至于其他的像 dabbet、jsrun、jsbin、runjs 等等就自己去尝试了。另外，由于 hexo 解析后都是 iframe 的结果形式，故而可以直接引入 iframe 的代码也行，只是效果体验会差些，毕竟连源码也显示出来了。至于，其他的 js 嵌入或 html+js 嵌入就自己去尝试了。codepen 里面尝试了一下，跟 iframe 引入方式效果一样。]]></content>
@@ -123,18 +170,6 @@
         <tag>Hexo</tag>
         <tag>CodePen</tag>
         <tag>jsFiddle</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hexo NexT主题评论功能的筛选对比]]></title>
-    <url>%2F2018%2F05%2F29%2Fgithub-hexo-next-05.html</url>
-    <content type="text"><![CDATA[个人站点评论系统的选择的确让人头疼，我在这上面也折腾了很长时间，蛮难选的。大致整理了一下，看下表，后续深入了解后再更新此文。 评论系统对比表 名称 推荐星数 介绍 多说 0 在2017年06月01日就关闭评论服务了 网易云跟贴 0 2017年08月01日也停止服务了 来必力 3 国外的，不能匿名评论，支持邮箱账号注册评论，据说容易出现乱码。 DISQUS 2 国外的，界面又丑，加载又慢。 畅言 4 国内的，不能匿名评论，，需要手机号验证。需要你的备案号，不然你网站没法长时间使用畅言。据说灌水厉害，这个功能目前已经是出于失灵与半失灵的状态，官方估计也没怎么维护了。 有言 3 国内的，支持匿名评论（默认关闭，需手动开启），但只是匿名，没有留联系方式的地方。 Facebook Comments 3 国外的，个人网站很少见人用，不做评论。 HyperComments 4 国外的，支持匿名评论，可以评论上传图片、影片等。功能还是比较强大，设置界面是英文，且没有中文支持。收费，只能免费试用14天。界面美观。 Valine 3 国内的，不能匿名评论，但也不需要注册那么麻烦，简单风格。 gitment 2 不推荐gitment因为作者弃坑了，一堆兼容问题没人修复，包括提交的pr都没合并。 gitalk 3 支持Markdown。 基于 GitHub Issues 的评论系统 ，面向程序员，不能匿名评论，需博主初始化话题，用户需登录 github 账号评论。 推荐星际评定不一定合理，自行搜集相关资料选择心仪的。我暂定的 Valine 。 参考 Hexo（NexT 主题）评论系统哪个好？ Hexo-NexT主题添加评论功能（来必力、Hypercomments、畅言、友言）]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>NexT</tag>
       </tags>
   </entry>
   <entry>
@@ -219,9 +254,9 @@
         <category>Hexo</category>
       </categories>
       <tags>
+        <tag>Github</tag>
         <tag>Hexo</tag>
         <tag>NexT</tag>
-        <tag>Github</tag>
       </tags>
   </entry>
   <entry>
@@ -260,18 +295,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Vue2 ：百度地图bmap]]></title>
-    <url>%2F2018%2F05%2F19%2Fvue-bmap.html</url>
-    <content type="text"><![CDATA[百度地图JavaScript API是一套由JavaScript语言编写的应用程序接口，可帮助您在网站中构建功能丰富、交互性强的地图应用，支持PC端和移动端基于浏览器的地图应用开发，且支持HTML5特性的地图开发。 该套API免费对外开放。自v1.5版本起，您需先申请密钥（ak）才可使用，接口无使用次数限制。 地址传送门：http://lbsyun.baidu.com/index.php?title=jspopular 申请密钥点击此处申请密钥，然后在首页index.html的head引入下面的js代码：&lt;script type=&quot;text/javascript&quot; src=&quot;http://api.map.baidu.com/api?v=2.0&amp;ak=密钥&quot;&gt;&lt;/script&gt;注意：建议先写个简单的html确认密钥正确可用后，再讲其引入vue的项目中。因为有些教程这里引入的js的src末尾带有 &amp;callback=init ，这个参数导致了报错（见下图），而始终无法正常使用百度地图api。 webpack 配置文件如果只是第一步，你调用百度地图api时，报错： Bmap is not defined ，那么就配置 webpack 配置文件（webpack.base.conf.js）的module.exports中加个externals：123456789module.exports = &#123; context: path.resolve(__dirname, '../'), entry: &#123; app: './src/main.js' &#125;, //百度地图配置20180518 externals: &#123; "BMap": "BMap" &#125;,...&#125; 调用12345678910111213141516171819202122232425262728293031323334&lt;template&gt; &lt;!--地图容器--&gt; &lt;div id="fli" class="fli"&gt;&lt;/div&gt;&lt;/template&gt;&lt;script&gt; export default &#123; name:'', data () &#123; return &#123; &#125; &#125;, mounted()&#123; var map = new BMap.Map('fli',&#123;enableMapClick:true&#125;); // 创建Map实例 map.centerAndZoom(new BMap.Point(104.06, 30.67), 11); // 初始化地图,设置中心点坐标和地图级别 //添加地图类型控件 map.addControl(new BMap.MapTypeControl(&#123; mapTypes:[ BMAP_NORMAL_MAP, BMAP_HYBRID_MAP ]&#125;)); map.setCurrentCity("成都"); // 设置地图显示的城市 此项是必须设置的 map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放 &#125;,&#125;&lt;/script&gt;&lt;style scoped&gt; .fli&#123; width: 100%; height: 100%; overflow: hidden; margin: 0; &#125;&lt;/style&gt; 另一种方式：异步加载跟百度api官网里的异步加载很像。首先跟入口 js（main.js）一样，新建一个 map.js 。（ak 就是你的密钥）123456789101112export function MP(ak) &#123; return new Promise(function (resolve, reject) &#123; window.onload = function () &#123; resolve(BMap) &#125; var script = document.createElement("script"); script.type = "text/javascript"; script.src = "http://api.map.baidu.com/api?v=2.0&amp;ak="+ak+"&amp;callback=init"; script.onerror = reject; document.head.appendChild(script); &#125;) &#125; 在页面中调用：1234567891011121314151617import &#123;MP&#125; from '@/map.js' export default &#123; data () &#123; return &#123; ak:'', // 这里就是百度地图密钥 &#125; &#125;, mounted()&#123; this.$nextTick(function() &#123; var _this = this; MP(_this.ak).then(BMap =&gt; &#123; // 百度地图API功能 ... &#125;) &#125;) &#125;,&#125; 注意：说到 src 末尾的 callback 参数，是否需要，值又是什么（ init, initialize ），自己去试验，随便写个简单的html，调试通了再引入vue。 小提示： 使用BMap的时候不需要import了，import反而会报错：BMap is not defined 注意一定要给bmap的div设置高度，否则会看不见 参考 前端框架Vue（9）——百度地图使用 vue调用百度地图api时Bmap没有定义的解决办法]]></content>
-      <categories>
-        <category>Vue2</category>
-      </categories>
-      <tags>
-        <tag>Vue2</tag>
-        <tag>百度地图</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Vue2 ：百度图表 Echarts]]></title>
     <url>%2F2018%2F05%2F19%2Fvue-echarts.html</url>
     <content type="text"><![CDATA[在后台管理系统中，图表是一个很普遍的元素。目前常用的图标插件有 charts, Echarts, highcharts。这次将介绍 Echarts 在 Vue 项目中的应用。 一、安装插件npm 安装 Echarts ，进入项目目录：npm install echarts -S和 axios 类似，echarts 也不能通过 Vue.use() 进行全局调用通常是在需要使用图表的 .vue 文件中直接引入：import echarts from &#39;echarts&#39;另外一只方式：挂到vue上，再使用：在 main.js 中引入，然后修改原型链：12import echarts from 'echarts' Vue.prototype.$echarts = echarts 然后就可以全局使用了let myChart = this.$echarts.init(document.getElementById(&#39;myChart&#39;)) 二、创建图表需要注意的是，图表的容器必须指定宽高，也就是说 width，height 不能使用百分比，只能用 px。简单封装：Echarts.vue12345678910111213141516&lt;template&gt; &lt;div style="width: 500px;height: 300px" :id="id" :class="className"&gt;&lt;/div&gt;&lt;/template&gt;&lt;script&gt; import * as echarts from 'echarts'; export default &#123; props: ['options','id','className'], data: function () &#123; return &#123; &#125; &#125;, mounted: function()&#123; var myChart = echarts.init(document.getElementById(this.id)); myChart.setOption(this.options); &#125; &#125;&lt;/script&gt; 然后使用：1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859&lt;template&gt; &lt;div class="center"&gt; &lt;h3&gt;ECharts 入门示例&lt;/h3&gt; &lt;Echarts id="main" :options='options' class="echarts" style="width: 500px;height: 300px"&gt;&lt;/Echarts&gt; &lt;Echarts id="main2" :options='optionsLine' class="echarts" style="width: 500px;height: 300px"&gt;&lt;/Echarts&gt; &lt;/div&gt;&lt;/template&gt;&lt;script&gt; import * as echarts from 'echarts'; import Echarts from '@/components/Echarts/Echarts.vue'; //组件 export default &#123; data: function () &#123; return &#123; options:&#123; title: &#123; text: '柱形图Bar' &#125;, tooltip: &#123;&#125;, xAxis: &#123; data: ['衬衫', '羊毛衫', '雪纺衫', '裤子', '高跟鞋', '袜子'] &#125;, yAxis: &#123;&#125;, series: [&#123; name: '销量', type: 'bar', data: [5, 20, 36, 10, 10, 20] &#125;] &#125;, optionsLine: &#123; title: &#123; text: '线状图Line' &#125;, xAxis: &#123; type: 'category', data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'] &#125;, yAxis: &#123; type: 'value' &#125;, series: [&#123; data: [820, 932, 901, 934, 1290, 1330, 1320], type: 'line' &#125;] &#125;, &#125; &#125;, components: &#123; 'Echarts': Echarts, &#125; &#125;&lt;/script&gt;&lt;style&gt; .echarts&#123; float: left; &#125;&lt;/style&gt; 三、按需引入上面引入的 echarts 包含了所有图表，但有时候我们只需要一两个基本图表，这时候完整的 echarts 就显得累赘。假如只需要创建一个饼图，那么可以这么做：1234567// 引入基本模板let echarts = require('echarts/lib/echarts')// 引入饼图组件require('echarts/lib/chart/pie')// 引入提示框和图例组件require('echarts/lib/component/tooltip')require('echarts/lib/component/legend') 可以按需引入的模块列表见 https://github.com/ecomfe/echarts/blob/master/index.js 其他如果在页面加载之后，仍需要图表自适应宽高，就需要用到 echarts 的媒体查询 参考 在Vue上初级使用ECharts 在vue-cli项目中使用echarts Vue 爬坑之路（八）—— 使用 Echarts 创建图表 做一个具有异步加载特性的 echarts-vue 组件 vue 将echarts封装为组件一键使用]]></content>
@@ -281,6 +304,18 @@
       <tags>
         <tag>Vue2</tag>
         <tag>Echarts</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Vue2 ：百度地图bmap]]></title>
+    <url>%2F2018%2F05%2F19%2Fvue-bmap.html</url>
+    <content type="text"><![CDATA[百度地图JavaScript API是一套由JavaScript语言编写的应用程序接口，可帮助您在网站中构建功能丰富、交互性强的地图应用，支持PC端和移动端基于浏览器的地图应用开发，且支持HTML5特性的地图开发。 该套API免费对外开放。自v1.5版本起，您需先申请密钥（ak）才可使用，接口无使用次数限制。 地址传送门：http://lbsyun.baidu.com/index.php?title=jspopular 申请密钥点击此处申请密钥，然后在首页index.html的head引入下面的js代码：&lt;script type=&quot;text/javascript&quot; src=&quot;http://api.map.baidu.com/api?v=2.0&amp;ak=密钥&quot;&gt;&lt;/script&gt;注意：建议先写个简单的html确认密钥正确可用后，再讲其引入vue的项目中。因为有些教程这里引入的js的src末尾带有 &amp;callback=init ，这个参数导致了报错（见下图），而始终无法正常使用百度地图api。 webpack 配置文件如果只是第一步，你调用百度地图api时，报错： Bmap is not defined ，那么就配置 webpack 配置文件（webpack.base.conf.js）的module.exports中加个externals：123456789module.exports = &#123; context: path.resolve(__dirname, '../'), entry: &#123; app: './src/main.js' &#125;, //百度地图配置20180518 externals: &#123; "BMap": "BMap" &#125;,...&#125; 调用12345678910111213141516171819202122232425262728293031323334&lt;template&gt; &lt;!--地图容器--&gt; &lt;div id="fli" class="fli"&gt;&lt;/div&gt;&lt;/template&gt;&lt;script&gt; export default &#123; name:'', data () &#123; return &#123; &#125; &#125;, mounted()&#123; var map = new BMap.Map('fli',&#123;enableMapClick:true&#125;); // 创建Map实例 map.centerAndZoom(new BMap.Point(104.06, 30.67), 11); // 初始化地图,设置中心点坐标和地图级别 //添加地图类型控件 map.addControl(new BMap.MapTypeControl(&#123; mapTypes:[ BMAP_NORMAL_MAP, BMAP_HYBRID_MAP ]&#125;)); map.setCurrentCity("成都"); // 设置地图显示的城市 此项是必须设置的 map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放 &#125;,&#125;&lt;/script&gt;&lt;style scoped&gt; .fli&#123; width: 100%; height: 100%; overflow: hidden; margin: 0; &#125;&lt;/style&gt; 另一种方式：异步加载跟百度api官网里的异步加载很像。首先跟入口 js（main.js）一样，新建一个 map.js 。（ak 就是你的密钥）123456789101112export function MP(ak) &#123; return new Promise(function (resolve, reject) &#123; window.onload = function () &#123; resolve(BMap) &#125; var script = document.createElement("script"); script.type = "text/javascript"; script.src = "http://api.map.baidu.com/api?v=2.0&amp;ak="+ak+"&amp;callback=init"; script.onerror = reject; document.head.appendChild(script); &#125;) &#125; 在页面中调用：1234567891011121314151617import &#123;MP&#125; from '@/map.js' export default &#123; data () &#123; return &#123; ak:'', // 这里就是百度地图密钥 &#125; &#125;, mounted()&#123; this.$nextTick(function() &#123; var _this = this; MP(_this.ak).then(BMap =&gt; &#123; // 百度地图API功能 ... &#125;) &#125;) &#125;,&#125; 注意：说到 src 末尾的 callback 参数，是否需要，值又是什么（ init, initialize ），自己去试验，随便写个简单的html，调试通了再引入vue。 小提示： 使用BMap的时候不需要import了，import反而会报错：BMap is not defined 注意一定要给bmap的div设置高度，否则会看不见 参考 前端框架Vue（9）——百度地图使用 vue调用百度地图api时Bmap没有定义的解决办法]]></content>
+      <categories>
+        <category>Vue2</category>
+      </categories>
+      <tags>
+        <tag>Vue2</tag>
+        <tag>百度地图</tag>
       </tags>
   </entry>
   <entry>
@@ -418,17 +453,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[html5视频转换工具]]></title>
-    <url>%2F2016%2F02%2F05%2Ftool-html5-video.html</url>
-    <content type="text"><![CDATA[10个免费的HTML5视频转换工具下载，搜过一些工具，跟此文的工具都差不多。然后下载了好几款试用了一下，最后比较满意的是any-video-converter。其他的，我就简单说说使用情况吧。先提一句：html5的视频播放格式编码要求：h264/mp4, theora/ogg, vp8/webm。 Miro Video Converter 能转，但是转完后就不能用。 Miro Video Converter 这个比较悲剧，找半天都没找到转成webm格式的地方。 Freemake Video Converter 能转，也能用，但是具体参数比较少。 Easy HTML5 Video 能转，并且比any-video-converter转的视频大小还小些，看了一下，视频没有失真没有出入。但是他丫的居然在右上角有个水印，导致了没法商用。 any-video-converter 能转的格式不全，还是收费的。 Online-Convert.Com 具体编码参数基本没有，懒得试了。 any-video-converter 各种格式和参数比较齐全，pc端手机端平板端的都有。转完还有demo页面。]]></content>
-      <categories>
-        <category>tool</category>
-      </categories>
-      <tags>
-        <tag>html5</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[网页(UI)设计--切图标注工具]]></title>
     <url>%2F2016%2F02%2F05%2Ftool-cut-mark.html</url>
     <content type="text"><![CDATA[cutterman(免费)–切图（ps 插件） parker(收费)–标注（ps 插件） PxCook(免费)–标注 ASSISTOR PS(免费)–切图，标注（ps 标注） BigShear(收费)–切图 markman(收费)–标注 标注的工具试过几个。PxCook和markman功能类似，不足：没法准确取色，特别是带透明色；无法准确获取文字（字体，字体大小，字体颜色，行高）。parker功能都有，但是外边距只能量2个图层，无法多个图层一起标注外边距。ASSISTOR PS功能都有，但是内边距需要自己手动拉个选框出来，再选中2个图层，才能量了。 切图类工具呢，虽然没怎么试过，不过大家都推荐cutterman。标注类工具呢，跟ps一起用的话，推荐ASSISTOR PS。单独用呢，用markman（mac版收费，windows有破解版，虽然官网说基本版免费，你用了就会发现啥叫基本功能了）和PxCook都行。 免费了！切图标记外挂神器ASSISTOR PS深入解读（上）免费了！切图标记外挂神器ASSISTOR PS深入解读（下）]]></content>
@@ -437,6 +461,17 @@
       </categories>
       <tags>
         <tag>photoshop</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[html5视频转换工具]]></title>
+    <url>%2F2016%2F02%2F05%2Ftool-html5-video.html</url>
+    <content type="text"><![CDATA[10个免费的HTML5视频转换工具下载，搜过一些工具，跟此文的工具都差不多。然后下载了好几款试用了一下，最后比较满意的是any-video-converter。其他的，我就简单说说使用情况吧。先提一句：html5的视频播放格式编码要求：h264/mp4, theora/ogg, vp8/webm。 Miro Video Converter 能转，但是转完后就不能用。 Miro Video Converter 这个比较悲剧，找半天都没找到转成webm格式的地方。 Freemake Video Converter 能转，也能用，但是具体参数比较少。 Easy HTML5 Video 能转，并且比any-video-converter转的视频大小还小些，看了一下，视频没有失真没有出入。但是他丫的居然在右上角有个水印，导致了没法商用。 any-video-converter 能转的格式不全，还是收费的。 Online-Convert.Com 具体编码参数基本没有，懒得试了。 any-video-converter 各种格式和参数比较齐全，pc端手机端平板端的都有。转完还有demo页面。]]></content>
+      <categories>
+        <category>tool</category>
+      </categories>
+      <tags>
+        <tag>html5</tag>
       </tags>
   </entry>
   <entry>
