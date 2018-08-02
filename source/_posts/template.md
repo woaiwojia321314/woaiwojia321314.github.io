@@ -1,7 +1,7 @@
 ---
 layout: pages
 title: markdown 常用语法（Hexo）
-date: 2014-12-22 12:39:04
+date: 2018-08-01 12:00:00
 categories:
 - class
 - 分类2

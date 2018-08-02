@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://missfli.com/"/>
-  <updated>2018-06-24T03:37:37.288Z</updated>
+  <updated>2018-08-02T03:21:44.256Z</updated>
   <id>http://missfli.com/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>input file选择文件标签美化</title>
+    <link href="http://missfli.com/2018/08/02/input-file-ie8.html"/>
+    <id>http://missfli.com/2018/08/02/input-file-ie8.html</id>
+    <published>2018-08-02T04:00:00.000Z</published>
+    <updated>2018-08-02T03:21:44.256Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;html中选择文件的标签 input[type=file]，默认样子比较丑，并且在各个浏览器上显示样子还不一样。所以需要手动美化。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="js" scheme="http://missfli.com/categories/js/"/>
+    
+    
+      <category term="file" scheme="http://missfli.com/tags/file/"/>
+    
+      <category term="js" scheme="http://missfli.com/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>markdown 常用语法（Hexo）</title>
+    <link href="http://missfli.com/2018/08/01/template.html"/>
+    <id>http://missfli.com/2018/08/01/template.html</id>
+    <published>2018-08-01T04:00:00.000Z</published>
+    <updated>2018-08-02T03:18:59.695Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;摘要：Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="class" scheme="http://missfli.com/categories/class/"/>
+    
+      <category term="分类2" scheme="http://missfli.com/categories/class/%E5%88%86%E7%B1%BB2/"/>
+    
+    
+      <category term="tag1" scheme="http://missfli.com/tags/tag1/"/>
+    
+      <category term="标签2" scheme="http://missfli.com/tags/%E6%A0%87%E7%AD%BE2/"/>
+    
+  </entry>
   
   <entry>
     <title>用vue实现无限滚动</title>
@@ -403,48 +449,6 @@
       <category term="Github" scheme="http://missfli.com/tags/Github/"/>
     
       <category term="Git" scheme="http://missfli.com/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Github 域名绑定</title>
-    <link href="http://missfli.com/2018/05/23/github-addon-domain.html"/>
-    <id>http://missfli.com/2018/05/23/github-addon-domain.html</id>
-    <published>2018-05-23T12:38:08.000Z</published>
-    <updated>2018-05-29T09:01:33.794Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;利用 Github pages 搭建静态网页项目时，Github 提个一个和用户名有关的免费域名：username.github.io 。当然如果你不满意，而自己又有个常见格式的域名（.com，.cn等等），那么绑定在一起呢。我是去&lt;a href=&quot;https://sg.godaddy.com/zh/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;godaddy&lt;/a&gt;购买的域名，据说域名服务商解析比较慢，所以采用了国内的&lt;a href=&quot;https://www.dnspod.cn/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;DNSPod&lt;/a&gt;&lt;br&gt;来做域名解析，然后把域名的NS服务器指向 DNSPod。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="域名" scheme="http://missfli.com/tags/%E5%9F%9F%E5%90%8D/"/>
-    
-      <category term="Github" scheme="http://missfli.com/tags/Github/"/>
-    
-      <category term="Godaddy" scheme="http://missfli.com/tags/Godaddy/"/>
-    
-      <category term="DNSPod" scheme="http://missfli.com/tags/DNSPod/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>域名信息查询</title>
-    <link href="http://missfli.com/2018/05/23/domain-look.html"/>
-    <id>http://missfli.com/2018/05/23/domain-look.html</id>
-    <published>2018-05-23T12:20:08.000Z</published>
-    <updated>2018-05-29T09:03:00.595Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;你想知道网站域名的相关信息吗？其实很简单，跟谷哥或度娘说：whois，一大堆结果。在这里呢，就只给你推荐几个比较权威准确点的。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="域名" scheme="http://missfli.com/tags/%E5%9F%9F%E5%90%8D/"/>
     
   </entry>
   
