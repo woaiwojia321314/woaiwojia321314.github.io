@@ -21,6 +21,6 @@
     "hexo-renderer-stylus": "^0.3.1",
     "hexo-server": "^0.2.0",
     "hexo-wordcount": "^3.0.2",
-    "valine": "^1.1.9-beta9"
+    "valine": "^1.4.15"
   }
 }
